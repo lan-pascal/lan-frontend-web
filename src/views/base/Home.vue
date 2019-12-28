@@ -4,7 +4,7 @@
       <v-parallax dark src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
         <v-layout align-center column justify-center>
           <v-flex grow-shrink-0 class="display-3 text-xs-center">Lan</v-flex>
-          <Countdown date="2019-06-23 16:00:00"/>
+          <Countdown date="2020-04-09 16:00:00"/>
         </v-layout>
       </v-parallax>
     </v-flex>

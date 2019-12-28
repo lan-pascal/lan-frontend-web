@@ -8,19 +8,23 @@
           :to="{name:'home'}"
           tag="span"
           style="cursor: pointer"> 
-          Lan
+            <v-img  :src="require('@/assets/LogoWhiteButterfly.svg')"
+                    contain
+                    
+                    width="100"
+                    height="150"></v-img>
           </router-link>
         </v-toolbar-title>
 
           <v-spacer/>
 
           <v-flex class="hidden-sm-and-down">
-              <v-btn text class="lan-btn" route: to="/event">Event</v-btn>
-              <v-btn text route: to="/gallery" class="lan-btn">Gallery</v-btn>
-              <v-btn text route: to="/poll-survey" class="lan-btn">Survey</v-btn>
-              <v-btn text route: to="/ranking">Ranking</v-btn>
-              <v-btn text route: to="/about">About</v-btn>
-              <v-btn text route: to="/signin">Sign in</v-btn>
+              <v-btn color="secondary" text class="lan-btn" route: to="/event">Event</v-btn>
+              <v-btn color="secondary" text route: to="/gallery" class="lan-btn">Gallery</v-btn>
+              <v-btn color="secondary" text route: to="/poll-survey" class="lan-btn">Survey</v-btn>
+              <v-btn color="secondary" text route: to="/ranking">Ranking</v-btn>
+              <v-btn color="secondary" text route: to="/about">About</v-btn>
+              <v-btn color="secondary" text route: to="/signin">Sign in</v-btn>
           </v-flex>
 
       <v-menu left class="hidden-md-and-up">
