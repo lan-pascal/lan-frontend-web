@@ -7,7 +7,7 @@
 * Installer Git-bash ou Github
 * Cloner le répertoire dans un dossier sur votre ordinateur avec la commande suivante.
 ```
-git clone https://github.com/lan-pascal/lan-backend-api
+git clone https://github.com/lan-pascal/lan-backend-web
 ```
 
 ### Javascript et ses dépendances
@@ -55,5 +55,4 @@ npm run lint
 
 Merci à 
 
-* [Stephen Kwan](https://github.com/tran-simon)
 * [Karl-Étienne Bolduc](https://github.com/LodrikMtl)
