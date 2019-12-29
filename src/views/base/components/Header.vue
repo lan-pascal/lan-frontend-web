@@ -1,22 +1,16 @@
 <template>
       <v-app-bar
         color="primary"
-        app
       >
         <v-toolbar-title>
           <router-link
           :to="{name:'home'}"
           tag="span"
           style="cursor: pointer"> 
-            <v-img  :src="require('@/assets/LogoWhiteButterfly.svg')"
-                    contain
-                    
-                    width="100"
-                    height="150"></v-img>
+            <v-img  :src="require('@/assets/logo/LogoWhiteButterfly.svg')" contain width="110" height="120">
+            </v-img>
           </router-link>
         </v-toolbar-title>
-
-          <v-spacer/>
 
           <v-flex class="hidden-sm-and-down">
               <v-btn color="secondary" text class="lan-btn" route: to="/event">Event</v-btn>
@@ -24,7 +18,12 @@
               <v-btn color="secondary" text route: to="/poll-survey" class="lan-btn">Survey</v-btn>
               <v-btn color="secondary" text route: to="/ranking">Ranking</v-btn>
               <v-btn color="secondary" text route: to="/about">About</v-btn>
-              <v-btn color="secondary" text route: to="/signin">Sign in</v-btn>
+          </v-flex>
+
+          <v-spacer/>
+
+          <v-flex d-inline-flex justify-end class="hidden-sm-and-down">
+            <v-btn color="secondary" text route: to="/signin">Sign up/in</v-btn>
           </v-flex>
 
       <v-menu left class="hidden-md-and-up">
