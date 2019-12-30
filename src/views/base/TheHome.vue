@@ -14,23 +14,23 @@
           <v-flex xs12>
             <v-container grid-list-xl>
               <v-layout row wrap align-center>
-                <v-flex xs8 md4 hover>
+                <v-col xs8 md4 hover>
                   <v-card class="elevation-10 transparent">
                     <v-card-text class="text-xs-center">
                       <v-icon x-large class="blue--text text--lighten-2">color_lens</v-icon>
                     </v-card-text>
 
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Material Design</div>
+                      <div class="headline text-xs-center">L'événement</div>
                     </v-card-title>
 
                     <v-card-text class="pt-2">
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
+                      Le LAN c'est un événement biannuel où tu te défoules avec des 
+                      jeux de toutes les sortes! Accessible à tous (oui, oui, c’est pas un truc nerd-only), 
+                      une variété d’activités différentes sont offertes.
                     </v-card-text>
                   </v-card>
-                </v-flex>
+                </v-col>
 
                 <v-flex xs8 md4 align-center justify-center class="my-2">
                   <v-card class="elevation-10 transparent">
@@ -39,13 +39,18 @@
                     </v-card-text>
 
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline">Fast development</div>
+                      <div class="headline">Le prochain</div>
                     </v-card-title>
 
                     <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
+                      <v-list disabled>
+                      <li>Places disponibles : 100</li>
+                      <li>Lieu : indéterminé</li>
+                      <li>Prix : indéterminé</li>
+                      <li>Nourriture : indéterminé</li>
+                      <li>Alcool : indéterminé</li>
+                      <li>Fun : garanti</li>
+                      </v-list>
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -57,7 +62,7 @@
                     </v-card-text>
 
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Completely Open Sourced</div>
+                      <div class="headline text-xs-center">Les activités prévues</div>
                     </v-card-title>
 
                     <v-card-text>
