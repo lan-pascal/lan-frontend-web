@@ -4,7 +4,7 @@
       <v-img :src="require('@/assets/logo/LogoBlackBackground.svg')" contain width="100%" aspect-ratio="4"></v-img>
       <v-layout align-center column justify-center>
         <v-flex grow-shrink-0 class="secondary--text display-3 text-center">NEXT LAN:</v-flex>
-        <Countdown class="secondary--text" date="2020-04-09 16:00:00"/>
+        <CountdownClassic class="secondary--text" date="2020-04-09 16:00:00"/>
       </v-layout>
     </v-flex>
 

@@ -1,7 +1,7 @@
 export default [
     {
       path:'/',
-      name: 'Layout',
+      name: 'layout',
       component: () => import('@/views/base/BaseLayout.vue'),
       redirect : "/home",
       children: [
