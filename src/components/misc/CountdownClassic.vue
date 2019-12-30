@@ -1,7 +1,7 @@
 <template id="countdown">
-    <v-flex grow-shrink-0>
+    <div>
     {{ days | two_digits}} jours : {{ hours | two_digits}} heures : {{ minutes | two_digits}} minutes : {{ seconds | two_digits}} secondes
-    </v-flex>
+    </div>
 </template>
 
 <script>
