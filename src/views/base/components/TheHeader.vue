@@ -13,17 +13,17 @@
         </v-toolbar-title>
 
           <v-flex class="hidden-sm-and-down">
-              <v-btn color="secondary" text class="lan-btn" route: to="/event">Event</v-btn>
-              <v-btn color="secondary" text route: to="/gallery" class="lan-btn">Gallery</v-btn>
-              <v-btn color="secondary" text route: to="/poll-survey" class="lan-btn">Survey</v-btn>
-              <v-btn color="secondary" text route: to="/ranking">Ranking</v-btn>
-              <v-btn color="secondary" text route: to="/about">About</v-btn>
+              <v-btn color="secondary" text class="lan-btn" route: to="/event">Événement</v-btn>
+              <v-btn color="secondary" text route: to="/gallery" class="lan-btn">Gallerie</v-btn>
+              <v-btn color="secondary" text route: to="/poll-survey" class="lan-btn">Sondage</v-btn>
+              <v-btn color="secondary" text route: to="/ranking">Classement</v-btn>
+              <v-btn color="secondary" text route: to="/about">À propos</v-btn>
           </v-flex>
 
           <v-spacer/>
 
           <v-flex d-inline-flex justify-end class="hidden-sm-and-down">
-            <v-btn color="secondary" text route: to="/signin">Sign up/in</v-btn>
+            <v-btn color="secondary" text route: to="/signin">Connexion/inscription</v-btn>
           </v-flex>
 
       <v-menu left class="hidden-md-and-up">

@@ -1,6 +1,6 @@
 <template id="countdown">
     <v-flex grow-shrink-0>
-    {{ days | two_digits}} days : {{ hours | two_digits}} hours : {{ minutes | two_digits}} minutes : {{ seconds | two_digits}} seconds
+    {{ days | two_digits}} jours : {{ hours | two_digits}} heures : {{ minutes | two_digits}} minutes : {{ seconds | two_digits}} secondes
     </v-flex>
 </template>
 
