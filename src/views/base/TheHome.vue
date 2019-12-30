@@ -77,12 +77,12 @@
 </template>
 
 <script>
-import Countdown from "@/components/misc/Countdown";
+import CountdownClassic from "@/components/misc/CountdownClassic";
 
 export default {
-  name: "Home",
+  name: "TheHome",
   components: {
-    Countdown
+    CountdownClassic
   },
 };
 </script>
