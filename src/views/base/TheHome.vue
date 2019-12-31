@@ -1,12 +1,13 @@
 <template>
   <v-layout column>
-    <v-flex pb-12>
+
+    <v-row pb-12>
       <v-img :src="require('@/assets/logo/LogoBlackBackground.svg')" contain width="100%" aspect-ratio="4"></v-img>
       <v-layout align-center column justify-center>
         <v-flex grow-shrink-0 class="secondary--text display-3 text-center">PROCHAIN LAN:</v-flex>
-        <CountdownClassic class="secondary--text" date="2020-04-09 16:00:00"/>
+        <CountdownFlip class="secondary--text" date="2020-04-09 16:00:00"/>
       </v-layout>
-    </v-flex>
+    </v-row>
 
     <v-flex>
       <v-layout row align-center wrap justify-center>
@@ -77,12 +78,12 @@
 </template>
 
 <script>
-import CountdownClassic from "@/components/misc/CountdownClassic";
+import CountdownFlip from "@/components/misc/CountdownFlip";
 
 export default {
   name: "TheHome",
   components: {
-    CountdownClassic
+    CountdownFlip
   },
 };
 </script>
