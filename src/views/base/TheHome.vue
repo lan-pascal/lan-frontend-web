@@ -90,7 +90,7 @@
 
     <v-row align=center class="primary secondary--text">
       <v-col cols=4>
-        <v-icon size = "100" class="black--text text--lighten-2 pr-12">mdi-arrow-white-bold-outline</v-icon>
+        <v-icon size = "100" class="white--text text--lighten-2 pl-12">mdi-arrow-right-bold </v-icon>
       </v-col>
       <v-col cols=8 class="white--text">
        Le prochain LAN sera le XX au YY. Il y a 100 places de disponibles. 
