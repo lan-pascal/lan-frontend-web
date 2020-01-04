@@ -14,3 +14,10 @@ export default {
   }),
 };
 </script>
+
+<style>
+.fullscreen {
+  width: 100%;
+  height: 100vh;
+}
+</style>
