@@ -29,7 +29,7 @@
 
         <v-row justify="space-around" align="center" class="midscreen">
             <v-col class="hidden-sm-and-down" cols=2>
-                <v-icon size = "100" class="accent--text text--lighten-2 pr-12">mdi-arrow-white-bold-outline</v-icon>
+                <v-icon size = "100" class="accent--text text--lighten-2 pr-12">mdi-play-outline</v-icon>
             </v-col>
             <v-col xs=12 sm=6 lg=5>
                 <div class="pl-2">
