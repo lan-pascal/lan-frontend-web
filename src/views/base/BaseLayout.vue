@@ -1,11 +1,11 @@
 <template>
-  <v-app class="primary">
-    <TheHeader/>
-      <v-content>
-          <router-view/>
-      </v-content>
-    <TheFooter/>
-  </v-app>
+    <div>
+        <TheHeader/>
+        <v-content class="bg-light-bulb">
+            <router-view/>
+        </v-content>
+        <TheFooter/>
+    </div>
 </template>
 
 <script>
@@ -20,3 +20,15 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.bg-light-bulb {
+  background-attachment: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle 1600px at 100% 0,var(--v-primary-darken2) 0%,var(--v-primary-base) 100%);
+}
+</style>
