@@ -1,5 +1,5 @@
 <template>
-  <v-footer>
+  <v-footer padless>
     <v-flex>
       <v-card
         text
