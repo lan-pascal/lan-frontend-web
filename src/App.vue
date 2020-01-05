@@ -15,9 +15,18 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .fullscreen {
   width: 100%;
   height: 100vh;
+}
+.non-interactive
+{
+    cursor: default;
+
+    &::selection {
+        color: inherit;
+        background: inherit;
+    }
 }
 </style>

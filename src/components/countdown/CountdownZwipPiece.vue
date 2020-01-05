@@ -47,13 +47,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.non-interactive
-{
-    cursor: default;
 
-    &::selection {
-        color: inherit;
-        background: inherit;
-    }
-}
 </style>
