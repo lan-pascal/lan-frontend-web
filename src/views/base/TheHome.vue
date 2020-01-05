@@ -2,7 +2,7 @@
   <div>
         <v-row class="fullscreen" align="center">
             <v-col align="center">
-                <v-img  class="mb-12" :src="require('@/assets/logo/LogoWhiteButterfly.svg')" contain width="100%" aspect-ratio="4"/>
+                <v-img  class="mb-12" :src="require('@/assets/logo/LogoWhiteFillEmptyBtns.svg')" contain width="100%" aspect-ratio="4"/>
                 <div class="display-3">PROCHAIN LAN:</div>
                 <CountdownZwip deadline="2020/04/09 16:00:00"/>
             </v-col>
