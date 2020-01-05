@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import Vuetify from 'vuetify/lib';
+import Vuetify from 'vuetify/lib/framework';
 
 Vue.use(Vuetify);
 
@@ -23,7 +23,7 @@ export default new Vuetify({
               darken1: "#8f8f8f"
             },
             accent: {
-              base: "#eb7134"
+              base: "#e86423"
             } 
           },
         }
