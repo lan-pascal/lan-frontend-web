@@ -9,7 +9,7 @@
           :to="{name:'home'}"
           tag="span"
           style="cursor: pointer"> 
-            <v-img  :src="require('@/assets/logo/LogoWhiteButterfly.svg')" contain width="60" height="120">
+            <v-img  :src="require('@/assets/logo/LogoWhiteFillEmptyBtns.svg')" contain width="60" height="120">
             </v-img>
           </router-link>
         </v-toolbar-title>
