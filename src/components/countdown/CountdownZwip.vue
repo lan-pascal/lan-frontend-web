@@ -33,6 +33,6 @@ export default {
 
 <style lang="scss" scoped>
 .clock__piece {
-  background-color: #212121;
+  background: var(--v-primary-darken1);
 }
 </style>
