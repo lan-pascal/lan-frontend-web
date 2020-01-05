@@ -1,8 +1,8 @@
 <template>
     <v-card flat width="5rem">
         <v-card-title 
-            ref="clockPieceFlip" 
-            class="justify-center display-2 px-0">
+            ref="clockPiece" 
+            class="non-interactive justify-center display-2 px-0">
                 {{digits}}
         </v-card-title>
     </v-card>
@@ -15,10 +15,10 @@ export default {
     mounted() {
         this.ready = false;
 
-        const { clockPieceFlip } = this.$refs
+        const { clockPiece } = this.$refs
 
         this.animation = anime.timeline({
-                targets: clockPieceFlip,
+                targets: clockPiece,
                 direction: "alternate",
                 delay: 0
             })
@@ -46,5 +46,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.non-interactive
+{
+    cursor: default;
+
+    &::selection {
+        color: inherit;
+        background: inherit;
+    }
+}
 </style>

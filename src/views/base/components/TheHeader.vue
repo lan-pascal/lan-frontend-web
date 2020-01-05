@@ -14,21 +14,21 @@
           </router-link>
         </v-toolbar-title>
 
-          <v-flex class="hidden-sm-and-down">
-              <v-btn :ripple="false" text class="underline" route: to="/event">Événement</v-btn>
-              <v-btn :ripple="false" text class="underline" route: to="/gallery">Gallerie</v-btn>
-              <v-btn :ripple="false" text class="underline" route: to="/poll-survey">Sondage</v-btn>
-              <v-btn :ripple="false" text class="underline" route: to="/ranking">Classement</v-btn>
-              <v-btn :ripple="false" text class="underline" route: to="/about">À propos</v-btn>
-          </v-flex>
+        <v-flex class="hidden-sm-and-down">
+            <v-btn :ripple="false" text class="underline" route: to="/event">Événement</v-btn>
+            <v-btn :ripple="false" text class="underline" route: to="/gallery">Gallerie</v-btn>
+            <v-btn :ripple="false" text class="underline" route: to="/poll-survey">Sondage</v-btn>
+            <v-btn :ripple="false" text class="underline" route: to="/ranking">Classement</v-btn>
+            <v-btn :ripple="false" text class="underline" route: to="/about">À propos</v-btn>
+        </v-flex>
 
-          <v-spacer/>
+        <v-spacer/>
 
-          <v-flex d-inline-flex justify-end class="hidden-sm-and-down">
-            <v-btn class="accent mx-2">Prix</v-btn>
-            <v-divider dark vertical/>
-            <v-btn outlined class="mx-2" route: to="/signin">Connexion/inscription</v-btn>
-          </v-flex>
+        <v-flex d-inline-flex justify-end class="hidden-sm-and-down">
+          <v-btn class="accent mx-2">Prix</v-btn>
+          <v-divider dark vertical/>
+          <v-btn outlined class="mx-2" route: to="/signin">Connexion/inscription</v-btn>
+        </v-flex>
 
         <v-menu left class="hidden-md-and-up">
           <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
@@ -53,22 +53,18 @@
 <style lang="scss" scoped>
 .underline {
   &:after {
-    bottom: 0;
     content: "";
     display: block;
     height: 2px;
+    width: 0;
+    bottom: 0;
     left: 50%;
     position: absolute;
     background : var(--v-accent-base);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
   }
-
-  &:hover {
-    color: var(--v-accent-base);
-  }
-
-  &.v-btn--active {
+  
+  &:hover, &.v-btn--active {
     color: var(--v-accent-base);
   }
 
