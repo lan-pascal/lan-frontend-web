@@ -1,7 +1,27 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib/framework';
+import VueI18n from 'vue-i18n'
 
 Vue.use(Vuetify);
+Vue.use(VueI18n)
+
+const messages = {
+  fr: {
+    $vuetify: {
+      test: 'test_fr',
+    },
+  },
+  en: {
+    $vuetify: {
+      test: 'test_en',
+    },
+  },
+}
+
+const i18n = new VueI18n({
+  locale: 'fr', // set locale
+  messages, // set locale messages
+})
 
 export default new Vuetify({
     theme: {
@@ -27,5 +47,8 @@ export default new Vuetify({
             } 
           },
         }
+    },
+    lang: {
+      t: (key, ...params) => i18n.t(key, params),
     },
 });
