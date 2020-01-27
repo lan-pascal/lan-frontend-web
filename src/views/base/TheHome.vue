@@ -8,7 +8,9 @@
             </v-col>
         </v-row>
 
-        <v-row justify="space-around" align="center" class="midscreen">
+        <v-divider class="hidden-sm-and-down"/>
+
+        <v-row justify="space-around" align="center" class="fullscreen">
             <v-col xs=12 sm=6 lg=5>
                 <div class="pr-2"> 
                     <v-card flat class="transparent">
@@ -25,9 +27,9 @@
             </v-col>
         </v-row>
 
-        <v-divider/>
+        <v-divider class="hidden-sm-and-down"/>
 
-        <v-row justify="space-around" align="center" class="midscreen">
+        <v-row justify="space-around" align="center" class="fullscreen">
             <v-col class="hidden-sm-and-down" cols=2>
                 <v-icon size = "100" class="accent--text text--lighten-2 pr-12">mdi-play-outline</v-icon>
             </v-col>
@@ -44,9 +46,9 @@
             </v-col>
         </v-row>
 
-        <v-divider/>
+        <v-divider class="hidden-sm-and-down"/>
 
-        <v-row justify="space-around" align="center" class="midscreen">
+        <v-row justify="space-around" align="center" class="fullscreen">
             <v-col xs=12 sm=6 lg=5>
                 <div class="pr-2"> 
                     <v-card flat class="transparent">
@@ -65,7 +67,7 @@
             </v-col>
         </v-row>
 
-        <v-divider/>
+        <v-divider class="hidden-sm-and-down"/>
     </div>
 </template>
 
