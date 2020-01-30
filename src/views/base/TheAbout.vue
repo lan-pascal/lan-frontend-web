@@ -104,6 +104,65 @@ export default {
           answer:
             "Ça dépend de LAN en LAN (notamment de la personne qui nous loue la salle). Clique ici pour savoir pour le prochain LAN."
         }
+      ],
+      team: [
+        {
+          name: "Pascal",
+          description:
+            "Créateur du LAN. Passionné des jeux vidéo. Adore voir les gens s’amuser au LAN. Grumpy quand il a faim/a pas assez dormi. Parle à la 3e personne."
+        },
+        {
+          name: "Karl-Étienne",
+          description: "Fondateur du site web. Bénévole dès le début. N’a jamais manqué de LAN."
+        },
+        {
+          name: "Simon",
+          description: "Bras-droit du LAN. Toujours là quand shit hits the fan. Premier LAN : LAN #3."
+        },
+        {
+          name: "Stephen",
+          description: "Aide avec le site web. Bénévole dès le début. N’a jamais manqué de LAN."
+        },
+        {
+          name: "Kevin",
+          description: "Bénévole dès le début. N’a jamais manqué de LAN."
+        },
+        {
+          name: "Alex",
+          description: "Bénévole dès le début. N’a jamais manqué de LAN."
+        },
+        {
+          name: "Étienne",
+          description: "Bénévole dès le début. N’a jamais manqué de LAN."
+        },
+        {
+          name: "Ayman",
+          description: "Bénévole dès le début. N’a jamais manqué de LAN."
+        },
+        {
+          name: "Arnaud",
+          description: "Bénévole dès le début. N’a jamais manqué de LAN."
+        },
+        {
+          name: "Lianne",
+          description: "Bénévole. Premier LAN : LAN #4."
+        },
+        {
+          name: "Soulaha",
+          description: "Bénévole. Premier LAN : LAN #4."
+        },
+        {
+          name: "Léon",
+          description: "Créateur du logo du LAN."
+        },
+        {
+          name: "Sacha",
+          description: "Photographe officiel du LAN. Premier LAN : LAN #4."
+        },
+        {
+          name: "Sami",
+          description: "Magicien officiel du LAN. Premier LAN : LAN #3."
+        }
       ]
     };
   }
