@@ -18,10 +18,15 @@
         </v-expansion-panels>
       </v-flex>
       <v-flex>
-        Team
-        <v-card>
-          <v-card-title>Pascal</v-card-title>
-        </v-card>
+        <span class="pa-5 d-block headline">Équipe</span>
+        <v-list>
+          <v-list-item two-line v-for="(teammate, teammateIndex) in team" :key="teammateIndex">
+            <v-list-item-content class="pa-3">
+              <v-list-item-title>{{teammate.name}}</v-list-item-title>
+              <v-list-item-subtitle>{{teammate.description}}</v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
       </v-flex>
     </v-layout>
   </div>
