@@ -118,15 +118,18 @@ export default {
         },
         {
           name: "Karl-Étienne",
-          description: "Fondateur du site web. Bénévole dès le début. N’a jamais manqué de LAN."
+          description:
+            "Fondateur du site web. Bénévole dès le début. N’a jamais manqué de LAN."
         },
         {
           name: "Simon",
-          description: "Bras-droit du LAN. Toujours là quand shit hits the fan. Premier LAN : LAN #3."
+          description:
+            "Bras-droit du LAN. Toujours là quand shit hits the fan. Premier LAN : LAN #3."
         },
         {
           name: "Stephen",
-          description: "Aide avec le site web. Bénévole dès le début. N’a jamais manqué de LAN."
+          description:
+            "Aide avec le site web. Bénévole dès le début. N’a jamais manqué de LAN."
         },
         {
           name: "Kevin",
