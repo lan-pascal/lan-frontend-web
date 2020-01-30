@@ -4,16 +4,12 @@
       <v-flex>
         <v-sheet height="400px" color="secondary">
           <v-layout row align-center justify-center fill-height>
-            <v-flex class="display-4 text-xs-center">About</v-flex>
+            <v-flex class="display-4 text-xs-center">À Propos</v-flex>
           </v-layout>
         </v-sheet>
       </v-flex>
       <v-flex>
-        Events:
-        Descriptions:
-      </v-flex>
-      <v-flex>
-        FAQ
+        <span class="pa-5 d-block headline">Foire aux questions</span>
         <v-expansion-panels accordion multiple>
           <v-expansion-panel v-for="(faq, faqIndex) in faqs" :key="faqIndex">
             <v-expansion-panel-header>{{faq.question}}</v-expansion-panel-header>
@@ -54,7 +50,8 @@ export default {
         },
         {
           question: "Je ne comprends pas trop c’est quoi le LAN.",
-          answer: "[copier brève description]"
+          answer:
+            "Le LAN c'est une soirée que tu passes avec tes amis à faire ce que tu as le goût dans toutes les activités offertes (voir liste ci-bas)! Tu es libre d'aller jouer à ce que tu veux et quand tu veux. Tes même pas obligé de jouer, plusieurs viennent simplement socialiser. C'est aussi l'occasion parfaite pour rencontrer plein de nouveau monde. Et si tu penses que c'est pas pour toi parce que tes pas nerd, tu peux pas avoir moins raison, on y trouve de tous les goûts : jeux de sociétés, jeux vidéo accessibles (Just Dance, Dance Dance Revolution, Guitar Hero, etc.), karaoke & plus!"
         },
         {
           question: "C’est où que j’achète mon billet?",
