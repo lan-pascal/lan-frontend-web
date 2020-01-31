@@ -1,59 +1,21 @@
 <template>
-  <v-layout 
-  column>
-
-    <v-sheet height="400px" color="secondary">
-        <v-layout 
-        row 
-        align-center 
-        justify-center 
-        fill-height>
-          <v-flex class="display-4 text-xs-center" >
-                Gallery
-          </v-flex>
-        </v-layout>
+  <v-layout column>
+    <v-sheet tile height="200px" color="secondary">
+      <v-layout align-center justify-center fill-height>
+        <span class="display-3 text-xs-center">Gallerie</span>
+      </v-layout>
     </v-sheet>
-
-    <v-container 
-    grid-list-lg
-    pa-5
-    >
-      <v-layout 
-      row 
-      wrap
-      justify-center
-      >
-        <v-flex 
-        v-for="(item,i) in items" 
-        :key="i"
-        grow-shrink-0
-        >
+    <v-container grid-list-lg pa-5>
+      <v-layout row wrap justify-center>
+        <v-flex v-for="(item,i) in items" :key="i" grow-shrink-0>
           <v-hover>
-            <v-card 
-            slot-scope="{hover}"
-            tile 
-            height="240px" 
-            width="240px"
-            >
-              <v-img 
-              :src="item.src" 
-              alt="lorem" 
-              width="100%" 
-              height="100%"
-              >
-              </v-img>
-
+            <v-card slot-scope="{hover}" tile height="240px" width="240px">
+              <v-img :src="item.src" alt="lorem" width="100%" height="100%"></v-img>
               <v-fade-transition>
-                  <v-overlay
-                    v-if="hover"
-                    dark
-                    absolute
-                    z-index=1
-                  >
-                    <v-flex class="black">Album</v-flex>
-                  </v-overlay>
+                <v-overlay v-if="hover" dark absolute z-index="1">
+                  <v-flex class="black">Album</v-flex>
+                </v-overlay>
               </v-fade-transition>
-
             </v-card>
           </v-hover>
         </v-flex>
@@ -86,7 +48,3 @@ export default {
   }
 };
 </script>
-
-
-<style>
-</style>
