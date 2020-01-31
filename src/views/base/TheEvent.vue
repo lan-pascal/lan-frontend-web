@@ -2,11 +2,9 @@
   <div class="about">
     <v-layout column>
       <v-flex>
-        <v-sheet height="400px" color="secondary">
-          <v-layout row align-center justify-center fill-height>
-            <v-flex class="display-4 text-xs-center">
-              <span>Events</span>
-            </v-flex>
+        <v-sheet tile height="200px" color="secondary">
+          <v-layout align-center justify-center fill-height>
+            <span class="display-3 text-xs-center">Événement</span>
           </v-layout>
         </v-sheet>
       </v-flex>
