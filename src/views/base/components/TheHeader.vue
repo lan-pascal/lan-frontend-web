@@ -4,7 +4,7 @@
         flat
         app
       >
-        <v-toolbar-title class="pr-6">
+        <v-toolbar-title class="pr-6 hidden-sm-and-down">
           <router-link
           :to="{name:'home'}"
           tag="span"
@@ -13,40 +13,71 @@
             </v-img>
           </router-link>
         </v-toolbar-title>
-
+<!-- Desktop -->
         <v-flex class="hidden-sm-and-down">
-            <v-btn :ripple="false" text class="underline" route: to="/event">Événement</v-btn>
-            <v-btn :ripple="false" text class="underline" route: to="/gallery">Gallerie</v-btn>
-            <v-btn :ripple="false" text class="underline" route: to="/poll-survey">Sondage</v-btn>
-            <v-btn :ripple="false" text class="underline" route: to="/ranking">Classement</v-btn>
-            <v-btn :ripple="false" text class="underline" route: to="/about">À propos</v-btn>
+          <v-btn
+          v-for="link in links"
+          :key="link.key"
+          :ripple="false"
+          class="underline white--text"
+          router :to="link.route"
+          text
+          >{{link.name}}
+          </v-btn>
         </v-flex>
-
+<!-- Mobile -->
+        <v-flex class="hidden-md-and-up">
+          <v-menu offset-y class="justify-space-between">
+            <template v-slot:activator="{ on }">
+                <v-btn
+                    v-on="on"
+                    text
+                    icon
+                    x-large
+                    >
+                    <v-icon class="menu-icon">mdi-menu</v-icon>
+                </v-btn>
+            </template>
+            <v-list>
+                <v-list-item route: to="/home">Accueil</v-list-item>
+                <v-list-item
+                    v-for="link in links"
+                    :key="link.text"
+                    router :to="link.route"
+                    class="white--text"
+                    >
+                    <v-list-item-title>{{ link.name }}</v-list-item-title>
+                </v-list-item>
+            </v-list>
+          </v-menu>
+        </v-flex>
         <v-spacer/>
 
         <v-flex d-inline-flex justify-end class="hidden-sm-and-down">
-          <v-btn class="accent mx-2">Prix</v-btn>
+          <v-btn class="accent mx-2" v-bind="size">Prix</v-btn>
           <v-divider dark vertical/>
-          <v-btn outlined class="mx-2" route: to="/signin">Connexion/inscription</v-btn>
+          <v-btn outlined class="mx-2" route: to="/signin" v-bind="size">Connexion/inscription</v-btn>
         </v-flex>
-
-        <v-menu left class="hidden-md-and-up">
-          <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
-          <v-list>
-            <v-list-tile>
-              <v-list-tile-content>
-                <v-list-tile-title>Test</v-list-tile-title>
-              </v-list-tile-content>
-            </v-list-tile>   
-          </v-list>
-        </v-menu>
       </v-app-bar>
 </template>
 
 <script>
   export default {
     data: () => ({
-    })
+      links:  [
+        {name: "Événement", route: "/event"},
+        {name: "Gallerie", route: "/gallery"},
+        {name: "Sondage", route: "/poll-survey"},
+        {name: "Classement", route: "/ranking"},
+        {name: "À propos", route: "/about"},
+        ]
+    }),
+    computed: {
+    size () {
+      const size = {xs:'small',sm:'small',lg:'',xl:''}[this.$vuetify.breakpoint.name];
+      return size ? { [size]: true } : {}
+    }
+  }
   }
 </script>
 
