@@ -31,9 +31,9 @@ export default [
             component: () => import('@/views/base/ThePollSurvey.vue')
         },
         {
-            path: '/gallery',
-            name: 'gallery',
-            component: () => import('@/views/base/TheGallery.vue')
+            path: '/faq',
+            name: 'faq',
+            component: () => import('@/views/base/TheFAQ.vue')
         },
       ]
     },

@@ -1,5 +1,5 @@
 <template>
-    <v-card flat width="5rem">
+    <v-card flat width="4rem">
         <v-card-title 
             ref="clockPiece" 
             class="non-interactive justify-center display-2 px-0">

@@ -3,6 +3,7 @@
         color="primary"
         flat
         app
+        class="pa-0"
       >
         <v-toolbar-title class="pr-6 hidden-sm-and-down">
           <router-link
@@ -35,7 +36,7 @@
                     icon
                     x-large
                     >
-                    <v-icon class="menu-icon">mdi-menu</v-icon>
+                    <v-icon class="menu-icon" large>mdi-menu</v-icon>
                 </v-btn>
             </template>
             <v-list>
@@ -65,11 +66,11 @@
   export default {
     data: () => ({
       links:  [
-        {name: "Événement", route: "/event"},
-        {name: "Gallerie", route: "/gallery"},
+        {name: "MTLAN 2020", route: "/event"},
+        {name: "Archives", route: "/about"},
         {name: "Sondage", route: "/poll-survey"},
         {name: "Classement", route: "/ranking"},
-        {name: "À propos", route: "/about"},
+        {name: "FAQ", route: "/faq"},
         ]
     }),
     computed: {

@@ -7,7 +7,7 @@
             </v-col>
       </template>
     </v-row>
-    Date : {{deadlineDisplay}}
+    {{deadlineDisplay}}
   </div>
 </template>
 
