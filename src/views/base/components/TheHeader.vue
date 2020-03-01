@@ -67,10 +67,9 @@
     data: () => ({
       links:  [
         {name: "MTLAN 2020", route: "/event"},
-        {name: "Archives", route: "/about"},
-        {name: "Sondage", route: "/poll-survey"},
-        {name: "Classement", route: "/ranking"},
+        {name: "Archive", route: "/archive"},
         {name: "FAQ", route: "/faq"},
+        {name: "À propos", route: "/about"}
         ]
     }),
     computed: {
