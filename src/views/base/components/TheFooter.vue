@@ -1,13 +1,9 @@
 <template>
-  <v-footer padless>
-    <v-flex>
-      <v-card text tile class="primary lighten-1 white--text text-xs-center">
-        <v-card-text class="grey--text text-center">
-          <span>LAN © 2018 - 2020</span>
-        </v-card-text>
-      </v-card>
-    </v-flex>
-  </v-footer>
+    <v-footer padless>
+        <v-col align=center no-gutters class="primary lighten-2">
+            LAN © 2018 - 2020
+        </v-col>
+    </v-footer>
 </template>
 
 <script>

@@ -1,52 +1,53 @@
 <template>
+    <v-col>
+        <v-row>
+            <v-col align=center justify=center>
+            <h1 class="display-3 accent--text">Archive</h1>
+            </v-col>
+        </v-row>
 
-  <v-layout column>
-    <v-sheet tile height="200px" color="secondary">
-      <v-layout align-center justify-center fill-height>
-        <span class="display-3 text-xs-center accent--text">Historique</span>
-      </v-layout>
-    </v-sheet>
-    <v-container grid-list-lg pa-5>
-      <v-layout row wrap justify-center>
-        <v-flex v-for="(item,i) in items" :key="i" grow-shrink-0>
-          <v-hover>
-            <v-card slot-scope="{hover}" tile height="240px" width="240px">
-              <v-img :src="item.src" alt="lorem" width="100%" height="100%"></v-img>
-              <v-fade-transition>
-                <v-overlay v-if="hover" dark absolute z-index="1">
-                  <v-flex class="black">Album</v-flex>
-                </v-overlay>
-              </v-fade-transition>
-            </v-card>
-          </v-hover>
-        </v-flex>
-        <v-flex class="pa-5">
-        <v-timeline id="event-timeline">
-          <v-timeline-item v-for="(event, eventIndex) in events" :key="eventIndex">
-            <template v-slot:opposite>
-              <span>{{event.date}} - {{event.place}}</span>
-            </template>
-            <v-card class="elevation-2">
-              <v-card-title class="accent--text">{{event.name}}</v-card-title>
-              <v-card-text>
-                <span class="d-block">Nombre de participants: {{event.numberParticipants}}</span>
-                <template v-for="(highlight, highlightIndex) in event.highlights">
-                  <span class="d-block" :key="highlightIndex">- {{highlight.item}}</span>
-                </template>
-              </v-card-text>
-            </v-card>
-          </v-timeline-item>
-        </v-timeline>
-      </v-flex>
-      </v-layout>
-    </v-container>
-  </v-layout>
-  
+        <v-row align=center>
+
+            <v-col v-for="(item,i) in items" :key="i" sm=3>
+                <v-hover>
+                    <v-card slot-scope="{hover}" tile height="240px" width="240px">
+                    <v-img :src="item.src" alt="lorem" width="100%" height="100%"></v-img>
+                    <v-fade-transition>
+                        <v-overlay v-if="hover" dark absolute z-index="1">
+                        <v-col class="black">Album</v-col>
+                        </v-overlay>
+                    </v-fade-transition>
+                    </v-card>
+                </v-hover>
+            </v-col>
+            
+        </v-row>
+
+        <v-row>
+            <v-timeline id="event-timeline">
+                <v-timeline-item v-for="(event, eventIndex) in events" :key="eventIndex">
+                    <template v-slot:opposite>
+                        <span>{{event.date}} - {{event.place}}</span>
+                    </template>
+                    <v-card class="elevation-2">
+                        <v-card-title class="accent--text">{{event.name}}</v-card-title>
+                        <v-card-text>
+                            <span class="d-block">Nombre de participants: {{event.numberParticipants}}</span>
+                            <template v-for="(highlight, highlightIndex) in event.highlights">
+                                <span class="d-block" :key="highlightIndex">- {{highlight.item}}</span>
+                            </template>
+                        </v-card-text>
+                    </v-card>
+                </v-timeline-item>
+            </v-timeline>
+        </v-row>
+
+    </v-col>
 </template>
 
 <script>
 export default {
-  name: "about",
+  name: "archive",
   components: {},
   data() {
     return {

@@ -1,9 +1,13 @@
 <template>
     <div>
         <TheHeader/>
+        
         <v-content class="bg-light-bulb">
-            <router-view/>
+            <v-container>
+                <router-view/>
+            </v-container>
         </v-content>
+
         <TheFooter/>
     </div>
 </template>

@@ -5,6 +5,7 @@
                 <span class="display-3 accent--text">FAQ</span>
             </v-col>
         </v-row>
+        
         <v-row>
             <v-expansion-panels multiple hover accordion flat>
                 <v-expansion-panel v-for="(faq, faqIndex) in faqs" :key="faqIndex" class="transparent">
