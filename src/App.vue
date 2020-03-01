@@ -20,6 +20,7 @@ export default {
   width: 100%;
   height: 100vh;
 }
+
 .non-interactive
 {
     cursor: default;
@@ -28,5 +29,9 @@ export default {
         color: inherit;
         background: inherit;
     }
+}
+
+.headline {
+    color: orangered;
 }
 </style>

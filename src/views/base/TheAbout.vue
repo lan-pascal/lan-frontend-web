@@ -1,178 +1,122 @@
 <template>
-  <div class="about">
-    <v-layout column>
-      <v-flex>
-        <v-sheet tile height="200px" color="secondary">
-          <v-layout align-center justify-center fill-height>
-            <span class="display-3 text-xs-center">À Propos</span>
-          </v-layout>
-        </v-sheet>
+
+  <v-layout column>
+    <v-sheet tile height="200px" color="secondary">
+      <v-layout align-center justify-center fill-height>
+        <span class="display-3 text-xs-center accent--text">Historique</span>
+      </v-layout>
+    </v-sheet>
+    <v-container grid-list-lg pa-5>
+      <v-layout row wrap justify-center>
+        <v-flex v-for="(item,i) in items" :key="i" grow-shrink-0>
+          <v-hover>
+            <v-card slot-scope="{hover}" tile height="240px" width="240px">
+              <v-img :src="item.src" alt="lorem" width="100%" height="100%"></v-img>
+              <v-fade-transition>
+                <v-overlay v-if="hover" dark absolute z-index="1">
+                  <v-flex class="black">Album</v-flex>
+                </v-overlay>
+              </v-fade-transition>
+            </v-card>
+          </v-hover>
+        </v-flex>
+        <v-flex class="pa-5">
+        <v-timeline id="event-timeline">
+          <v-timeline-item v-for="(event, eventIndex) in events" :key="eventIndex">
+            <template v-slot:opposite>
+              <span>{{event.date}} - {{event.place}}</span>
+            </template>
+            <v-card class="elevation-2">
+              <v-card-title class="accent--text">{{event.name}}</v-card-title>
+              <v-card-text>
+                <span class="d-block">Nombre de participants: {{event.numberParticipants}}</span>
+                <template v-for="(highlight, highlightIndex) in event.highlights">
+                  <span class="d-block" :key="highlightIndex">- {{highlight.item}}</span>
+                </template>
+              </v-card-text>
+            </v-card>
+          </v-timeline-item>
+        </v-timeline>
       </v-flex>
-      <v-flex>
-        <span class="pa-5 d-block headline">Foire aux questions</span>
-        <v-expansion-panels accordion multiple>
-          <v-expansion-panel v-for="(faq, faqIndex) in faqs" :key="faqIndex">
-            <v-expansion-panel-header>{{faq.question}}</v-expansion-panel-header>
-            <v-expansion-panel-content>{{faq.answer}}</v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>
-      </v-flex>
-      <v-flex>
-        <span class="pa-5 d-block headline">Équipe</span>
-        <v-list>
-          <v-list-item two-line v-for="(teammate, teammateIndex) in team" :key="teammateIndex">
-            <v-list-item-content class="pa-3">
-              <v-list-item-title>{{teammate.name}}</v-list-item-title>
-              <v-list-item-subtitle>{{teammate.description}}</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
-      </v-flex>
-    </v-layout>
-  </div>
+      </v-layout>
+    </v-container>
+  </v-layout>
+  
 </template>
 
 <script>
 export default {
-  name: "About",
+  name: "about",
   components: {},
   data() {
     return {
-      faqs: [
+      items: [
         {
-          question: "Où sont les informations sur le prochain LAN?",
-          answer: "Clique ici."
+          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
         },
         {
-          question: "Je veux aider avec le LAN, comment faire?",
-          answer:
-            "Cool! Contacte-nous ici. Peu importe ce que tu sais faire, on est veut connaître ton intérêt! Souvent aussi, on cherche du matériel, donc tu peux nous faire part de ce que tu as (surtout en matière jeux vidéo, jeux de société)"
+          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg"
         },
         {
-          question:
-            "J’ai des suggestions pour le prochain LAN/le futur du LAN. Comment les partager?",
-          answer: "Super! Vas ici pour nous en faire part."
+          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg"
         },
         {
-          question: "Je ne comprends pas trop c’est quoi le LAN.",
-          answer:
-            "Le LAN c'est une soirée que tu passes avec tes amis à faire ce que tu as le goût dans toutes les activités offertes (voir liste ci-bas)! Tu es libre d'aller jouer à ce que tu veux et quand tu veux. Tes même pas obligé de jouer, plusieurs viennent simplement socialiser. C'est aussi l'occasion parfaite pour rencontrer plein de nouveau monde. Et si tu penses que c'est pas pour toi parce que tes pas nerd, tu peux pas avoir moins raison, on y trouve de tous les goûts : jeux de sociétés, jeux vidéo accessibles (Just Dance, Dance Dance Revolution, Guitar Hero, etc.), karaoke & plus!"
-        },
-        {
-          question: "C’est où que j’achète mon billet?",
-          answer: "Clique ici."
-        },
-        {
-          question: "Quelle méthode de paiement acceptez-vous?",
-          answer: "On accepte […]"
-        },
-        {
-          question: "Puis-je me faire rembourser une fois mon billet acheté?",
-          answer:
-            "Normalement, toute vente est finale. Mais on est des humains et on comprend que ça arrive des empêchement dernière minute. Si tu crois que tu as une bonne raison pour te faire rembourser (garde en tête qu’on roule pas sur l’or et que donc nos option sont limitées), contacte-nous ici"
-        },
-        {
-          question: "Acceptez-vous les dons?",
-          answer: "De l’argent???? Oui!! Clique ici (xoxoxoxo)."
-        },
-        {
-          question: "Avez-vous l’histoire des LANs?",
-          answer: "Certainement, clique ici!"
-        },
-        {
-          question: "Puis-je acheter un billet sur place?",
-          answer:
-            "Malheureusement, à cause des complications que cela engendrerait non. Mais il est possible, qu’ils restent des billets. Si c’est le cas, ce sera indiqué sur le site et les médias sociaux."
-        },
-        {
-          question: "Comment rester au courant avec le LAN?",
-          answer:
-            "Tu peux t’abonner à notre info-lettre ici ou nous suivre sur les diverse plateformes que nous avons ici. Le site web est aussi souvent mis-à-jour, donc reviens de temps en temps!"
-        },
-        {
-          question: "Comment s’inscrire aux tournois?",
-          answer: "Quand tu achètes ton billet, l’option se présente à toi."
-        },
-        {
-          question:
-            "J’ai déjà acheté mon billet, puis-je tout de même m’ajouter à un tournoi?",
-          answer: "Ça dépend des disponibilités. Contacte-nous ici."
-        },
-        {
-          question:
-            "Puis-je apporter mon ordinateur, ma console de jeu et/ou des jeux de société ?",
-          answer:
-            "Tu peux apporter ton ordinateur portable sans problème (par contre, tu en es responsable). Pour les ordinateurs « tours », il faut que tu vérifies avec nous avant en nous contactant ici et c’est toi qui  s’occupe d’apporter ton écran, clavier, souris, etc. Pour les consoles de jeu, ça dépend la disponibilité des télévisions, contacte-nous ici. Bien sûr les consoles de jeu portables sont les bienvenues! Pour les jeux de société, pas de problème!"
-        },
-        {
-          question: "Puis-je apporter mon alcool et/ou ma nourriture?",
-          answer:
-            "Ça dépend de LAN en LAN (notamment de la personne qui nous loue la salle). Clique ici pour savoir pour le prochain LAN."
+          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg"
         }
       ],
-      team: [
+      events: [
         {
-          name: "Pascal",
-          description:
-            "Créateur du LAN. Passionné des jeux vidéo. Adore voir les gens s’amuser au LAN. Grumpy quand il a faim/a pas assez dormi. Parle à la 3e personne."
+          name: "LAN 5",
+          date: "9 avril 2020",
+          place: "À venir",
+          numberParticipants: "À venir",
+          highlights: [{ item: "À venir" }]
         },
         {
-          name: "Karl-Étienne",
-          description:
-            "Fondateur du site web. Bénévole dès le début. N’a jamais manqué de LAN."
+          name: "LAN 4",
+          date: "23 juin 2019",
+          place: "Gam1ng Café",
+          numberParticipants: "49",
+          highlights: [
+            { item: "Premirère fois en présence d'un photographe (Sacha)" },
+            { item: "Premières consoles en Local Area Network" },
+            { item: "Premier tournoi de Tetris" }
+          ]
         },
         {
-          name: "Simon",
-          description:
-            "Bras-droit du LAN. Toujours là quand shit hits the fan. Premier LAN : LAN #3."
+          name: "LAN 3",
+          date: "27 décembre 2018",
+          place: "Gam1ng Café",
+          numberParticipants: "51",
+          highlights: [
+            { item: "Plus de 50 personnes" },
+            { item: "Ajout des jeux de sociétés" },
+            { item: "Premier tounoir de DDR" },
+            { item: "Permis permis d'alcool" },
+            { item: "Premier tour de magie au LAN (Sami)" },
+            { item: "On passe de 20 ordis à 32 (salle arrière)" }
+          ]
         },
         {
-          name: "Stephen",
-          description:
-            "Aide avec le site web. Bénévole dès le début. N’a jamais manqué de LAN."
+          name: "LAN 2",
+          date: "11 août 2018",
+          place: "Gam1ng Café",
+          numberParticipants: "23",
+          highlights: [{ item: "Rien?" }]
         },
         {
-          name: "Kevin",
-          description: "Bénévole dès le début. N’a jamais manqué de LAN."
-        },
-        {
-          name: "Alex",
-          description: "Bénévole dès le début. N’a jamais manqué de LAN."
-        },
-        {
-          name: "Étienne",
-          description: "Bénévole dès le début. N’a jamais manqué de LAN."
-        },
-        {
-          name: "Ayman",
-          description: "Bénévole dès le début. N’a jamais manqué de LAN."
-        },
-        {
-          name: "Arnaud",
-          description: "Bénévole dès le début. N’a jamais manqué de LAN."
-        },
-        {
-          name: "Lianne",
-          description: "Bénévole. Premier LAN : LAN #4."
-        },
-        {
-          name: "Soulaha",
-          description: "Bénévole. Premier LAN : LAN #4."
-        },
-        {
-          name: "Léon",
-          description: "Créateur du logo du LAN."
-        },
-        {
-          name: "Sacha",
-          description: "Photographe officiel du LAN. Premier LAN : LAN #4."
-        },
-        {
-          name: "Sami",
-          description: "Magicien officiel du LAN. Premier LAN : LAN #3."
+          name: "LAN 1",
+          date: "4 javier 2018",
+          place: "Gam1ng Café",
+          numberParticipants: "24",
+          highlights: [
+            { item: "Premier LAN" },
+            { item: "Premier et dernier tournoi de CS:GO" },
+            { item: "Premier tournoi de SSB" }
+          ]
         }
       ]
-    };
+    }
   }
 };
 </script>
