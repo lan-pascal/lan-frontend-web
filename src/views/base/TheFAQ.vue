@@ -1,40 +1,24 @@
 <template>
-  <div class="about">
-    <v-layout column>
-      <v-flex>
-        <v-sheet tile height="200px" color="secondary">
-          <v-layout align-center justify-center fill-height>
-            <span class="display-3 text-xs-center">À Propos</span>
-          </v-layout>
-        </v-sheet>
-      </v-flex>
-      <v-flex>
-        <span class="pa-5 d-block headline">Foire aux questions</span>
-        <v-expansion-panels accordion multiple>
-          <v-expansion-panel v-for="(faq, faqIndex) in faqs" :key="faqIndex">
-            <v-expansion-panel-header>{{faq.question}}</v-expansion-panel-header>
-            <v-expansion-panel-content>{{faq.answer}}</v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>
-      </v-flex>
-      <v-flex>
-        <span class="pa-5 d-block headline">Équipe</span>
-        <v-list>
-          <v-list-item two-line v-for="(teammate, teammateIndex) in team" :key="teammateIndex">
-            <v-list-item-content class="pa-3">
-              <v-list-item-title>{{teammate.name}}</v-list-item-title>
-              <v-list-item-subtitle>{{teammate.description}}</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
-      </v-flex>
-    </v-layout>
-  </div>
+    <v-col>
+        <v-row class="my-3">
+            <v-col align=center justify=center>
+                <span class="display-3 accent--text">FAQ</span>
+            </v-col>
+        </v-row>
+        <v-row>
+            <v-expansion-panels multiple hover accordion flat>
+                <v-expansion-panel v-for="(faq, faqIndex) in faqs" :key="faqIndex" class="transparent">
+                    <v-expansion-panel-header><h3>{{faq.question}}</h3></v-expansion-panel-header>
+                    <v-expansion-panel-content>{{faq.answer}}</v-expansion-panel-content>
+                </v-expansion-panel>
+            </v-expansion-panels>
+        </v-row>
+    </v-col>
 </template>
 
 <script>
 export default {
-  name: "FAQ",
+  name: "faq",
   components: {},
   data() {
     return {
@@ -113,63 +97,77 @@ export default {
       team: [
         {
           name: "Pascal",
+          title: "Créateur du LAN",
           description:
-            "Créateur du LAN. Passionné des jeux vidéo. Adore voir les gens s’amuser au LAN. Grumpy quand il a faim/a pas assez dormi. Parle à la 3e personne."
+            "Passionné des jeux vidéo. Adore voir les gens s’amuser au LAN. Grumpy quand il a faim/a pas assez dormi. Parle à la 3e personne."
         },
         {
           name: "Karl-Étienne",
+          title: "Fondateur du site web",
           description:
-            "Fondateur du site web. Bénévole dès le début. N’a jamais manqué de LAN."
+            " N’a jamais manqué de LAN."
         },
         {
           name: "Simon",
+          title: "Bras-droit du LAN",
           description:
-            "Bras-droit du LAN. Toujours là quand shit hits the fan. Premier LAN : LAN #3."
+            "Toujours là quand shit hits the fan. Premier LAN : LAN #3."
         },
         {
           name: "Stephen",
+          title: "Aide avec le site web/Bénévole dès le début",
           description:
-            "Aide avec le site web. Bénévole dès le début. N’a jamais manqué de LAN."
+            "N’a jamais manqué de LAN."
         },
         {
           name: "Kevin",
-          description: "Bénévole dès le début. N’a jamais manqué de LAN."
+          title: "Bénévole dès le début",
+          description: "N’a jamais manqué de LAN."
         },
         {
           name: "Alex",
-          description: "Bénévole dès le début. N’a jamais manqué de LAN."
+          title: "Bénévole dès le début",
+          description: "N’a jamais manqué de LAN."
         },
         {
           name: "Étienne",
-          description: "Bénévole dès le début. N’a jamais manqué de LAN."
+          title: "Bénévole dès le début",
+          description: "N’a jamais manqué de LAN."
         },
         {
           name: "Ayman",
-          description: "Bénévole dès le début. N’a jamais manqué de LAN."
+          title: "Bénévole dès le début",
+          description: "N’a jamais manqué de LAN."
         },
         {
           name: "Arnaud",
-          description: "Bénévole dès le début. N’a jamais manqué de LAN."
+          title: "Bénévole dès le début",
+          description: "N’a jamais manqué de LAN."
         },
         {
           name: "Lianne",
-          description: "Bénévole. Premier LAN : LAN #4."
+          title: "Bénévole",
+          description: "Premier LAN : LAN #4."
         },
         {
           name: "Soulaha",
-          description: "Bénévole. Premier LAN : LAN #4."
+          title: "Bénévole",
+          description: "Premier LAN : LAN #4."
         },
         {
           name: "Léon",
+          title: "Créateur du logo du LAN",
           description: "Créateur du logo du LAN."
         },
         {
           name: "Sacha",
-          description: "Photographe officiel du LAN. Premier LAN : LAN #4."
+          title: "Photographe officiel du LAN",
+          description: "Premier LAN : LAN #4."
         },
         {
           name: "Sami",
-          description: "Magicien officiel du LAN. Premier LAN : LAN #3."
+          title: "Magicien officiel du LAN",
+          description: "Premier LAN : LAN #3."
         }
       ]
     };
