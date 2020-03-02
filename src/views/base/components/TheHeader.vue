@@ -96,7 +96,7 @@
   }
   
   &:hover, &.v-btn--active {
-    color: var(--v-accent-base);
+    color: var(--v-accent-base) !important;
   }
 
   &:hover, &.v-btn:before {

@@ -8,11 +8,11 @@
 
         <v-row>
             <span class="pa-5 d-block text--accent">Équipe</span>
-            <v-row>
-                <v-col v-for="(teammate, teammateIndex) in team" :key="teammateIndex" sm=4 md=3>
-                    <v-card width="250" height="100%" class="mx-auto text-center">
+            <v-row justify=center justify-md=start>
+                <v-col v-for="(teammate, teammateIndex) in team" :key="teammateIndex" cols=10 sm=5 md=4 lg=3>
+                    <v-card height="100%" class="mx-auto text-center">
                         <v-row justify="center">
-                            <v-avatar color="secondary" size="128" class="mt-2"></v-avatar>
+                            <v-avatar color="secondary" size="128" class="mt-5"></v-avatar>
                         </v-row>
                         <v-card-title><v-col>{{teammate.name}}</v-col></v-card-title> <!-- Seems like a bug. The Name should be at the center. -->
 
