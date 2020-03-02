@@ -35,7 +35,7 @@
                     text
                     icon
                     x-large
-                    >
+                    class="px-0">
                     <v-icon class="menu-icon" large>mdi-menu</v-icon>
                 </v-btn>
             </template>
@@ -55,9 +55,9 @@
         <v-spacer/>
 
         <v-flex d-inline-flex justify-end class="hidden-sm-and-down">
-          <v-btn class="accent mx-2" v-bind="size">Prix</v-btn>
+          <v-btn class="accent mx-1 mx-sm-2" v-bind="size">Tarifs</v-btn>
           <v-divider dark vertical/>
-          <v-btn outlined class="mx-2" route: to="/signin" v-bind="size">Connexion/inscription</v-btn>
+          <v-btn outlined class="mx-1 mx-sm-2" route: to="/signin" v-bind="size">Connexion/inscription</v-btn>
         </v-flex>
       </v-app-bar>
 </template>
@@ -66,15 +66,15 @@
   export default {
     data: () => ({
       links:  [
-        {name: "MTLAN 2020", route: "/event"},
-        {name: "Archive", route: "/archive"},
+        {name: "QdN 2020", route: "/event"},
+        {name: "Archives", route: "/archive"},
         {name: "FAQ", route: "/faq"},
         {name: "À propos", route: "/about"}
         ]
     }),
     computed: {
     size () {
-      const size = {xs:'small',sm:'small',lg:'',xl:''}[this.$vuetify.breakpoint.name];
+      const size = {xs:'small',sm:'',lg:'',xl:''}[this.$vuetify.breakpoint.name];
       return size ? { [size]: true } : {}
     }
   }
