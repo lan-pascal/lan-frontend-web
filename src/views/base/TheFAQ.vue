@@ -8,9 +8,9 @@
         
         <v-row>
             <v-expansion-panels multiple hover accordion flat>
-                <v-expansion-panel v-for="(faq, faqIndex) in faqs" :key="faqIndex" class="transparent">
-                    <v-expansion-panel-header><h3>{{faq.question}}</h3></v-expansion-panel-header>
-                    <v-expansion-panel-content>{{faq.answer}}</v-expansion-panel-content>
+                <v-expansion-panel v-for="(faq, faqIndex) in faqs" :key=faqIndex class="transparent">
+                    <v-expansion-panel-header><div class="headline">{{faq.question}}</div></v-expansion-panel-header>
+                    <v-expansion-panel-content class="pl-5">{{faq.answer}}</v-expansion-panel-content>
                 </v-expansion-panel>
             </v-expansion-panels>
         </v-row>

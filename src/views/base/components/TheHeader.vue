@@ -20,7 +20,7 @@
           v-for="link in links"
           :key="link.key"
           :ripple="false"
-          class="underline white--text"
+          class="underline title"
           router :to="link.route"
           text
           >{{link.name}}
@@ -45,7 +45,7 @@
                     v-for="link in links"
                     :key="link.text"
                     router :to="link.route"
-                    class="white--text"
+                    class="title"
                     >
                     <v-list-item-title>{{ link.name }}</v-list-item-title>
                 </v-list-item>
@@ -55,9 +55,9 @@
         <v-spacer/>
 
         <v-flex d-inline-flex justify-end class="hidden-sm-and-down">
-          <v-btn class="accent mx-1 mx-sm-2" v-bind="size">Tarifs</v-btn>
+          <v-btn class="accent title mx-1 mx-sm-2" v-bind="size">Tarifs</v-btn>
           <v-divider dark vertical/>
-          <v-btn outlined class="mx-1 mx-sm-2" route: to="/signin" v-bind="size">Connexion/inscription</v-btn>
+          <v-btn outlined class="title mx-1 mx-sm-2" route: to="/signin" v-bind="size">Connexion/inscription</v-btn>
         </v-flex>
       </v-app-bar>
 </template>

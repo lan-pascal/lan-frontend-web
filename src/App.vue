@@ -30,8 +30,4 @@ export default {
         background: inherit;
     }
 }
-
-.headline {
-    color: orangered;
-}
 </style>

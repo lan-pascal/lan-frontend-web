@@ -3,7 +3,7 @@
         <v-row class="fullscreen ml-0" align="center" >
             <v-col align="center">
                 <v-img  class="mb-12" :src="require('@/assets/logo/LogoWhiteFillEmptyBtns.svg')" contain width="100%" aspect-ratio="4"/>
-                <div class="display-3">PROCHAIN LAN:</div>
+                <div class="display-4">PROCHAIN LAN</div>
                 <CountdownZwip deadline="2020/04/20 20:00:00"/>
             </v-col>
         </v-row>
@@ -17,7 +17,7 @@
             <v-col xs=12 sm=12 lg=5>
                 <div class="pr-2"> 
                     <v-card flat class="transparent">
-                        <v-card-title class="accent--text"><h2>C'est quoi le LAN?</h2></v-card-title>
+                        <v-card-title class="accent--text"><div class="display-2 font-weight-medium font-italic">C'est quoi le LAN?</div></v-card-title>
                         <v-card-text>
                             <h3>Le LAN c'est un événement biannuel où tu te défoules avec des jeux de toutes les sortes!
                             Accessible à tous (oui, oui, c’est pas un truc nerd-only), une variété d’activités différentes sont offertes.</h3>
@@ -118,7 +118,7 @@
             <v-col xs=12 sm=6 lg=5>
                 <div class="pr-2"> 
                     <v-card flat class="transparent">
-                        <v-card-title class="accent--text">Activités</v-card-title>
+                        <v-card-title class="accent--text display-2 font-weight-medium font-italic">Activités</v-card-title>
                         <v-card-text>
                             Au menu : karaoke, jeux de société animés par des employés de Randolph, 
                             tournois de Dance Dance Revolution, Super Smash Bros. Ultimate & Tetris, 
