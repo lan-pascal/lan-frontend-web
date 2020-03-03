@@ -35,75 +35,79 @@ export default {
       team: [
         {
           name: "Pascal",
-          title: "Créateur du LAN",
+          title: "Créateur du Quart de nuit",
           description:
-            "Passionné des jeux vidéo. Adore voir les gens s’amuser au LAN. Grumpy quand il a faim/a pas assez dormi. Parle à la 3e personne."
+            ""
         },
         {
           name: "Karl-Étienne",
-          title: "Fondateur du site web",
-          description: " N’a jamais manqué de LAN."
-        },
-        {
-          name: "Simon",
-          title: "Bras-droit du LAN",
-          description:
-            "Toujours là quand shit hits the fan. Premier LAN : LAN #3."
+          title: "Développeur web & bénévole",
+          description: "Créateur du site web. Bénévole depuis le début. Ne dort pas beaucoup."
         },
         {
           name: "Stephen",
-          title: "Aide avec le site web/Bénévole dès le début",
-          description: "N’a jamais manqué de LAN."
-        },
-                {
-          name: "Léon",
-          title: "Créateur du logo du LAN",
-          description: "Créateur du logo du LAN."
+          title: "Développeur web & bénévole",
+          description: "Aide avec le site web. Bénévole depuis le début."
         },
         {
-          name: "Sacha",
-          title: "Photographe officiel du LAN",
-          description: "Premier LAN : LAN #4."
+          name: "Nicolas",
+          title: "Développeur web",
+          description: "Maître de l'esthétique du site."
         },
         {
-          name: "Sami",
-          title: "Magicien officiel du LAN",
-          description: "Premier LAN : LAN #3."
-        },
-        {
-          name: "Kevin",
-          title: "Bénévole dès le début",
-          description: "N’a jamais manqué de LAN."
-        },
-        {
-          name: "Alex",
-          title: "Bénévole dès le début",
-          description: "N’a jamais manqué de LAN."
-        },
-        {
-          name: "Étienne",
-          title: "Bénévole dès le début",
-          description: "N’a jamais manqué de LAN."
-        },
-        {
-          name: "Ayman",
-          title: "Bénévole dès le début",
-          description: "N’a jamais manqué de LAN."
-        },
-        {
-          name: "Arnaud",
-          title: "Bénévole dès le début",
-          description: "N’a jamais manqué de LAN."
+          name: "Simon",
+          title: "Bénévole",
+          description: "Aide depuis Quart de nuit 3. Épicerie du Quart de nuit."
         },
         {
           name: "Lianne",
           title: "Bénévole",
-          description: "Premier LAN : LAN #4."
+          description: "Aide depuis Quart de nuit 4. Épicerie du Quart de nuit."
+        },
+        {
+          name: "Kevin",
+          title: "Bénévole",
+          description: "Aide depuis Quart de nuit 1."
+        },
+        {
+          name: "Alex",
+          title: "Bénévole",
+          description: "Aide depuis Quart de nuit 1. Dort encore moins que Karl-Étienne."
+        },
+        {
+          name: "Étienne",
+          title: "Bénévole",
+          description: "Bénévole depuis Quart de nuit 1. Fait de la musique!"
+        },
+        {
+          name: "Ayman",
+          title: "Bénévole",
+          description: "Bénévole depuis Quart de nuit 1. Très très enthousiaste."
+        },
+        {
+          name: "Arnaud",
+          title: "Bénévole",
+          description: "Bénévole depuis Quart de nuit 1. Oublie de s'occuper de son tournoi."
         },
         {
           name: "Soulaha",
           title: "Bénévole",
-          description: "Premier LAN : LAN #4."
+          description: "Bénévole depuis Quart de nuit 1."
+        },
+        {
+          name: "Léon",
+          title: "Créateur du logo du LAN",
+          description: "Fais des caméléons photo-réaliste à la mine."
+        },
+        {
+          name: "Sacha",
+          title: "Photographe",
+          description: "Prends de jolis photos et fait des t-shirt."
+        },
+        {
+          name: "Sami",
+          title: "Magicien",
+          description: "A offert deux tours de magie aux Quarts de nuit."
         },
       ]
     };
