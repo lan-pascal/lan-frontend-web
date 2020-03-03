@@ -30,9 +30,11 @@
           class="transparent"
         >
           <v-expansion-panel-header>
-            <div class="headline">{{faq.question}}</div>
+            <div v-html="faq.question" class="headline">{{faq.question}}</div>
           </v-expansion-panel-header>
-          <v-expansion-panel-content class="pl-5">{{faq.answer}}</v-expansion-panel-content>
+          <v-expansion-panel-content class="pl-5">
+            <div v-html="faq.answer"></div>
+          </v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
     </v-row>
@@ -115,7 +117,7 @@ export default {
           question:
             "Puis-je apporter mon ordinateur, ma console de jeu et/ou des jeux de société ?",
           answer:
-            "Tu peux apporter ton ordinateur portable sans problème (par contre, tu en es responsable). Pour les ordinateurs « tours », il faut que tu vérifies avec nous avant en nous contactant ici et c’est toi qui s’occupe d’apporter ton écran, clavier, souris, etc. Pour les consoles de jeu, ça dépend la disponibilité des télévisions, contacte-nous ici. Bien sûr les consoles de jeu portables sont les bienvenues! Pour les jeux de société, pas de problème (mais tu en es responsable aussi)!"
+            "Tu peux apporter ton ordinateur portable sans problème (par contre, tu en es responsable). Pour les ordinateurs « tours », <br/> il faut que tu vérifies avec nous avant en nous contactant ici et c’est toi qui s’occupe d’apporter ton écran, clavier, souris, etc. Pour les consoles de jeu, ça dépend la disponibilité des télévisions, contacte-nous ici. Bien sûr les consoles de jeu portables sont les bienvenues! Pour les jeux de société, pas de problème (mais tu en es responsable aussi)!"
         },
         {
           categories: ["Contribuer"],
