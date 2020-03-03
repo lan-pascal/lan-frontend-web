@@ -1,20 +1,15 @@
 <template>
-  <div>
+    <div>
         <v-row class="fullscreen ml-0" align="center" >
             <v-col align="center">
                 <v-img  class="mb-12" :src="require('@/assets/logo/LogoWhiteFillEmptyBtns.svg')" contain width="100%" aspect-ratio="4"/>
-                <div class="display-4">PROCHAIN LAN</div>
-                <CountdownZwip deadline="2020/04/20 20:00:00"/>
+                <div class="display-4 font-weight-bold">PROCHAIN LAN</div>
+                <CountdownZwip :deadline="deadline"/>
             </v-col>
         </v-row>
-        <v-row>
 
-        </v-row>
-
-        <v-divider class="hidden-sm-and-down"/>
-
-        <v-row justify="space-around ml-0" align="center" class="fullscreen">
-            <v-col xs=12 sm=12 lg=5>
+        <v-row justify="space-around" align="center" class="fullscreen ml-0">
+            <v-col cols=12 md=6>
                 <div class="pr-2"> 
                     <v-card flat class="transparent">
                         <v-card-title class="accent--text"><div class="display-2 font-weight-medium font-italic">C'est quoi le LAN?</div></v-card-title>
@@ -44,78 +39,82 @@
                 <v-img src="https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"></v-img>
             </v-col>
         </v-row>
-
-        <v-divider class="hidden-sm-and-down"/>
         
-        <v-row wrap class="fullscreen wrap">
-          <v-row wrap justify="space-around" align="center" class="ml-0" height="50%">
-            <v-col xs=12 sm=6 md=2>
-                <div class="pl-2">
-                    <v-card flat class="transparent" align="center">
-                        <v-icon color="accent" size="75">mdi-map-marker</v-icon>
-                        <v-card-title class="accent--text text-center">C'est où?</v-card-title>
-                        <v-card-text>
-                          Cegep de Maisonneuve dans la salle Vivoir
-                        </v-card-text>
-                    </v-card>
-                </div>
-            </v-col>
-            <v-col xs=12 sm=6 md=2>
-                <v-card flat class="transparent" align="center">
-                        <v-icon size="75" color="accent">mdi-seat</v-icon>
-                        <v-card-title class="accent--text">100 Places</v-card-title>
-                        
-                        <v-card-text>
-                        </v-card-text>
-                    </v-card>
-            </v-col>
-            <v-col xs=12 sm=6 md=2>
-                <v-card flat class="transparent" align="center">
-                        <v-icon size="75" color="accent">mdi-clock</v-icon>
-                        <v-card-title class="accent--text">20h à 3h</v-card-title>
-                        <v-card-text>
-                            Fermeture des portes à 22h
-                        </v-card-text>
-                    </v-card>
-            </v-col>
-            <v-col xs=12 sm=6 md=2>
-                <v-card flat class="transparent" align="center">
-                        <v-icon size="75" color="accent">mdi-cash-usd</v-icon>
-                        <v-card-title class="accent--text">25$</v-card-title>
-                        <v-btn color="accent">Payer en Ligne</v-btn>
-                    </v-card>
-            </v-col>
-        </v-row>
-        <v-row height="50%">
-            <GmapMap
-               :center="{lat:45.550500, lng:-73.553563}"
-               :zoom="16"
-               :options="{styles:styles,
-               zoomControl: false,
-                     mapTypeControl: false,
-                     scaleControl: false,
-                     streetViewControl: false,
-                     rotateControl: false,
-                     fullscreenControl: false,
-                     disableDefaultUi: false }"
-               map-type-id="terrain"
-               style="width: 100%; height: 300px"
-               >
-               <GmapMarker
-                 :key="index"
-                 v-for="(m, index) in markers"
-                 :position="m.position"
-                 @click="center=m.position"
-                 
-               />
-            </GmapMap>
-          </v-row>
-        </v-row>
+        <v-row class="fullscreen">
+        <!--     <GmapMap
+                ref="mapRef"
+                :zoom="16"
+                :options="{
+                        zoomControl: true,
+                        mapTypeControl: false,
+                        scaleControl: false,
+                        streetViewControl: false,
+                        rotateControl: false,
+                        fullscreenControl: true,
+                        disableDefaultUi: true 
+                        }"
+                map-type-id="terrain"
+                style="width: 100%; height: 50%;"
+                >
+                <GmapMarker
+                    :key="index"
+                    v-for="(m, index) in map.markers"
+                    :position="m.position"
+                    @click="center=m.position"
+                />
+            </GmapMap> -->
 
-        <v-divider class="hidden-sm-and-down"/>
+            <iframe 
+                    width=100% 
+                    height=50% 
+                    frameborder="0" 
+                    style="border:0" 
+                    :src="`https://www.google.com/maps/embed/v1/place?key=${map.api_key}&q=${map.location}`">
+            </iframe>'
+
+            <v-row justify="space-around" align="center" class="ml-0" height="50%">
+                <v-col cols=12 sm=6 md=2>
+                    <div class="pl-2">
+                        <v-card flat class="transparent" align="center">
+                            <v-icon color="accent" size="75">mdi-map-marker</v-icon>
+                            <v-card-title class="accent--text text-center">C'est où?</v-card-title>
+                            <v-card-text>
+                            Cegep de Maisonneuve dans la salle Vivoir {{map.markers}}
+                            </v-card-text>
+                        </v-card>
+                    </div>
+                </v-col>
+                <v-col cols=12 sm=6 md=2>
+                    <v-card flat class="transparent" align="center">
+                            <v-icon size="75" color="accent">mdi-seat</v-icon>
+                            <v-card-title class="accent--text">100 Places</v-card-title>
+                            
+                            <v-card-text>
+                            </v-card-text>
+                        </v-card>
+                </v-col>
+                <v-col cols=12 sm=6 md=2>
+                    <v-card flat class="transparent" align="center">
+                            <v-icon size="75" color="accent">mdi-clock</v-icon>
+                            <v-card-title class="accent--text">20h à 3h</v-card-title>
+                            <v-card-text>
+                                Fermeture des portes à 22h
+                            </v-card-text>
+                        </v-card>
+                </v-col>
+                <v-col cols=12 sm=6 md=2>
+                    <v-card flat class="transparent" align="center">
+                            <v-icon size="75" color="accent">mdi-cash-usd</v-icon>
+                            <v-card-title class="accent--text">25$</v-card-title>
+                            <v-btn color="accent">Payer en Ligne</v-btn>
+                        </v-card>
+                </v-col>
+            </v-row>
+
+        </v-row>
 
         <v-row justify="space-around" align="center" class="fullscreen">
-            <v-col xs=12 sm=6 lg=5>
+            <v-col cols=12 md=6>
                 <div class="pr-2"> 
                     <v-card flat class="transparent">
                         <v-card-title class="accent--text display-2 font-weight-medium font-italic">Activités</v-card-title>
@@ -135,8 +134,6 @@
                 <v-icon size = "100" class="accent--text text--lighten-2 pr-12">mdi-gamepad-circle </v-icon>
             </v-col>
         </v-row>
-
-        <v-divider class="hidden-sm-and-down"/>
     </div>
 </template>
 
@@ -161,9 +158,16 @@ export default {
   components: {
     CountdownZwip
   },
+  mounted() {
+    this.$refs.mapRef.$mapPromise.then((map) => {
+      map.panTo(this.map.center)
+    })
+  },
   data () {
       return {
-        styles: [
+        deadline : "2020/04/20 20:00:00",
+        map : {
+            /* styles: [
               {
                 "elementType": "geometry",
                 "stylers": [
@@ -323,7 +327,12 @@ export default {
                   }
                 ]
               }
-            ]
+            ],
+            center : {lat:45.550500, lng:-73.553563},
+            markers : [{position : {lat:45.550500, lng:-73.553563}}], */
+            api_key: "AIzaSyBdHhJCXc_-ygexFUz3D4hryzbUYMVsRQk",
+            location: "College+de+maisonneuve,Montreal+QC+Canada",
+        },
       }
     }
 }
