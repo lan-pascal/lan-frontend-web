@@ -182,12 +182,14 @@
             <v-col cols=12>
               <h3>{{item.extra}}</h3>
             </v-col>
-            <v-col cols=12>
-              <h3>ADD PAYMENT ICONS HERE</h3>
-              <v-icon>mdi-wave</v-icon>
-            </v-col>
         </v-row>
-
+        <v-row  wrap cols=12>
+          <v-img
+          v-for="icon in payicon"
+          :key="icon"
+          :src="icon.src"
+          width="40"></v-img>
+        </v-row>
       </v-card>
     </v-row>
 
@@ -230,6 +232,14 @@ export default {
         {name: "Coût d'entrée", icon:"mdi-ticket", cost:"25$", cols:"6"},
         {name: "Boisson", icon:"mdi-glass-cocktail", cost:"1 pour 3$ | 2 pour 5$", array: [ "Corona Extra","Coors Light","Stella Artois", "Pepito Sangria", "Palm Bay", "Shot de vodka", "Shot de Tequila"], extra:"Les shots sont aussi offerts à 10 pour 20$", cols:"3"},
         {name: "Boisson sans alcool", icon:"mdi-bottle-soda-classic", array:["Coca-Cola", "Sprite",  "Thé Glacé",  "Fruitopia",  "Eau pétillante"], cost:"2$", extra:"Eau offerte gratuitement sur place", cols:"7"},
+      ],
+      payicon: [
+        {src:require("../../assets/media/coin-vector.svg")},
+        {src:require("../../assets/media/cc-vector.svg")},
+        {src:require("../../assets/media/gpay-vector.svg")},
+        {src:require("../../assets/media/apay-vector.svg")},
+        {src:require("../../assets/media/interac-vector.svg")},
+        {src:require("../../assets/media/pp-vector.svg")}
       ]
     }
   }

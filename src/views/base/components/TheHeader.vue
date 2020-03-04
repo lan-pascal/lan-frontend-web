@@ -55,7 +55,7 @@
         <v-spacer/>
 
         <v-flex d-inline-flex justify-end class="hidden-sm-and-down">
-          <v-btn class="accent title mx-1 mx-sm-2" v-bind="size">Tarifs</v-btn>
+          <v-btn class="accent title mx-1 mx-sm-2" v-bind="size">Prix</v-btn>
           <v-divider dark vertical/>
           <v-btn outlined class="title mx-1 mx-sm-2" route: to="/signin" v-bind="size">Connexion/inscription</v-btn>
         </v-flex>
