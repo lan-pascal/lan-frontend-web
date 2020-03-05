@@ -1,7 +1,7 @@
 <template>
-  <div class="justify-center primary">
-
-    <v-row class="primary pa-4">
+  <div class="justify-center ">
+<!-- EVENT HEADER -->
+    <v-row class=" pa-4">
       <v-img 
       src="../../assets/logo/QDN2020_Artwork.png"
       width="450"
@@ -9,8 +9,8 @@
       ></v-img>
       <h2 class="accent--text mt-6 text-right">Ouverture des portes dès 20h</h2>
     </v-row>
-
-    <v-row class="primary pa-4">
+<!-- QdN c'est quoi? -->
+    <v-row class=" pa-4">
       <v-col>
         <v-row>
           <h1 class="display-1">Le QdN, c'est quoi<span class="accent--text rotate">?</span></h1>
@@ -23,8 +23,8 @@
         </v-row>
       </v-col>
     </v-row>
-
-    <v-row class="primary pa-4">
+<!-- SCÈNE / LIGNE DU TEMPS -->
+    <v-row class=" pa-4">
       <v-col>
         <v-row>
         <h1 class="accent--text display-1 ">SCÈNE</h1>
@@ -52,9 +52,9 @@
         </v-timeline-item>
       </v-timeline>
     </v-row>
-
+<!-- JEUX DE SOCIÉTÉ -->
     <v-row
-    class="primary pa-4"
+    class=" pa-4"
     align="center">
       <v-col>
         <v-row>
@@ -75,9 +75,9 @@
         </v-row>  
       </v-col>
     </v-row>
-
+<!-- TOURNOIS -->
     <v-row
-    class="primary pa-4"
+    class=" pa-4"
     align="center">
        <v-col>
            <v-row>
@@ -91,10 +91,8 @@
          </v-row>
        </v-col>
     </v-row>
-    <v-row
-    class="primary"
-    align="center">
-      <v-col>
+    <v-row>
+      <v-col class="scrolling-wrapper" align="center">
         <v-card
         v-for="(game, index) in tournament"
         :key="index"
@@ -102,7 +100,7 @@
         height="325"
         tile
         color="black"
-        class="text-center ma-4">
+        class="text-center ma-4 card justify-end">
           <v-card-title
           class="accent--text justify-center display-1">
             {{game.name}}
@@ -115,20 +113,20 @@
             </v-img>
           </v-row>
           <v-card-subtitle>
-            {{game.time}}
+            <h2>{{game.time}}</h2>
           </v-card-subtitle>
           <v-card-subtitle
           class="accent--text">
-            {{game.location}}
+            <h2>{{game.location}}</h2>
           </v-card-subtitle>
         </v-card>
       </v-col>
     </v-row>
-
+<!-- AUTRES INFOS GÉNÉRAUX (Couch/Halo/Bar) -->
     <v-row
     v-for="info in information"
     :key="info"
-    class="primary pa-4"
+    class=" pa-4"
     align="center">
        <v-col xs=12 sm=6 md=4>
            <v-row>
@@ -148,8 +146,9 @@
        </v-col>
     </v-row>
 
+<!-- TARIFS -->
     <v-row
-    class="primary"
+    class=""
     justify="center">
       <v-card
       width="320"
@@ -207,6 +206,18 @@
 <style lang="scss">
 .rotate {
   transform: rotate(20deg);
+}
+.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
+  display:flex;
+  flex-wrap: nowrap;
+  overflow-x:auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .card {
+    flex: 0 0 auto;
+  }
 }
 </style>
 
