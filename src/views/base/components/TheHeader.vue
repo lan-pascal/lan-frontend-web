@@ -1,7 +1,6 @@
 <template>
       <v-app-bar
         color="primary"
-        flat
         app
         class="pa-0"
       >
@@ -27,6 +26,7 @@
           </v-btn>
         </v-flex>
 <!-- Mobile -->
+        <!--
         <v-flex class="hidden-md-and-up">
           <v-menu offset-y class="justify-space-between">
             <template v-slot:activator="{ on }">
@@ -40,7 +40,7 @@
                 </v-btn>
             </template>
             <v-list>
-                <v-list-item route: to="/home">Accueil</v-list-item>
+                <v-list-item route: to="/home" class="title">Accueil</v-list-item>
                 <v-list-item
                     v-for="link in links"
                     :key="link.text"
@@ -52,24 +52,94 @@
             </v-list>
           </v-menu>
         </v-flex>
-        <v-spacer/>
 
-        <v-flex d-inline-flex justify-end class="hidden-sm-and-down">
+        <v-spacer/>
+--> 
+        <v-col class="d-none d-md-flex justify-end">
           <v-btn class="accent title mx-1 mx-sm-2" v-bind="size">Prix</v-btn>
           <v-divider dark vertical/>
           <v-btn outlined class="title mx-1 mx-sm-2" route: to="/signin" v-bind="size">Connexion/inscription</v-btn>
-        </v-flex>
+        </v-col>
+   
+
+        <v-row class="hidden-md-and-up" justify="space-between" align="center">
+            <router-link
+            :to="{name:'home'}"
+            tag="span"
+            style="cursor: pointer"> 
+              <v-img  :src="require('@/assets/logo/LogoWhiteFillEmptyBtns.svg')" contain width="60" height="120">
+              </v-img>
+            </router-link>
+            <v-btn
+              @click.stop="drawer = !drawer"
+              text
+              icon
+              x-large>
+              <v-icon class="menu-icon" large>mdi-menu</v-icon>
+            </v-btn>
+        </v-row>
+        <v-navigation-drawer
+        v-model="drawer"
+        absolute
+        temporary
+        height="400">
+          
+          <v-list>
+            <v-list-item
+            link
+            router to="/">
+              <v-list-item-icon>
+                  <v-icon class="accent--text">mdi-home</v-icon>
+                </v-list-item-icon>
+              <v-list-item-content>
+                <v-list-item-title>
+                  Accueil
+                </v-list-item-title>
+            </v-list-item-content>
+            </v-list-item>
+            <v-list-item
+              v-for="link in links"
+              :key="link.name"
+              link
+              router :to="link.route">
+              <v-list-item-icon>
+                  <v-icon class="accent--text">{{link.icon}}</v-icon>
+                </v-list-item-icon>
+              <v-list-item-content>
+                <v-list-item-title>
+                  {{link.name}}
+                </v-list-item-title>
+            </v-list-item-content>
+            </v-list-item>
+            <v-list-item>
+              <v-btn
+              color="accent">
+                <h3>TARIFS</h3>
+              </v-btn>
+            </v-list-item>
+            <v-list-item>
+              <v-btn
+              outlined>
+                <v-icon small>mdi-account</v-icon>
+                <h3>Connection/Inscription</h3>
+                </v-btn>
+            </v-list-item>
+          </v-list>
+        </v-navigation-drawer>
+        
+        
       </v-app-bar>
 </template>
 
 <script>
   export default {
     data: () => ({
+      drawer: null,
       links:  [
-        {name: "QdN 2020", route: "/event"},
-        {name: "Archives", route: "/archive"},
-        {name: "FAQ", route: "/faq"},
-        {name: "À propos", route: "/about"}
+        {name: "QdN 2020", route: "/event", icon: "mdi-calendar-star"},
+        {name: "Archives", route: "/archive", icon: "mdi-bookshelf"},
+        {name: "FAQ", route: "/faq", icon: "mdi-frequently-asked-questions"},
+        {name: "À propos", route: "/about", icon: "mdi-information-outline"}
         ]
     }),
     computed: {
