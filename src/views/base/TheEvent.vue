@@ -7,13 +7,13 @@
       width="450"
       contain
       ></v-img>
-      <h2 class="accent--text">Ouverture des portes dès 20h</h2>
+      <h2 class="accent--text mt-6 text-right">Ouverture des portes dès 20h</h2>
     </v-row>
 
-    <v-row class="primary">
+    <v-row class="primary pa-4">
       <v-col>
         <v-row>
-          <h1>Le QdN, c'est quoi<span class="accent--text rotate">?</span></h1>
+          <h1 class="display-1">Le QdN, c'est quoi<span class="accent--text rotate">?</span></h1>
         </v-row>
         <v-row>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
@@ -24,10 +24,10 @@
       </v-col>
     </v-row>
 
-    <v-row class="primary">
+    <v-row class="primary pa-4">
       <v-col>
         <v-row>
-        <h1 class="accent--text">SCÈNE</h1>
+        <h1 class="accent--text display-1 ">SCÈNE</h1>
       </v-row>
       <v-row>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
@@ -54,11 +54,11 @@
     </v-row>
 
     <v-row
-    class="primary"
+    class="primary pa-4"
     align="center">
       <v-col>
         <v-row>
-          <h1 class="accent--text">JEUX DE SOCIÉTÉ</h1>
+          <h1 class="accent--text display-1">JEUX DE SOCIÉTÉ</h1>
         </v-row>
         <v-row>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
@@ -77,11 +77,11 @@
     </v-row>
 
     <v-row
-    class="primary"
+    class="primary pa-4"
     align="center">
        <v-col>
            <v-row>
-             <h1 class="accent--text">TOURNOIS</h1>
+             <h1 class="accent--text display-1">TOURNOIS</h1>
            </v-row>
            <v-row>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
@@ -104,7 +104,7 @@
         color="black"
         class="text-center ma-4">
           <v-card-title
-          class="accent--text justify-center">
+          class="accent--text justify-center display-1">
             {{game.name}}
           </v-card-title>
           <v-row
@@ -128,11 +128,11 @@
     <v-row
     v-for="info in information"
     :key="info"
-    class="primary"
+    class="primary pa-4"
     align="center">
-       <v-col>
+       <v-col xs=12 sm=6 md=4>
            <v-row>
-             <h1 class="accent--text">{{info.name}}</h1>
+             <h1 class="accent--text display-1">{{info.name}}</h1>
            </v-row>
            <v-row>
              <p>
@@ -149,13 +149,16 @@
     </v-row>
 
     <v-row
-    class="primary">
+    class="primary"
+    justify="center">
       <v-card
-      width="315"
-      color="black">
+      width="320"
+      color="black"
+      class="ma-2 pa-2">
         <v-row
-        justify="center">
-            <h1 class="accent--text">PRIX</h1>
+        justify="center"
+        class="ma-5">
+            <h1 class="display-3 accent--text">PRIX</h1>
         </v-row>
         <v-row
         v-for="item in price"
@@ -180,15 +183,20 @@
               </ul>
             </v-col>
             <v-col cols=12>
-              <h3>{{item.extra}}</h3>
+              <h3 class="text-center">{{item.extra}}</h3>
             </v-col>
         </v-row>
-        <v-row  wrap cols=12>
-          <v-img
+        <v-row>
+          <v-col
           v-for="icon in payicon"
           :key="icon"
+          cols="4"
+          align="center">
+            <v-img
           :src="icon.src"
-          width="40"></v-img>
+          width="45"></v-img>
+          </v-col>
+          
         </v-row>
       </v-card>
     </v-row>
@@ -230,7 +238,7 @@ export default {
       ],
       price: [
         {name: "Coût d'entrée", icon:"mdi-ticket", cost:"25$", cols:"6"},
-        {name: "Boisson", icon:"mdi-glass-cocktail", cost:"1 pour 3$ | 2 pour 5$", array: [ "Corona Extra","Coors Light","Stella Artois", "Pepito Sangria", "Palm Bay", "Shot de vodka", "Shot de Tequila"], extra:"Les shots sont aussi offerts à 10 pour 20$", cols:"3"},
+        {name: "Boisson", icon:"mdi-glass-cocktail", cost:"1 pour 3$ | 2 pour 5$", array: [ "Corona Extra","Coors Light","Stella Artois", "Pepito Sangria", "Palm Bay", "Shot de vodka", "Shot de Tequila"], extra:"Les shots sont aussi offerts à 10 pour 20$", cols:"4"},
         {name: "Boisson sans alcool", icon:"mdi-bottle-soda-classic", array:["Coca-Cola", "Sprite",  "Thé Glacé",  "Fruitopia",  "Eau pétillante"], cost:"2$", extra:"Eau offerte gratuitement sur place", cols:"7"},
       ],
       payicon: [
