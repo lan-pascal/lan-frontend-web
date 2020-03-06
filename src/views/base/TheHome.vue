@@ -3,7 +3,11 @@
         <v-row class="fullscreen ml-0" align="center" >
             <v-col align="center">
                 <v-img  class="my-0" :src="require('@/assets/logo/LogoWhiteFillEmptyBtns.svg')" contain width="100%" aspect-ratio="1.5" max-width="600px" min-width=275px />
+<<<<<<< HEAD
                 <div class="display-4 font-weight-bold"><div class="qdn-top">QDN</div> <div class="primary--text qdn-behind">2020</div></div>
+=======
+                <div class="display-4 font-weight-bold"><div class="qdn-top">QUART DE NUIT</div> <div class="accent--text">V</div></div>
+>>>>>>> 2c6a830605882a558ec3d12344e5c63caa999613
                 <CountdownZwip :deadline="deadline"/>
             </v-col>
         </v-row>
