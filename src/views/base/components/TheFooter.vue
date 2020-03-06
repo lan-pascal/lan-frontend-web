@@ -6,18 +6,25 @@
             class="text-center"
             width=100%
             >
-        <v-col align=center no-gutters class="primary lighten-2">
-            LAN © 2018 - 2020
-        </v-col>
+                <v-card-text>
+                    <v-btn
+                    v-for="media in medias"
+                    :key="media.link"
+                    :href="media.link"
+                    class="mx-4"
+                    icon
+                    >
+                        <v-icon size="24px">{{ media.icon }}</v-icon>
+                    </v-btn>
+                </v-card-text>
 
                 <v-card-text class="pt-0">
                     <v-btn
                         v-for="link in links"
-                        :key="link"
+                        :key="link.route"
                         text
                         x-small
-                        flat
-                        :to="link.route"
+                        :href="link.route"
                         class="my-2"
                     >
                         {{ link.name }}
@@ -36,7 +43,12 @@
 <script>
 export default {
   data: () => ({
-  data: () => ({})
+        medias: [
+            {icon: "mdi-email", link: "mailto:quartdenuitmtl@gmail.com"},
+            {icon: "mdi-instagram", link: "https://www.instagram.com/quartdenuit/"},
+            {icon: "mdi-twitter", link: "https://twitter.com/quartdenuit"},
+            {icon: "mdi-facebook", link: "facebook"}
+        ],
         links:  [
             {name: "Conditions d'utilisation", route: "terms_of_use"},
             {name: "Politique de confidentialité", route: "privacy_policy"}
