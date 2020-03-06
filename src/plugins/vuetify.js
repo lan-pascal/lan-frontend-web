@@ -46,7 +46,10 @@ export default new Vuetify({
               base: "#3BD7F7"
             },
             grey: {
-              base: "#303030"
+              base: "#303030",
+              lighten1: "#616161",
+              darken1: "#202020",
+              darken2: "#080808"
             }
           },
         }
