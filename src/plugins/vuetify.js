@@ -32,18 +32,18 @@ export default new Vuetify({
         themes: {
           dark: {
             primary: {
-              base: "#252525",
+              base: "#40E0D0",
               lighten1: "#616161",
               darken1: "#202020",
               darken2: "#080808"
             },
             secondary: {
-              base: "#d6d6d6",
+              base: "#399FED",
               lighten1: "#e0e0e0",
               darken1: "#8f8f8f"
             },
             accent: {
-              base: "#6772e5"
+              base: "#3BD7F7"
             } 
           },
         }
