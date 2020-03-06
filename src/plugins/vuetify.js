@@ -33,18 +33,21 @@ export default new Vuetify({
           dark: {
             primary: {
               base: "#40E0D0",
-              lighten1: "#616161",
-              darken1: "#202020",
-              darken2: "#080808"
+              lighten1: "#87E6DC",
+              darken1: "#32ADA1",
+              darken2: "#1C615A"
             },
             secondary: {
               base: "#399FED",
-              lighten1: "#e0e0e0",
-              darken1: "#8f8f8f"
+              lighten1: "#82C0F0",
+              darken1: "#2D7DBA"
             },
             accent: {
               base: "#3BD7F7"
-            } 
+            },
+            grey: {
+              base: "#303030"
+            }
           },
         }
     },
