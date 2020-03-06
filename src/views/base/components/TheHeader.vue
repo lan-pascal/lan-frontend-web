@@ -1,58 +1,16 @@
 <template>
-      <v-app-bar
-        color="primary"
-        app
-        class="pa-0"
-      >
-        <v-toolbar-title class="pr-6 hidden-sm-and-down">
-          <router-link
-          :to="{name:'home'}"
-          tag="span"
-          style="cursor: pointer"> 
-            <v-img  :src="require('@/assets/logo/LogoWhiteFillEmptyBtns.svg')" contain width="60" height="120">
-            </v-img>
-          </router-link>
-        </v-toolbar-title>
-<!-- Desktop -->
-        <v-flex class="hidden-sm-and-down">
-          <v-btn
-          v-for="link in links"
-          :key="link.key"
-          :ripple="false"
-          class="underline title"
-          router :to="link.route"
-          text
-          >{{link.name}}
-          </v-btn>
-        </v-flex>
-<!-- Mobile -->
-        <!--
-        <v-flex class="hidden-md-and-up">
-          <v-menu offset-y class="justify-space-between">
-            <template v-slot:activator="{ on }">
-                <v-btn
-                    v-on="on"
-                    text
-                    icon
-                    x-large
-                    class="px-0">
-                    <v-icon class="menu-icon" large>mdi-menu</v-icon>
-                </v-btn>
-            </template>
-            <v-list>
-                <v-list-item route: to="/home" class="title">Accueil</v-list-item>
-                <v-list-item
-                    v-for="link in links"
-                    :key="link.text"
-                    router :to="link.route"
-                    class="title"
-                    >
-                    <v-list-item-title>{{ link.name }}</v-list-item-title>
-                </v-list-item>
-            </v-list>
-          </v-menu>
-        </v-flex>
-
+    <div>
+        <v-app-bar
+            dark
+            clipped-right
+        >  
+            <v-btn :to="{name: 'home'}" :ripple="false" exact text class="noeffect"><v-img width="85px" :src="require('@/assets/logo/LogoWhiteFillEmptyBtns.svg')"/></v-btn>
+        
+            <v-btn v-for="(link, linkIndex) in links" :key="linkIndex" :to="link.to" :ripple="false" text class="title underline noeffect hidden-sm-and-down">
+            {{ link.name }}
+            </v-btn>
+            
+            <v-spacer> </v-spacer>
         <v-spacer/>
 --> 
         <v-col class="d-none d-md-flex justify-end">
@@ -60,66 +18,38 @@
         </v-col>
    
 
-        <v-row class="hidden-md-and-up" justify="space-between" align="center">
-            <router-link
-            :to="{name:'home'}"
-            tag="span"
-            style="cursor: pointer"> 
-              <v-img  :src="require('@/assets/logo/LogoWhiteFillEmptyBtns.svg')" contain width="60" height="120">
-              </v-img>
-            </router-link>
-            <v-btn
-              @click.stop="drawer = !drawer"
-              text
-              icon
-              x-large>
-              <v-icon class="menu-icon" large>mdi-menu</v-icon>
-            </v-btn>
-        </v-row>
+            <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+        </v-app-bar>
+
         <v-navigation-drawer
-        v-model="drawer"
-        absolute
-        temporary
-        height="400">
-          
-          <v-list>
-            <v-list-item
-            link
-            router to="/">
-              <v-list-item-icon>
-                  <v-icon class="accent--text">mdi-home</v-icon>
+                v-model="drawer"
+                absolute
+                floating
+                right
+                clipped
+                width="200px"
+                height="200px"
+                class="hidden-md-and-up"
+        >
+            <v-list dense>
+
+                <v-list-item
+                v-for="link in links"
+                :key="link.name"
+                :to="link.to"
+                >
+                <v-list-item-icon>
+                    <v-icon class="accent--text">{{ link.icon }}</v-icon>
                 </v-list-item-icon>
-              <v-list-item-content>
-                <v-list-item-title>
-                  Accueil
-                </v-list-item-title>
-            </v-list-item-content>
-            </v-list-item>
-            <v-list-item
-              v-for="link in links"
-              :key="link.name"
-              link
-              router :to="link.route">
-              <v-list-item-icon>
-                  <v-icon class="accent--text">{{link.icon}}</v-icon>
-                </v-list-item-icon>
-              <v-list-item-content>
-                <v-list-item-title>
-                  {{link.name}}
-                </v-list-item-title>
-            </v-list-item-content>
-            </v-list-item>
-            <v-list-item>
-              <v-btn
-              color="accent">
-                <h3>TARIFS</h3>
-              </v-btn>
-            </v-list-item>
-          </v-list>
+
+                <v-list-item-content>
+                    <v-list-item-title class="accent-text">{{ link.name }}</v-list-item-title>
+                </v-list-item-content>
+                </v-list-item>
+                <v-divider/>
+            </v-list>
         </v-navigation-drawer>
-        
-        
-      </v-app-bar>
+    </div>
 </template>
 
 <script>
@@ -127,9 +57,9 @@
     data: () => ({
       drawer: null,
       links:  [
-        {name: "QdN 2020", route: "/event", icon: "mdi-calendar-star"},
-        {name: "FAQ", route: "/faq", icon: "mdi-frequently-asked-questions"},
-        {name: "À propos", route: "/about", icon: "mdi-information-outline"}
+        {name: "QdN 2020", to: "/event", icon: "mdi-calendar-star"},
+        {name: "FAQ", to: "/faq", icon: "mdi-frequently-asked-questions"},
+        {name: "À propos", to: "/about", icon: "mdi-information-outline"}
         ]
     }),
     computed: {
@@ -142,6 +72,11 @@
 </script>
 
 <style lang="scss" scoped>
+.noeffect {
+    &:hover, &.v-btn:before {
+        background-color: transparent;
+    }
+}
 .underline {
   &:after {
     content: "";
@@ -157,10 +92,6 @@
   
   &:hover, &.v-btn--active {
     color: var(--v-accent-base) !important;
-  }
-
-  &:hover, &.v-btn:before {
-    background-color: transparent;
   }
 
   &:hover:after {
