@@ -12,19 +12,22 @@
             <v-col cols=12 md=6>
                 <div class="pr-2"> 
                     <v-card flat class="transparent">
-                        <v-card-title class="primary--text"><div class="display-2 font-weight-medium font-italic">C'est quoi le LAN?</div></v-card-title>
+                        <v-card-title class="primary--text"><div class="display-2 font-weight-medium font-italic">Quart de nuit, c'est quoi?</div></v-card-title>
                         <v-card-text>
-                            <h3>Le LAN c'est un événement biannuel où tu te défoules avec des jeux de toutes les sortes!
-                            Accessible à tous (oui, oui, c’est pas un truc nerd-only), une variété d’activités différentes sont offertes.</h3>
+                            <h3><br>Nous sommes un regroupement de personnes motivé à créer des événements, nommés <i>Quart de nuit</i>, qui incorporent diverse facettes du geek-culture et les rendent accessibles à tous. 
+            <br><br>Notre mission est, qu'à chaque <i>Quart de nuit</i>, tout le monde se sente à sa place, tout en gardant la nature geek du <i>Quart</i> qui le rend si unique.</h3>
                         
-                        <h3 class="mt-3 bold">Au programme:</h3>
+                        <h3 class="mt-3 bold">Au programme pour le Quart de nuit V :</h3>
 
                         <ul class="mt-2">
+                          <li>Bar</li>
                           <li>Jeux de société avec animateur</li>
+                          <li>Trivia night sur le pop culture</li>
                           <li>Call of Duty: Black Ops à 12 joueurs</li>
-                          <li>Tournois de Dance Dance Revolution</li>
+                          <li>Halo: Reach à 12 joueurs</li>
+                          <li>Jeux de danse et musique : Dance Dance Revoution, Guitar Hero, Rock Band & Just Dance</li>
+                          <li>Karaoké</li>
                           <li>Couch Gaming</li>
-                          <li>et beaucoup plus...</li>
                         </ul>
                         </v-card-text>
                         
@@ -77,9 +80,10 @@
                     <div class="pl-2">
                         <v-card flat class="transparent" align="center">
                             <v-icon color="primary" size="75">mdi-map-marker</v-icon>
-                            <v-card-title class="primary--text text-center">C'est où?</v-card-title>
+                            <v-card-title class="primary--text text-center">Collège de Maisonneuve</v-card-title>
                             <v-card-text>
-                            Cegep de Maisonneuve dans la salle Vivoir {{map.markers}}
+                            Dans la salle Vivoir {{map.markers}}
+                            <br>3800 boul. Pie-IX, Montréal
                             </v-card-text>
                         </v-card>
                     </div>
@@ -87,25 +91,25 @@
                 <v-col cols=12 sm=6 md=2>
                     <v-card flat class="transparent" align="center">
                             <v-icon size="75" color="primary">mdi-seat</v-icon>
-                            <v-card-title class="primary--text">100 Places</v-card-title>
-                            
+                            <v-card-title class="primary--text">150 places de disponibles</v-card-title>
                             <v-card-text>
+                              Tu peux inviter tes amis!
                             </v-card-text>
                         </v-card>
                 </v-col>
                 <v-col cols=12 sm=6 md=2>
                     <v-card flat class="transparent" align="center">
                             <v-icon size="75" color="primary">mdi-clock</v-icon>
-                            <v-card-title class="primary--text">20h à 3h</v-card-title>
+                            <v-card-title class="primary--text">De 20h00 à 3h00</v-card-title>
                             <v-card-text>
-                                Fermeture des portes à 22h
+                                Fermeture des portes à 22h00!
                             </v-card-text>
                         </v-card>
                 </v-col>
                 <v-col cols=12 sm=6 md=2>
                     <v-card flat class="transparent" align="center">
                             <v-icon size="75" color="primary">mdi-cash-usd</v-icon>
-                            <v-card-title class="primary--text">25$</v-card-title>
+                            <v-card-title class="primary--text">Seulement 25 $!</v-card-title>
                             <v-btn color="primary">Payer en Ligne</v-btn>
                         </v-card>
                 </v-col>
