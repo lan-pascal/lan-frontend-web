@@ -95,7 +95,7 @@ export default {
           description: "Bénévole depuis Quart de nuit 1."
         },
         {
-          name: "Léon",
+          name: "Leon",
           title: "Créateur du logo du LAN",
           description: "Fais des caméléons photo-réaliste à la mine."
         },
