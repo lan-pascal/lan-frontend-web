@@ -56,9 +56,7 @@
         <v-spacer/>
 --> 
         <v-col class="d-none d-md-flex justify-end">
-          <v-btn class="accent title mx-1 mx-sm-2" v-bind="size">Prix</v-btn>
-          <v-divider dark vertical/>
-          <v-btn outlined class="title mx-1 mx-sm-2" route: to="/signin" v-bind="size">Connexion/inscription</v-btn>
+          <v-btn class="accent title mx-1 mx-sm-2" v-bind="size">Tarifs</v-btn>
         </v-col>
    
 
@@ -117,13 +115,6 @@
                 <h3>TARIFS</h3>
               </v-btn>
             </v-list-item>
-            <v-list-item>
-              <v-btn
-              outlined>
-                <v-icon small>mdi-account</v-icon>
-                <h3>Connection/Inscription</h3>
-                </v-btn>
-            </v-list-item>
           </v-list>
         </v-navigation-drawer>
         
@@ -137,7 +128,6 @@
       drawer: null,
       links:  [
         {name: "QdN 2020", route: "/event", icon: "mdi-calendar-star"},
-        {name: "Archives", route: "/archive", icon: "mdi-bookshelf"},
         {name: "FAQ", route: "/faq", icon: "mdi-frequently-asked-questions"},
         {name: "À propos", route: "/about", icon: "mdi-information-outline"}
         ]
