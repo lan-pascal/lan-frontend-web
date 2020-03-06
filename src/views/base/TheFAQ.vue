@@ -3,7 +3,7 @@
     <v-row align=center class="fullscreen">
       <v-col class="pr-12" cols=12 md=8>
         <div class="display-3 accent--text">FAQ</div>
-        <div class="headline font-italic"><i>Si vous avez plus de questions, n'hésitez pas à nous contacter sur les réseaux sociaux.</i></div>
+        <div class="headline font-italic"><i>Si vous avez plus de questions, n'hésitez pas à nous contacter. Liens pour nous rejoindre au bas de la page!</i></div>
       </v-col>
     </v-row>
 
