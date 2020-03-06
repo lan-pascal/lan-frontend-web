@@ -1,21 +1,21 @@
 <template>
   <v-col>
-    <v-row class="my-3">
-      <v-col align="center" justify="center">
-        <span class="display-3 accent--text">FAQ</span>
+    <v-row align=center class="fullscreen">
+      <v-col class="pr-12" cols=12 md=6>
+        <div class="display-3 accent--text">FAQ</div>
+        <div class="headline font-italic"><i>Si vous avez plus de questions, n'hésitez pas à nous contacter sur les réseaux sociaux.</i></div>
       </v-col>
     </v-row>
 
-    <v-row>
-      <v-card flat outlined class="outlined transparent ml-4" >
-        <v-card-text>Filtres</v-card-text>
+    <v-row class="mx-4 pb-12">
+      <v-card flat outlined class="outlined transparent" >
+        <v-card-text class="pb-0 ">Filtres</v-card-text>
         <v-card-actions>
           <v-chip-group v-model="selection" column mandatory active-class="accent--text">
             <v-chip
               v-for="category in categories"
               :key="category"
               :value="category"
-              filter
             >{{category}}</v-chip>
           </v-chip-group>
         </v-card-actions>

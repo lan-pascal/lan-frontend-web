@@ -1,16 +1,17 @@
 <template>
     <v-col>
-        <v-row>
-            <v-col align=center justify=center>
-                <h1 class="display-3 accent--text">À Propos</h1>
-            </v-col>
+        <v-row align=center class="fullscreen">
+          <v-col class="pr-12" cols=12 md=6>
+            <div class="display-3 accent--text">À propos</div>
+            <div class="headline font-italic"><i>Nous (Pascall!!)</i></div>
+          </v-col>
         </v-row>
 
         <v-row>
             <span class="pa-5 d-block text--accent">Équipe</span>
             <v-row justify=center justify-md=start>
                 <v-col v-for="(teammate, teammateIndex) in team" :key="teammateIndex" cols=10 sm=5 md=4 lg=3>
-                    <v-card height="100%" class="mx-auto text-center">
+                    <v-card height="100%" width=250px class="mx-auto text-center">
                         <v-row justify="center">
                             <v-avatar color="secondary" size="128" class="mt-5"></v-avatar>
                         </v-row>
