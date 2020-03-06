@@ -1,8 +1,8 @@
 <template>
-    <v-card flat width="4rem">
+    <v-card flat width="4rem" height="75%">
         <v-card-title 
             ref="clockPiece" 
-            class="non-interactive justify-center display-2 px-0">
+            class="non-interactive justify-center display-2 px-0 pb-10">
                 {{digits}}
         </v-card-title>
     </v-card>

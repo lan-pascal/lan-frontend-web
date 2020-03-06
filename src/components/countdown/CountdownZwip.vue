@@ -32,7 +32,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.clock__piece {
-  background: var(--v-primary-darken1);
-}
+
 </style>
