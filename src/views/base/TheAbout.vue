@@ -3,7 +3,7 @@
         <v-row align=center class="fullscreen">
           <v-col class="pr-12" cols=12 md=6>
             <div class="display-3 accent--text">À propos</div>
-            <div class="headline font-italic"><i>Nous (Pascall!!)</i></div>
+            <div class="headline font"><br>Nous sommes un regroupement de personnes motivé à créer des événements, nommés <i>Quart de nuit</i>, qui incorporent diverse facettes du geek-culture et les rendent accessibles à tous. <br><br>Notre mission est, qu'à chaque <i>Quart de nuit</i>, tout le monde se sente à sa place, tout en gardant la nature geek du <i>Quart</i> qui le rend si unique.<br><br><i>Les Quarts de nuits</i> vont souvent incorporer jeux vidéo, jeux de société, trivia, bar et karaoke. Il y en a, en général, deux par année. Le premier <i>Quart de nuit</i> date de janvier 2018 et comportait seulement 24 personnes!</div>
           </v-col>
         </v-row>
 
@@ -66,34 +66,29 @@ export default {
           description: "Aide depuis Quart de nuit 4. Épicerie du Quart de nuit."
         },
         {
+          name: "Ayman",
+          title: "Bénévole",
+          description: "Bénévole depuis le début. Très très enthousiaste."
+        },
+        {
           name: "Kevin",
           title: "Bénévole",
-          description: "Aide depuis Quart de nuit 1."
+          description: "Aide depuis le début."
         },
         {
           name: "Alex",
           title: "Bénévole",
-          description: "Aide depuis Quart de nuit 1. Dort encore moins que Karl-Étienne."
+          description: "Aide depuis le début. Dort encore moins que Karl-Étienne."
         },
         {
           name: "Étienne",
           title: "Bénévole",
-          description: "Bénévole depuis Quart de nuit 1. Fait de la musique!"
-        },
-        {
-          name: "Ayman",
-          title: "Bénévole",
-          description: "Bénévole depuis Quart de nuit 1. Très très enthousiaste."
+          description: "Bénévole depuis le début. Fait de la musique!"
         },
         {
           name: "Arnaud",
           title: "Bénévole",
-          description: "Bénévole depuis Quart de nuit 1. Oublie de s'occuper de son tournoi."
-        },
-        {
-          name: "Soulaha",
-          title: "Bénévole",
-          description: "Bénévole depuis Quart de nuit 1."
+          description: "Bénévole depuis le début. Oublie de s'occuper de son tournoi."
         },
         {
           name: "Leon",
@@ -103,12 +98,7 @@ export default {
         {
           name: "Sacha",
           title: "Photographe",
-          description: "Prends de jolis photos et fait des t-shirt."
-        },
-        {
-          name: "Sami",
-          title: "Magicien",
-          description: "A offert deux tours de magie aux Quarts de nuit."
+          description: "Prends de très jolies photos."
         },
       ]
     };
