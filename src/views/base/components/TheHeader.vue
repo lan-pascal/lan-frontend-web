@@ -55,7 +55,6 @@
     data: () => ({
       drawer: null,
       links:  [
-        {name: "QdN 2020", to: "/event", icon: "mdi-calendar-star"},
         {name: "FAQ", to: "/faq", icon: "mdi-frequently-asked-questions"},
         {name: "À propos", to: "/about", icon: "mdi-information-outline"}
         ]

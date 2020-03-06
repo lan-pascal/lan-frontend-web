@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="justify-center width">
         <v-row class="fullscreen ml-0" align="center" >
             <v-col align="center">
                 <v-img  class="my-0" :src="require('@/assets/logo/LogoWhiteFillEmptyBtns.svg')" contain width="100%" aspect-ratio="1.5" max-width="600px" min-width=275px />
@@ -7,137 +7,189 @@
                 <CountdownZwip :deadline="deadline"/>
             </v-col>
         </v-row>
-
-        <v-row justify="space-around" align="center" class="fullscreen ml-0">
-            <v-col cols=12 md=6>
-                <div class="pr-2"> 
-                    <v-card flat class="transparent">
-                        <v-card-title class="primary--text"><div class="display-2 font-weight-medium font-italic">C'est quoi le LAN?</div></v-card-title>
-                        <v-card-text>
-                            <h3>Le LAN c'est un événement biannuel où tu te défoules avec des jeux de toutes les sortes!
-                            Accessible à tous (oui, oui, c’est pas un truc nerd-only), une variété d’activités différentes sont offertes.</h3>
-                        
-                        <h3 class="mt-3 bold">Au programme:</h3>
-
-                        <ul class="mt-2">
-                          <li>Jeux de société avec animateur</li>
-                          <li>Call of Duty: Black Ops à 12 joueurs</li>
-                          <li>Tournois de Dance Dance Revolution</li>
-                          <li>Couch Gaming</li>
-                          <li>et beaucoup plus...</li>
-                        </ul>
-                        </v-card-text>
-                        
-                        <v-btn
-                        class="ml-4"
-                        color="primary"
-                        route: to="/event">En savoir plus</v-btn>
-                    </v-card>
-                </div>
-            </v-col>
-            <v-col class="hidden-sm-and-down" cols=6>
-                <v-img src="https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"></v-img>
-            </v-col>
-        </v-row>
-        
-        <v-row class="fullscreen">
-        <!--     <GmapMap
-                ref="mapRef"
-                :zoom="16"
-                :options="{
-                        zoomControl: true,
-                        mapTypeControl: false,
-                        scaleControl: false,
-                        streetViewControl: false,
-                        rotateControl: false,
-                        fullscreenControl: true,
-                        disableDefaultUi: true 
-                        }"
-                map-type-id="terrain"
-                style="width: 100%; height: 50%;"
-                >
-                <GmapMarker
-                    :key="index"
-                    v-for="(m, index) in map.markers"
-                    :position="m.position"
-                    @click="center=m.position"
-                />
-            </GmapMap> -->
-
-            <iframe 
-                    width=100% 
-                    height=50% 
-                    frameborder="0" 
-                    style="border:0" 
-                    :src="`https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=${map.coord}&amp;q=${map.location}&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed`">
-            </iframe>'
-
-            <v-row justify="space-around" align="center" class="ml-0" height="50%">
-                <v-col cols=12 sm=6 md=2>
-                    <div class="pl-2">
-                        <v-card flat class="transparent" align="center">
-                            <v-icon color="primary" size="75">mdi-map-marker</v-icon>
-                            <v-card-title class="primary--text text-center">C'est où?</v-card-title>
-                            <v-card-text>
-                            Cegep de Maisonneuve dans la salle Vivoir {{map.markers}}
-                            </v-card-text>
-                        </v-card>
-                    </div>
-                </v-col>
-                <v-col cols=12 sm=6 md=2>
-                    <v-card flat class="transparent" align="center">
-                            <v-icon size="75" color="primary">mdi-seat</v-icon>
-                            <v-card-title class="primary--text">100 Places</v-card-title>
-                            
-                            <v-card-text>
-                            </v-card-text>
-                        </v-card>
-                </v-col>
-                <v-col cols=12 sm=6 md=2>
-                    <v-card flat class="transparent" align="center">
-                            <v-icon size="75" color="primary">mdi-clock</v-icon>
-                            <v-card-title class="primary--text">20h à 3h</v-card-title>
-                            <v-card-text>
-                                Fermeture des portes à 22h
-                            </v-card-text>
-                        </v-card>
-                </v-col>
-                <v-col cols=12 sm=6 md=2>
-                    <v-card flat class="transparent" align="center">
-                            <v-icon size="75" color="primary">mdi-cash-usd</v-icon>
-                            <v-card-title class="primary--text">25$</v-card-title>
-                            <v-btn color="primary">Payer en Ligne</v-btn>
-                        </v-card>
-                </v-col>
+    <!-- QdN c'est quoi? -->
+        <v-row class="pa-4">
+          <v-col
+          cols=12
+          md=6
+          align-self="center">
+          <v-col>
+            <v-row justify="center">
+              <h1 class="display-1">Le Quart de Nuit, c'est quoi<span class="display-2 primary--text">?</span></h1>
             </v-row>
+            <v-row class="pa-2">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
+              voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
+              voluptatum impedit laudantium magni dolores. Natus, in quas.
+            </p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
+              voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
+              voluptatum impedit laudantium magni dolores. Natus, in quas.
+            </p>
+            </v-row>
+          </v-col>
+
+          </v-col>
+          <v-col
+          cols=6
+          class="d-none d-md-flex">
+            <v-img
+            src="../../assets/media/ppl-game-pic.png">
+
+            </v-img>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col
+          v-for="info in quickinfo"
+          :key="info"
+          align="center"
+          cols=6
+          md=3>
+            <v-icon x-large color="accent">{{info.icon}}</v-icon>
+            <h2>{{info.name}}</h2>
+            <p>{{info.desc}}</p>
+          </v-col>
+        </v-row>
+    <!-- SCÈNE / LIGNE DU TEMPS -->
+        <v-row class=" pa-4">
+          <v-col>
+          
+          </v-col>
+          <v-col
+          cols=12
+          md=6>
+            <v-row justify="center">
+              <h1 class="primary--text display-1">HORAIRE DE LA SCÈNE</h1>
+            </v-row>
+            <v-row>
+              <p class="pa-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
+              voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
+              voluptatum impedit laudantium magni dolores. Natus, in quas.
+              </p>
+            </v-row>
+            <v-timeline
+            class="black">
+              <v-timeline-item
+              v-for="(activity, index) in schedule"
+              :key="index"
+              small
+              right>
+                <template v-slot:opposite>
+                  <h3
+                  v-text="activity.time"></h3>
+                </template>
+                <div class="py-4">
+                  <h3>{{activity.name}}</h3>
+                </div>
+              </v-timeline-item>
+            </v-timeline>
+          </v-col>
 
         </v-row>
+    <!-- JEUX DE SOCIÉTÉ -->
+        <v-row
+        class=" pa-4"
+        align="center">
+          <v-col>
+            <v-row justify="center">
+              <h1 class="primary--text display-1">JEUX DE SOCIÉTÉ</h1>
+            </v-row>
+            <v-row>
+              <p class="pa-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
+              voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
+              voluptatum impedit laudantium magni dolores. Natus, in quas.
+              </p>
+            </v-row>
+            <v-row
+            justify="center">
+              <v-img 
+              class="ma-6"
+              max-width="275"
+              src="../../assets/media/vector/board-game-stack.svg"></v-img>
+            </v-row>  
+          </v-col>
+        </v-row>
+    <!-- TOURNOIS -->
+        <v-row
+        class=" pa-4"
+        align="center">
+           <v-col>
+               <v-row justify="center">
+                 <h1 class="primary--text display-1">TOURNOIS</h1>
+               </v-row>
+               <v-row>
+                 <p class="pa-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
+                 voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
+                 voluptatum impedit laudantium magni dolores. Natus, in quas.
+                 </p>
+             </v-row>
+           </v-col>
+        </v-row>
+        <v-row>
+          <v-col class="scrolling-wrapper" align="center">
+            <v-card
+            v-for="(game, index) in tournament"
+            :key="index"
+            width="225"
+            height="325"
+            tile
+            color="black"
+            class="text-center ma-4 card justify-end">
+              <v-card-title
+              class="primary--text justify-center display-1">
+                {{game.name}}
+              </v-card-title>
+              <v-row
+              justify="center">
+                <v-img
+                :src="game.vector"
+                max-width="100">
+                </v-img>
+              </v-row>
+              <v-card-subtitle>
+                <h2>{{game.time}}</h2>
+              </v-card-subtitle>
+              <v-card-subtitle
+              class="primary--text">
+                <h2>{{game.location}}</h2>
+              </v-card-subtitle>
+            </v-card>
+          </v-col>
+        </v-row>
+    <!-- AUTRES INFOS GÉNÉRAUX (Couch/Halo/Bar) -->
+        <v-row 
+        wrap
+        justify="space-around">
+           <v-col v-for="info in information"
+            :key="info"
+            class="pa-4"
+            cols=12
+            sm=6
+            md=5
 
-        <v-row justify="space-around" align="center" class="fullscreen">
-            <v-col cols=12 md=6>
-                <div class="pr-2"> 
-                    <v-card flat class="transparent">
-                        <v-card-title class="primary--text display-2 font-weight-medium font-italic">Activités</v-card-title>
-                        <v-card-text>
-                            Au menu : karaoke, jeux de société animés par des employés de Randolph, 
-                            tournois de Dance Dance Revolution, Super Smash Bros. Ultimate & Tetris, 
-                            parties de 10 joueurs sur Halo: Reach & Call of Duty: Black Ops, « couch gaming »
-                            de 4 à 8 personnes et plus (clique ici pour la liste complète)!
-                        </v-card-text>
-                        <v-btn
-                        class="ml-4"
-                        color="primary">Liste des activités</v-btn>
-                    </v-card>
-                </div>
-            </v-col>
-            <v-col class="hidden-sm-and-down" cols=2 >
-                <v-icon size = "100" class="primary--text text--lighten-2 pr-12">mdi-gamepad-circle </v-icon>
-            </v-col>
+            >
+               <v-row justify="center">
+                 <h1 class="primary--text display-1">{{info.name}}</h1>
+               </v-row>
+               <v-row>
+                 <p class="pa-2">
+                   {{info.text}}
+                 </p>
+               </v-row>
+               <v-row
+               justify="center">
+                 <v-img
+                 max-width="100"
+                 :src="info.vector"></v-img>
+               </v-row>
+           </v-col>
         </v-row>
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .midscreen {
   width: 100%;
   height: 30rem;
@@ -154,6 +206,18 @@
   top: -65px;
   font-size:200px;
   width: fit-content;
+}
+.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
+  display:flex;
+  flex-wrap: nowrap;
+  overflow-x:auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .card {
+    flex: 0 0 auto;
+  }
 }
 </style>
 
@@ -172,175 +236,47 @@ export default {
   },
   data () {
       return {
-        deadline : "2020/04/20 20:00:00",
-        map : {
-            /* styles: [
-              {
-                "elementType": "geometry",
-                "stylers": [
-                  {
-                    "color": "#0e0e0e"
-                  }
-                ]
-              },
-              {
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#746855"
-                  }
-                ]
-              },
-              {
-                "elementType": "labels.text.stroke",
-                "stylers": [
-                  {
-                    "color": "#242f3e"
-                  }
-                ]
-              },
-              {
-                "featureType": "administrative.locality",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#d59563"
-                  }
-                ]
-              },
-              {
-                "featureType": "poi",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#d59563"
-                  }
-                ]
-              },
-              {
-                "featureType": "poi.park",
-                "elementType": "geometry",
-                "stylers": [
-                  {
-                    "color": "#263c3f"
-                  }
-                ]
-              },
-              {
-                "featureType": "poi.park",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#6b9a76"
-                  }
-                ]
-              },
-              {
-                "featureType": "road",
-                "elementType": "geometry",
-                "stylers": [
-                  {
-                    "color": "#38414e"
-                  }
-                ]
-              },
-              {
-                "featureType": "road",
-                "elementType": "geometry.stroke",
-                "stylers": [
-                  {
-                    "color": "#212a37"
-                  }
-                ]
-              },
-              {
-                "featureType": "road",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#9ca5b3"
-                  }
-                ]
-              },
-              {
-                "featureType": "road.highway",
-                "elementType": "geometry",
-                "stylers": [
-                  {
-                    "color": "#746855"
-                  }
-                ]
-              },
-              {
-                "featureType": "road.highway",
-                "elementType": "geometry.stroke",
-                "stylers": [
-                  {
-                    "color": "#1f2835"
-                  }
-                ]
-              },
-              {
-                "featureType": "road.highway",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#f3d19c"
-                  }
-                ]
-              },
-              {
-                "featureType": "transit",
-                "elementType": "geometry",
-                "stylers": [
-                  {
-                    "color": "#2f3948"
-                  }
-                ]
-              },
-              {
-                "featureType": "transit.station",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#d59563"
-                  }
-                ]
-              },
-              {
-                "featureType": "water",
-                "elementType": "geometry",
-                "stylers": [
-                  {
-                    "color": "#17263c"
-                  }
-                ]
-              },
-              {
-                "featureType": "water",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#515c6d"
-                  }
-                ]
-              },
-              {
-                "featureType": "water",
-                "elementType": "labels.text.stroke",
-                "stylers": [
-                  {
-                    "color": "#17263c"
-                  }
-                ]
-              }
-            ],
-            center : {lat:45.550500, lng:-73.553563},
-            markers : [{position : {lat:45.550500, lng:-73.553563}}], */
-            coord: "45.550500,-73.553563",
-            api_key: "AIzaSyBdHhJCXc_-ygexFUz3D4hryzbUYMVsRQk",
-            location: "College+de+maisonneuve,Montreal+QC+Canada",
-        },
+        quickinfo: [
+          {name: "Collège de Maisonneuve", desc: "Salle Vivoir, 3800 boul. Pie-IX, Montréal", icon:"mdi-map-marker"},
+          {name: "150 places", desc: "Tu peux inviter tes amis!", icon:"mdi-seat"},
+          {name: "20h à 3h00", desc: "Fermeture des portes à 22h00", icon:"mdi-clock-outline"},
+          {name: "Seulement 25$", desc: "PAYER EN LIGNE", icon:"mdi-currency-usd"}
+
+        ],
+        deadline : "2020/04/09 20:00:00",
+        schedule: [
+        {name: "Rock Band & Guitar Hero", time: "20h"},
+        {name: "Trivia Quiz", time: "21h"},
+        {name: "", time: ""},
+        {name: "Karaoke", time: "23h"},
+        {name: "", time: ""},
+        {name: "Tournois de Dance Dance Revolution", time: "01h"},
+        {name: "", time: ""},
+        {name: "Rock Band & Guitar Hero", time: "03h"},
+      ],
+      tournament: [
+        {name: "TETRIS", time: "21h", location: "Loundge", vector:require("../../assets/media/vector/tetris-vector.svg")},
+        {name: "SUPER SMASH BROS.", time: "23h", location: "Loundge", vector:require("../../assets/media/vector/ssb-vector.svg")}, //SVG NEEDS FIX
+        {name: "DANCE DANCE REVOLUTION", time: "01h", location: "Scène principale", vector:require("../../assets/media/vector/ddr-vector.svg")}
+      ],
+      information: [
+        {name: "COUCH GAMING", vector: require("../../assets/media/vector/sofa-vector.svg") , text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, oluptatum impedit laudantium magni dolores. Natus, in quas."},
+        {name: "HALO REACH & BLACK OPS", vector: require("../../assets/media/vector/military-vector.svg") , text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, oluptatum impedit laudantium magni dolores. Natus, in quas."},
+        {name: "BAR", vector: require("../../assets/media/vector/beer-vector.svg") , text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, oluptatum impedit laudantium magni dolores. Natus, in quas."}
+      ],
+      price: [
+        {name: "Coût d'entrée", icon:"mdi-ticket", cost:"25$", cols:"6"},
+        {name: "Boisson", icon:"mdi-glass-cocktail", cost:"1 pour 3$ | 2 pour 5$", array: [ "Corona Extra","Coors Light","Stella Artois", "Pepito Sangria", "Palm Bay", "Shot de vodka", "Shot de Tequila"], extra:"Les shots sont aussi offerts à 10 pour 20$", cols:"4"},
+        {name: "Boisson sans alcool", icon:"mdi-bottle-soda-classic", array:["Coca-Cola", "Sprite",  "Thé Glacé",  "Fruitopia",  "Eau pétillante"], cost:"2$", extra:"Eau offerte gratuitement sur place", cols:"7"},
+      ],
+      payicon: [
+        {src:require("../../assets/media/vector/coin-vector.svg")},
+        {src:require("../../assets/media/vector/cc-vector.svg")},
+        {src:require("../../assets/media/vector/gpay-vector.svg")},
+        {src:require("../../assets/media/vector/apay-vector.svg")},
+        {src:require("../../assets/media/vector/interac-vector.svg")},
+        {src:require("../../assets/media/vector/pp-vector.svg")}
+      ]
       }
     }
 }

@@ -97,7 +97,7 @@
           <v-img 
           class="ma-6"
           max-width="275"
-          src="../../assets/media/board-game-stack.svg"></v-img>
+          src="../../assets/media/vector/board-game-stack.svg"></v-img>
         </v-row>  
       </v-col>
     </v-row>
@@ -234,9 +234,6 @@
     
 </template>
 <style lang="scss">
-.rotate {
-  transform: rotate(20deg);
-}
 .scrolling-wrapper {
   -webkit-overflow-scrolling: touch;
   display:flex;
@@ -268,14 +265,14 @@ export default {
         {name: "Rock Band & Guitar Hero", time: "03h"},
       ],
       tournament: [
-        {name: "TETRIS", time: "21h", location: "Loundge", vector:require("../../assets/media/tetris-vector.svg")},
-        {name: "SUPER SMASH BROS.", time: "23h", location: "Loundge", vector:require("../../assets/media/ssb-vector.svg")}, //SVG NEEDS FIX
-        {name: "DANCE DANCE REVOLUTION", time: "01h", location: "Scène principale", vector:require("../../assets/media/ddr-vector.svg")}
+        {name: "TETRIS", time: "21h", location: "Loundge", vector:require("../../assets/media/vector/tetris-vector.svg")},
+        {name: "SUPER SMASH BROS.", time: "23h", location: "Loundge", vector:require("../../assets/media/vector/ssb-vector.svg")}, //SVG NEEDS FIX
+        {name: "DANCE DANCE REVOLUTION", time: "01h", location: "Scène principale", vector:require("../../assets/media/vector/ddr-vector.svg")}
       ],
       information: [
-        {name: "COUCH GAMING", vector: require("../../assets/media/sofa-vector.svg") , text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, oluptatum impedit laudantium magni dolores. Natus, in quas."},
-        {name: "HALO REACH & BLACK OPS", vector: require("../../assets/media/military-vector.svg") , text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, oluptatum impedit laudantium magni dolores. Natus, in quas."},
-        {name: "BAR", vector: require("../../assets/media/beer-vector.svg") , text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, oluptatum impedit laudantium magni dolores. Natus, in quas."}
+        {name: "COUCH GAMING", vector: require("../../assets/media/vector/sofa-vector.svg") , text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, oluptatum impedit laudantium magni dolores. Natus, in quas."},
+        {name: "HALO REACH & BLACK OPS", vector: require("../../assets/media/vector/military-vector.svg") , text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, oluptatum impedit laudantium magni dolores. Natus, in quas."},
+        {name: "BAR", vector: require("../../assets/media/vector/beer-vector.svg") , text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, oluptatum impedit laudantium magni dolores. Natus, in quas."}
       ],
       price: [
         {name: "Coût d'entrée", icon:"mdi-ticket", cost:"25$", cols:"6"},
@@ -283,12 +280,12 @@ export default {
         {name: "Boisson sans alcool", icon:"mdi-bottle-soda-classic", array:["Coca-Cola", "Sprite",  "Thé Glacé",  "Fruitopia",  "Eau pétillante"], cost:"2$", extra:"Eau offerte gratuitement sur place", cols:"7"},
       ],
       payicon: [
-        {src:require("../../assets/media/coin-vector.svg")},
-        {src:require("../../assets/media/cc-vector.svg")},
-        {src:require("../../assets/media/gpay-vector.svg")},
-        {src:require("../../assets/media/apay-vector.svg")},
-        {src:require("../../assets/media/interac-vector.svg")},
-        {src:require("../../assets/media/pp-vector.svg")}
+        {src:require("../../assets/media/vector/coin-vector.svg")},
+        {src:require("../../assets/media/vector/cc-vector.svg")},
+        {src:require("../../assets/media/vector/gpay-vector.svg")},
+        {src:require("../../assets/media/vector/apay-vector.svg")},
+        {src:require("../../assets/media/vector/interac-vector.svg")},
+        {src:require("../../assets/media/vector/pp-vector.svg")}
       ]
     }
   }
