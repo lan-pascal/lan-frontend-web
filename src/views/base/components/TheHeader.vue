@@ -11,12 +11,10 @@
             </v-btn>
             
             <v-spacer> </v-spacer>
-        <v-spacer/>
---> 
-        <v-col class="d-none d-md-flex justify-end">
-          <v-btn class="accent title mx-1 mx-sm-2" v-bind="size">Tarifs</v-btn>
-        </v-col>
-   
+            
+            <v-btn :to="{name:'pricing'}" class="accent hidden-sm-and-down">
+                Billets
+            </v-btn>
 
             <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         </v-app-bar>
