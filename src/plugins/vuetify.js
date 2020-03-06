@@ -43,7 +43,7 @@ export default new Vuetify({
               darken1: "#8f8f8f"
             },
             accent: {
-              base: "#e86423"
+              base: "#6772e5"
             } 
           },
         }
