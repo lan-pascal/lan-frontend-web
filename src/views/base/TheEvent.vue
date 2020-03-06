@@ -17,7 +17,7 @@
       align-self="center">
       <v-col>
         <v-row justify="center">
-          <h1 class="display-1">Le QdN, c'est quoi<span class="accent--text rotate">?</span></h1>
+          <h1 class="display-1">Le QdN, c'est quoi<div class="accent--text rotate">?</div></h1>
         </v-row>
         <v-row class="pa-2">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
