@@ -3,7 +3,7 @@
         <v-row class="fullscreen ml-0" align="center" >
             <v-col align="center">
                 <v-img  class="my-0" :src="require('@/assets/logo/LogoWhiteFillEmptyBtns.svg')" contain width="100%" aspect-ratio="1.5" max-width="600px" min-width=275px />
-                <div class="display-4 font-weight-bold"><div class="qdn-top">QUART DE NUIT</div> <div class="accent--text">V</div></div>
+                <div class="display-4 font-weight-bold"><div class="qdn-top">QUART DE NUIT</div> <div class="accent--text qdn-behind">V</div></div>
                 <CountdownZwip :deadline="deadline"/>
             </v-col>
         </v-row>
@@ -145,14 +145,14 @@
 
 .qdn-top{
   position: relative;
+  z-index: 4;
   bottom: -30px;
 }
 
 .qdn-behind{
   position: relative;
-  top: -15px;
-  transform: rotate(4deg);
-  border: thick solid var(--v-primary-base);
+  top: -65px;
+  font-size:200px;
   width: fit-content;
 }
 </style>
