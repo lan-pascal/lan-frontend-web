@@ -1,42 +1,66 @@
 <template>
-  <div class="justify-center ">
+  <div class="justify-center width">
 <!-- EVENT HEADER -->
-    <v-row class=" pa-4">
+    <v-row class="justify-center ma-md-6 pa-2 pa-md-4"
+    max-width="800">
       <v-img 
       src="../../assets/logo/QDN2020_Artwork.png"
-      width="450"
       contain
       ></v-img>
-      <h2 class="accent--text mt-6 text-right">Ouverture des portes dès 20h</h2>
     </v-row>
+    <v-row justify="end"><h2 class="accent--text mt-6 text-right">Ouverture des portes dès 20h</h2></v-row>
 <!-- QdN c'est quoi? -->
-    <v-row class=" pa-4">
+    <v-row class="pa-4">
+      <v-col
+      cols=12
+      md=6
+      align-self="center">
       <v-col>
-        <v-row>
+        <v-row justify="center">
           <h1 class="display-1">Le QdN, c'est quoi<span class="accent--text rotate">?</span></h1>
         </v-row>
-        <v-row>
+        <v-row class="pa-2">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
+          voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
+          voluptatum impedit laudantium magni dolores. Natus, in quas.
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
           voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
           voluptatum impedit laudantium magni dolores. Natus, in quas.
         </p>
         </v-row>
       </v-col>
+        
+      </v-col>
+      <v-col
+      cols=6
+      class="d-none d-md-flex">
+      <v-img
+      src="../../assets/media/ppl-game-pic.png">
+
+      </v-img>
+      </v-col>
     </v-row>
 <!-- SCÈNE / LIGNE DU TEMPS -->
     <v-row class=" pa-4">
       <v-col>
-        <v-row>
-        <h1 class="accent--text display-1 ">SCÈNE</h1>
+      
+      </v-col>
+      <v-col
+      cols=12
+      md=6>
+      <v-row justify="center">
+        <h1 class="accent--text display-1 ">HORAIRE DE LA SCÈNE</h1>
       </v-row>
       <v-row>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
+        <p class="pa-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
         voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
         voluptatum impedit laudantium magni dolores. Natus, in quas.
         </p>
       </v-row>
-      </v-col>
-      <v-timeline>
+        <v-timeline
+      class="black">
         <v-timeline-item
         v-for="(activity, index) in schedule"
         :key="index"
@@ -51,21 +75,23 @@
           </div>
         </v-timeline-item>
       </v-timeline>
+      </v-col>
+      
     </v-row>
 <!-- JEUX DE SOCIÉTÉ -->
     <v-row
     class=" pa-4"
     align="center">
       <v-col>
-        <v-row>
+        <v-row justify="center">
           <h1 class="accent--text display-1">JEUX DE SOCIÉTÉ</h1>
         </v-row>
         <v-row>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
-        voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
-        voluptatum impedit laudantium magni dolores. Natus, in quas.
-        </p>
-      </v-row>
+          <p class="pa-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
+          voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
+          voluptatum impedit laudantium magni dolores. Natus, in quas.
+          </p>
+        </v-row>
         <v-row
         justify="center">
           <v-img 
@@ -80,11 +106,11 @@
     class=" pa-4"
     align="center">
        <v-col>
-           <v-row>
+           <v-row justify="center">
              <h1 class="accent--text display-1">TOURNOIS</h1>
            </v-row>
            <v-row>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
+             <p class="pa-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
              voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
              voluptatum impedit laudantium magni dolores. Natus, in quas.
              </p>
@@ -123,17 +149,22 @@
       </v-col>
     </v-row>
 <!-- AUTRES INFOS GÉNÉRAUX (Couch/Halo/Bar) -->
-    <v-row
-    v-for="info in information"
-    :key="info"
-    class=" pa-4"
-    align="center">
-       <v-col xs=12 sm=6 md=4>
-           <v-row>
+    <v-row 
+    wrap
+    justify="space-around">
+       <v-col v-for="info in information"
+        :key="info"
+        class="pa-4"
+        cols=12
+        sm=6
+        md=5
+        
+        >
+           <v-row justify="center">
              <h1 class="accent--text display-1">{{info.name}}</h1>
            </v-row>
            <v-row>
-             <p>
+             <p class="pa-2">
                {{info.text}}
              </p>
            </v-row>
@@ -151,7 +182,6 @@
     class=""
     justify="center">
       <v-card
-      width="320"
       color="black"
       class="ma-2 pa-2">
         <v-row
