@@ -3,10 +3,10 @@ export default [
         path: '/',
         name: 'layout',
         component: () => import('@/views/base/BaseLayout.vue'),
-        redirect: "/home",
+        redirect: {name: "home"},
         children: [
             {
-                path: '/home',
+                path: '/',
                 name: 'home',
                 component: () => import('@/views/base/TheHome.vue')
             },
