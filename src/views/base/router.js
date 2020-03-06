@@ -31,6 +31,11 @@ export default [
                 component: () => import('@/views/base/TheAbout.vue')
             },
             {
+                path: '/pricing',
+                name: 'pricing',
+                component: () => import('@/views/base/ThePricing.vue')
+            },
+            {
                 path: '/privacy_policy',
                 name: 'privacy_policy',
                 component: () => import('@/views/base/ThePrivacyPolicy.vue')

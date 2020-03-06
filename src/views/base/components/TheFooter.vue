@@ -11,6 +11,7 @@
                     v-for="media in medias"
                     :key="media.link"
                     :href="media.link"
+                    target="_blank"
                     class="mx-4"
                     icon
                     >

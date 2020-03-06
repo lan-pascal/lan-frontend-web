@@ -2,8 +2,8 @@
     <div>
         <v-row class="fullscreen ml-0" align="center" >
             <v-col align="center">
-                <v-img  class="mb-12" :src="require('@/assets/logo/LogoWhiteFillEmptyBtns.svg')" contain width="100%" aspect-ratio="4"/>
-                <div class="display-4 font-weight-bold">PROCHAIN LAN</div>
+                <v-img  class="my-0" :src="require('@/assets/logo/LogoWhiteFillEmptyBtns.svg')" contain width="100%" aspect-ratio="1.5" max-width="600px" min-width=275px />
+                <div class="display-4 font-weight-bold"><div class="qdn-top">QDN</div> <div class="accent--text qdn-behind">2020</div></div>
                 <CountdownZwip :deadline="deadline"/>
             </v-col>
         </v-row>
@@ -69,7 +69,7 @@
                     height=50% 
                     frameborder="0" 
                     style="border:0" 
-                    :src="`https://www.google.com/maps/embed/v1/place?key=${map.api_key}&q=${map.location}`">
+                    :src="`https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=${map.coord}&amp;q=${map.location}&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed`">
             </iframe>'
 
             <v-row justify="space-around" align="center" class="ml-0" height="50%">
@@ -142,11 +142,18 @@
   width: 100%;
   height: 30rem;
 }
-h3 {
-  font-weight: 400;
+
+.qdn-top{
+  position: relative;
+  bottom: -30px;
 }
-.bold {
-  font-weight: bold;
+
+.qdn-behind{
+  position: relative;
+  top: -15px;
+  transform: rotate(4deg);
+  border: thick solid var(--v-accent-base);
+  width: fit-content;
 }
 </style>
 
@@ -330,6 +337,7 @@ export default {
             ],
             center : {lat:45.550500, lng:-73.553563},
             markers : [{position : {lat:45.550500, lng:-73.553563}}], */
+            coord: "45.550500,-73.553563",
             api_key: "AIzaSyBdHhJCXc_-ygexFUz3D4hryzbUYMVsRQk",
             location: "College+de+maisonneuve,Montreal+QC+Canada",
         },
