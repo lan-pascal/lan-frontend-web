@@ -19,7 +19,7 @@
                                 <v-divider/>
                                 <v-card-text><v-text-field class="text-right" suffix="x" label="Nombre de billets" placeholder=2 :rules="[rules.number, rules.maximum]" width=30px height=30px></v-text-field>Billet d'entrée générale</v-card-text>
 
-                                <v-card-actions class="justify-center"><v-btn class="accent">Acheter</v-btn></v-card-actions>
+                                <v-card-actions class="justify-center"><v-btn class="primary">Acheter</v-btn></v-card-actions>
                         </v-card>
                     </v-col>
                 </v-row>

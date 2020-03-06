@@ -2,7 +2,7 @@
     <v-col>
         <v-row>
             <v-col align=center justify=center>
-                <h1 class="display-3 accent--text">Condition d'utilisation</h1>
+                <h1 class="display-3 primary--text">Condition d'utilisation</h1>
             </v-col>
         </v-row>
         <div class="title">Introduction</div>

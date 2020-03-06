@@ -8,7 +8,7 @@
       contain
       ></v-img>
     </v-row>
-    <v-row justify="end"><h2 class="accent--text mt-6 text-right">Ouverture des portes dès 20h</h2></v-row>
+    <v-row justify="end"><h2 class="primary--text mt-6 text-right">Ouverture des portes dès 20h</h2></v-row>
 <!-- QdN c'est quoi? -->
     <v-row class="pa-4">
       <v-col
@@ -17,7 +17,7 @@
       align-self="center">
       <v-col>
         <v-row justify="center">
-          <h1 class="display-1">Le QdN, c'est quoi<span class="accent--text rotate">?</span></h1>
+          <h1 class="display-1">Le QdN, c'est quoi<span class="primary--text rotate">?</span></h1>
         </v-row>
         <v-row class="pa-2">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
@@ -51,7 +51,7 @@
       cols=12
       md=6>
       <v-row justify="center">
-        <h1 class="accent--text display-1 ">HORAIRE DE LA SCÈNE</h1>
+        <h1 class="primary--text display-1 ">HORAIRE DE LA SCÈNE</h1>
       </v-row>
       <v-row>
         <p class="pa-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
@@ -84,7 +84,7 @@
     align="center">
       <v-col>
         <v-row justify="center">
-          <h1 class="accent--text display-1">JEUX DE SOCIÉTÉ</h1>
+          <h1 class="primary--text display-1">JEUX DE SOCIÉTÉ</h1>
         </v-row>
         <v-row>
           <p class="pa-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
@@ -107,7 +107,7 @@
     align="center">
        <v-col>
            <v-row justify="center">
-             <h1 class="accent--text display-1">TOURNOIS</h1>
+             <h1 class="primary--text display-1">TOURNOIS</h1>
            </v-row>
            <v-row>
              <p class="pa-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
@@ -128,7 +128,7 @@
         color="black"
         class="text-center ma-4 card justify-end">
           <v-card-title
-          class="accent--text justify-center display-1">
+          class="primary--text justify-center display-1">
             {{game.name}}
           </v-card-title>
           <v-row
@@ -142,7 +142,7 @@
             <h2>{{game.time}}</h2>
           </v-card-subtitle>
           <v-card-subtitle
-          class="accent--text">
+          class="primary--text">
             <h2>{{game.location}}</h2>
           </v-card-subtitle>
         </v-card>
@@ -161,7 +161,7 @@
         
         >
            <v-row justify="center">
-             <h1 class="accent--text display-1">{{info.name}}</h1>
+             <h1 class="primary--text display-1">{{info.name}}</h1>
            </v-row>
            <v-row>
              <p class="pa-2">
@@ -187,7 +187,7 @@
         <v-row
         justify="center"
         class="ma-5">
-            <h1 class="display-3 accent--text">PRIX</h1>
+            <h1 class="display-3 primary--text">PRIX</h1>
         </v-row>
         <v-row
         v-for="item in price"
@@ -202,7 +202,7 @@
             </v-col>
             <v-col
             class="text-right">
-              <h3 class="accent--text mr-5">{{item.cost}}</h3>
+              <h3 class="primary--text mr-5">{{item.cost}}</h3>
             </v-col>
             <v-col cols=12>
               <ul>

@@ -2,7 +2,7 @@
     <v-col>
         <v-row>
             <v-col align="center" justify="center">
-                <h1 class="display-3 accent--text">Archive</h1>
+                <h1 class="display-3 primary--text">Archive</h1>
             </v-col>
         </v-row>
 
@@ -41,7 +41,7 @@
                     <span>{{event.date}} - {{event.place}}</span>
                 </template>
                 <v-card class="elevation-2">
-                    <v-card-title class="accent--text">{{event.name}}</v-card-title>
+                    <v-card-title class="primary--text">{{event.name}}</v-card-title>
                     <v-card-text>
                         <span class="d-block">Nombre de participants: {{event.numberParticipants}}</span>
                         <template v-for="(highlight, highlightIndex) in event.highlights">

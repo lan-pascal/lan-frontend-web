@@ -2,7 +2,7 @@
     <div>
         <TheHeader/>
         
-        <v-content class="bg-light-bulb">
+        <v-content class="bg">
             <v-container>
                 <router-view/>
             </v-container>
@@ -26,13 +26,13 @@ export default {
 </script>
 
 <style lang="scss">
-.bg-light-bulb {
+.bg {
   background-attachment: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(circle 1600px at 100% 0,var(--v-primary-darken2) 0%,var(--v-primary-base) 100%);
+  background-image: radial-gradient(circle 1600px at 100% 0,var(--v-grey-base) 0%,var(--v-grey-darken2) 100%);
 }
 </style>

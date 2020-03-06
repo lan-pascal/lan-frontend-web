@@ -3,7 +3,7 @@
         <v-row class="fullscreen ml-0" align="center" >
             <v-col align="center">
                 <v-img  class="my-0" :src="require('@/assets/logo/LogoWhiteFillEmptyBtns.svg')" contain width="100%" aspect-ratio="1.5" max-width="600px" min-width=275px />
-                <div class="display-4 font-weight-bold"><div class="qdn-top">QDN</div> <div class="accent--text qdn-behind">2020</div></div>
+                <div class="display-4 font-weight-bold"><div class="qdn-top">QDN</div> <div class="primary--text qdn-behind">2020</div></div>
                 <CountdownZwip :deadline="deadline"/>
             </v-col>
         </v-row>
@@ -12,7 +12,7 @@
             <v-col cols=12 md=6>
                 <div class="pr-2"> 
                     <v-card flat class="transparent">
-                        <v-card-title class="accent--text"><div class="display-2 font-weight-medium font-italic">C'est quoi le LAN?</div></v-card-title>
+                        <v-card-title class="primary--text"><div class="display-2 font-weight-medium font-italic">C'est quoi le LAN?</div></v-card-title>
                         <v-card-text>
                             <h3>Le LAN c'est un événement biannuel où tu te défoules avec des jeux de toutes les sortes!
                             Accessible à tous (oui, oui, c’est pas un truc nerd-only), une variété d’activités différentes sont offertes.</h3>
@@ -30,7 +30,7 @@
                         
                         <v-btn
                         class="ml-4"
-                        color="accent"
+                        color="primary"
                         route: to="/event">En savoir plus</v-btn>
                     </v-card>
                 </div>
@@ -76,8 +76,8 @@
                 <v-col cols=12 sm=6 md=2>
                     <div class="pl-2">
                         <v-card flat class="transparent" align="center">
-                            <v-icon color="accent" size="75">mdi-map-marker</v-icon>
-                            <v-card-title class="accent--text text-center">C'est où?</v-card-title>
+                            <v-icon color="primary" size="75">mdi-map-marker</v-icon>
+                            <v-card-title class="primary--text text-center">C'est où?</v-card-title>
                             <v-card-text>
                             Cegep de Maisonneuve dans la salle Vivoir {{map.markers}}
                             </v-card-text>
@@ -86,8 +86,8 @@
                 </v-col>
                 <v-col cols=12 sm=6 md=2>
                     <v-card flat class="transparent" align="center">
-                            <v-icon size="75" color="accent">mdi-seat</v-icon>
-                            <v-card-title class="accent--text">100 Places</v-card-title>
+                            <v-icon size="75" color="primary">mdi-seat</v-icon>
+                            <v-card-title class="primary--text">100 Places</v-card-title>
                             
                             <v-card-text>
                             </v-card-text>
@@ -95,8 +95,8 @@
                 </v-col>
                 <v-col cols=12 sm=6 md=2>
                     <v-card flat class="transparent" align="center">
-                            <v-icon size="75" color="accent">mdi-clock</v-icon>
-                            <v-card-title class="accent--text">20h à 3h</v-card-title>
+                            <v-icon size="75" color="primary">mdi-clock</v-icon>
+                            <v-card-title class="primary--text">20h à 3h</v-card-title>
                             <v-card-text>
                                 Fermeture des portes à 22h
                             </v-card-text>
@@ -104,9 +104,9 @@
                 </v-col>
                 <v-col cols=12 sm=6 md=2>
                     <v-card flat class="transparent" align="center">
-                            <v-icon size="75" color="accent">mdi-cash-usd</v-icon>
-                            <v-card-title class="accent--text">25$</v-card-title>
-                            <v-btn color="accent">Payer en Ligne</v-btn>
+                            <v-icon size="75" color="primary">mdi-cash-usd</v-icon>
+                            <v-card-title class="primary--text">25$</v-card-title>
+                            <v-btn color="primary">Payer en Ligne</v-btn>
                         </v-card>
                 </v-col>
             </v-row>
@@ -117,7 +117,7 @@
             <v-col cols=12 md=6>
                 <div class="pr-2"> 
                     <v-card flat class="transparent">
-                        <v-card-title class="accent--text display-2 font-weight-medium font-italic">Activités</v-card-title>
+                        <v-card-title class="primary--text display-2 font-weight-medium font-italic">Activités</v-card-title>
                         <v-card-text>
                             Au menu : karaoke, jeux de société animés par des employés de Randolph, 
                             tournois de Dance Dance Revolution, Super Smash Bros. Ultimate & Tetris, 
@@ -126,12 +126,12 @@
                         </v-card-text>
                         <v-btn
                         class="ml-4"
-                        color="accent">Liste des activités</v-btn>
+                        color="primary">Liste des activités</v-btn>
                     </v-card>
                 </div>
             </v-col>
             <v-col class="hidden-sm-and-down" cols=2 >
-                <v-icon size = "100" class="accent--text text--lighten-2 pr-12">mdi-gamepad-circle </v-icon>
+                <v-icon size = "100" class="primary--text text--lighten-2 pr-12">mdi-gamepad-circle </v-icon>
             </v-col>
         </v-row>
     </div>
@@ -152,7 +152,7 @@
   position: relative;
   top: -15px;
   transform: rotate(4deg);
-  border: thick solid var(--v-accent-base);
+  border: thick solid var(--v-primary-base);
   width: fit-content;
 }
 </style>
