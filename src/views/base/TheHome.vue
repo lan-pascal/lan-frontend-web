@@ -125,6 +125,7 @@
                <v-row>
                  <p class="pa-2">Deux tournois se présenteront à cette 5e édition : un tournoi 2v2 de Super Smash Bros. (le 5e!)
                    et un tournoi de Tetris 1v1 (le 2e!). Les finales auront lieu sur le grand écran de la scène. Des prix seront remis aux gagnants.
+                   Pour vous inscrire aux tournois, vous recevrez un courriel quelques jours avant le Quart si vous avez votre billet.
                  </p>
              </v-row>
            </v-col>
