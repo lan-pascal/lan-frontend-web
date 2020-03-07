@@ -1,13 +1,25 @@
 <template>
-    <v-col>
-        <v-row align=center class="fullscreen">
-          <v-col class="pr-12" cols=12 md=8>
-            <div class="display-3 primary--text">À propos</div>
-            <div class="headline font"><br>Nous sommes un regroupement de personnes motivé à créer des événements, nommés <i>Quart de nuit</i>, qui incorporent diverse facettes du geek-culture et les rendent accessibles à tous. 
-            <br><br>Notre mission est, qu'à chaque <i>Quart de nuit</i>, tout le monde se sente à sa place, tout en gardant la nature geek du <i>Quart</i> qui le rend si unique.
-            <br><br><i>Les Quarts de nuits</i> vont souvent incorporer jeux vidéo, jeux de société, trivia, bar et karaoke. Il y en a, en général, deux par année. Le premier <i>Quart de nuit</i> date de janvier 2018 et comportait seulement 24 personnes!</div>
-          </v-col>
-        </v-row>
+  <v-col>
+    <v-row align="center" class="fullscreen">
+      <v-col class="pr-12" cols="12" md="8">
+        <div class="display-3 primary--text">À propos</div>
+        <div class="headline font">
+          <p>
+            Nous sommes un regroupement de personnes motivé à créer des événements, nommés
+            <i>Quart de nuit</i>, qui incorporent diverse facettes du geek-culture et les rendent accessibles à tous.
+          </p>
+          <p>
+            Notre mission est, qu'à chaque
+            <i>Quart de nuit</i>, tout le monde se sente à sa place, tout en gardant la nature geek du
+            <i>Quart</i> qui le rend si unique.
+          </p>
+          <p>
+            <i>Les Quarts de nuits</i> vont souvent incorporer jeux vidéo, jeux de société, trivia, bar et karaoke. Il y en a, en général, deux par année. Le premier
+            <i>Quart de nuit</i> date de janvier 2018 et comportait seulement 24 personnes!
+          </p>
+        </div>
+      </v-col>
+    </v-row>
 
         <v-row>
             <span class="pa-5 d-block text--primary">Équipe</span>
