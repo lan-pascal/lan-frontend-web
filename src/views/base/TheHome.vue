@@ -15,7 +15,7 @@
           align-self="center">
           <v-col>
             <v-row justify="center">
-              <h1 class="display-1">Le Quart de Nuit, c'est quoi<span class="display-2 primary--text">?</span></h1>
+              <h1 class="display-1">Le Quart de Nuit, c'est quoi<span class="display-2 fix accent--text">?</span></h1>
             </v-row>
             <v-row class="pa-2">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
@@ -41,7 +41,8 @@
           </v-col>
         </v-row>
         <v-row>
-          <v-col
+          
+            <v-col
           v-for="info in quickinfo"
           :key="info"
           align="center"
@@ -51,6 +52,7 @@
             <h2>{{info.name}}</h2>
             <p>{{info.desc}}</p>
           </v-col>
+          
         </v-row>
     <!-- SCÈNE / LIGNE DU TEMPS -->
         <v-row class=" pa-4">
@@ -61,21 +63,23 @@
           cols=12
           md=6>
             <v-row justify="center">
-              <h1 class="primary--text display-1">HORAIRE DE LA SCÈNE</h1>
+              <h1 class="fix accent--text display-1">HORAIRE DE LA SCÈNE</h1>
             </v-row>
-            <v-row>
+            <v-row
+            class="ma-0 ma-md-2">
               <p class="pa-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
               voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
               voluptatum impedit laudantium magni dolores. Natus, in quas.
               </p>
             </v-row>
             <v-timeline
-            class="black">
+            >
               <v-timeline-item
               v-for="(activity, index) in schedule"
               :key="index"
               small
-              right>
+              right
+              :color="activity.color">
                 <template v-slot:opposite>
                   <h3
                   v-text="activity.time"></h3>
@@ -92,9 +96,11 @@
         <v-row
         class=" pa-4"
         align="center">
-          <v-col>
+          <v-col
+          cols=12
+          md=6>
             <v-row justify="center">
-              <h1 class="primary--text display-1">JEUX DE SOCIÉTÉ</h1>
+              <h1 class="fix accent--text display-1">JEUX DE SOCIÉTÉ</h1>
             </v-row>
             <v-row>
               <p class="pa-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
@@ -117,7 +123,7 @@
         align="center">
            <v-col>
                <v-row justify="center">
-                 <h1 class="primary--text display-1">TOURNOIS</h1>
+                 <h1 class="fix accent--text display-1">TOURNOIS</h1>
                </v-row>
                <v-row>
                  <p class="pa-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
@@ -138,7 +144,7 @@
             color="black"
             class="text-center ma-4 card justify-end">
               <v-card-title
-              class="primary--text justify-center display-1">
+              class="fix accent--text justify-center display-1">
                 {{game.name}}
               </v-card-title>
               <v-row
@@ -152,7 +158,7 @@
                 <h2>{{game.time}}</h2>
               </v-card-subtitle>
               <v-card-subtitle
-              class="primary--text">
+              class="fix accent--text">
                 <h2>{{game.location}}</h2>
               </v-card-subtitle>
             </v-card>
@@ -171,7 +177,7 @@
 
             >
                <v-row justify="center">
-                 <h1 class="primary--text display-1">{{info.name}}</h1>
+                 <h1 class="fix accent--text display-1">{{info.name}}</h1>
                </v-row>
                <v-row>
                  <p class="pa-2">
@@ -245,14 +251,14 @@ export default {
         ],
         deadline : "2020/04/09 20:00:00",
         schedule: [
-        {name: "Rock Band & Guitar Hero", time: "20h"},
-        {name: "Trivia Quiz", time: "21h"},
-        {name: "", time: ""},
-        {name: "Karaoke", time: "23h"},
-        {name: "", time: ""},
-        {name: "Tournois de Dance Dance Revolution", time: "01h"},
-        {name: "", time: ""},
-        {name: "Rock Band & Guitar Hero", time: "03h"},
+        {name: "Rock Band & Guitar Hero", time: "20h", color: "accent"},
+        {name: "Trivia Quiz", time: "21h", color: "accent"},
+        {name: "", time: "", color: "grey"},
+        {name: "Karaoke", time: "23h", color: "accent"},
+        {name: "", time: "", color: "grey"},
+        {name: "Tournois de Dance Dance Revolution", time: "01h", color: "accent"},
+        {name: "", time: "", color:"grey"},
+        {name: "Rock Band & Guitar Hero", time: "03h", color: "accent"},
       ],
       tournament: [
         {name: "TETRIS", time: "21h", location: "Loundge", vector:require("../../assets/media/vector/tetris-vector.svg")},
