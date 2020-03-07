@@ -235,6 +235,7 @@ export default {
   },
   data () {
       return {
+        deadline : "2020/04/09 20:00:00",
         quickinfo: [
           {name: "Collège de Maisonneuve", desc: "Salle Vivoir, 3800 boul. Pie-IX, Montréal", icon:"mdi-map-marker"},
           {name: "150 places", desc: "Tu peux inviter tes amis!", icon:"mdi-seat"},
@@ -242,7 +243,6 @@ export default {
           {name: "Seulement 25$", desc: "PAYER EN LIGNE", icon:"mdi-currency-usd"}
 
         ],
-        deadline : "2020/04/09 20:00:00",
         schedule: [
         {name: "Rock Band & Guitar Hero", time: "20h"},
         {name: "Trivia Quiz", time: "21h"},
@@ -262,19 +262,6 @@ export default {
         {name: "COUCH GAMING", vector: require("@/assets/media/vector/sofa-vector.svg") , text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, oluptatum impedit laudantium magni dolores. Natus, in quas."},
         {name: "HALO REACH & BLACK OPS", vector: require("@/assets/media/vector/military-vector.svg") , text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, oluptatum impedit laudantium magni dolores. Natus, in quas."},
         {name: "BAR", vector: require("@/assets/media/vector/beer-vector.svg") , text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, oluptatum impedit laudantium magni dolores. Natus, in quas."}
-      ],
-      price: [
-        {name: "Coût d'entrée", icon:"mdi-ticket", cost:"25$", cols:"6"},
-        {name: "Boisson", icon:"mdi-glass-cocktail", cost:"1 pour 3$ | 2 pour 5$", array: [ "Corona Extra","Coors Light","Stella Artois", "Pepito Sangria", "Palm Bay", "Shot de vodka", "Shot de Tequila"], extra:"Les shots sont aussi offerts à 10 pour 20$", cols:"4"},
-        {name: "Boisson sans alcool", icon:"mdi-bottle-soda-classic", array:["Coca-Cola", "Sprite",  "Thé Glacé",  "Fruitopia",  "Eau pétillante"], cost:"2$", extra:"Eau offerte gratuitement sur place", cols:"7"},
-      ],
-      payicon: [
-        {src:require("@/assets/media/vector/coin-vector.svg")},
-        {src:require("@/assets/media/vector/cc-vector.svg")},
-        {src:require("@/assets/media/vector/gpay-vector.svg")},
-        {src:require("@/assets/media/vector/apay-vector.svg")},
-        {src:require("@/assets/media/vector/interac-vector.svg")},
-        {src:require("@/assets/media/vector/pp-vector.svg")}
       ]
       }
     }
