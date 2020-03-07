@@ -41,7 +41,8 @@
           </v-col>
         </v-row>
         <v-row>
-          <v-col
+          
+            <v-col
           v-for="info in quickinfo"
           :key="info"
           align="center"
@@ -51,6 +52,7 @@
             <h2>{{info.name}}</h2>
             <p>{{info.desc}}</p>
           </v-col>
+          
         </v-row>
     <!-- SCÈNE / LIGNE DU TEMPS -->
         <v-row class=" pa-4">
@@ -61,19 +63,20 @@
           cols=12
           md=6>
             <v-row justify="center">
-              <h1 class="primary--text display-1">HORAIRE DE LA SCÈNE</h1>
+              <h1 class="fix accent--text display-1">HORAIRE DE LA SCÈNE</h1>
             </v-row>
             <v-row>
-              <p class="pa-2">Une scène sera présente tout le long de la soirée. Avec son écran-projecteur, diverses activités se tiendront sur celle-ci.
+              <p class="ma-0 ma-md-2 pa-2">Une scène sera présente tout le long de la soirée. Avec son écran-projecteur, diverses activités se tiendront sur celle-ci.
               </p>
             </v-row>
             <v-timeline
-            class="black">
+            >
               <v-timeline-item
               v-for="(activity, index) in schedule"
               :key="index"
               small
-              right>
+              right
+              :color="activity.color">
                 <template v-slot:opposite>
                   <h3
                   v-text="activity.time"></h3>
@@ -90,9 +93,11 @@
         <v-row
         class=" pa-4"
         align="center">
-          <v-col>
+          <v-col
+          cols=12
+          md=6>
             <v-row justify="center">
-              <h1 class="primary--text display-1">JEUX DE SOCIÉTÉ</h1>
+              <h1 class="fix accent--text display-1">JEUX DE SOCIÉTÉ</h1>
             </v-row>
             <v-row>
               <p class="pa-2">Plusieurs jeux de société seront disponibles tout au long de la soirée. 
@@ -115,7 +120,7 @@
         align="center">
            <v-col>
                <v-row justify="center">
-                 <h1 class="primary--text display-1">TOURNOIS</h1>
+                 <h1 class="fix accent--text display-1">TOURNOIS</h1>
                </v-row>
                <v-row>
                  <p class="pa-2">Deux tournois se présenteront à cette 5e édition : un tournoi 2v2 de Super Smash Bros. (le 5e!)
@@ -135,7 +140,7 @@
             color="black"
             class="text-center ma-4 card justify-end">
               <v-card-title
-              class="primary--text justify-center display-1">
+              class="fix accent--text justify-center display-1">
                 {{game.name}}
               </v-card-title>
               <v-row
@@ -168,7 +173,7 @@
 
             >
                <v-row justify="center">
-                 <h1 class="primary--text display-1">{{info.name}}</h1>
+                 <h1 class="fix accent--text display-1">{{info.name}}</h1>
                </v-row>
                <v-row>
                  <p class="pa-2">
@@ -237,14 +242,14 @@ export default {
 
         ],
         schedule: [
-        {name: "Rock Band & Guitar Hero", time: "20h"},
-        {name: "Trivia Quiz", time: "21h"},
-        {name: "", time: ""},
-        {name: "Karaoke", time: "23h"},
-        {name: "", time: ""},
-        {name: "Tournois de Dance Dance Revolution", time: "01h"},
-        {name: "", time: ""},
-        {name: "Rock Band & Guitar Hero", time: "03h"},
+        {name: "Rock Band & Guitar Hero", time: "20h", color: "accent"},
+        {name: "Trivia Quiz", time: "21h", color: "accent"},
+        {name: "", time: "", color: "grey"},
+        {name: "Karaoke", time: "23h", color: "accent"},
+        {name: "", time: "", color: "grey"},
+        {name: "Tournois de Dance Dance Revolution", time: "01h", color: "accent"},
+        {name: "", time: "", color:"grey"},
+        {name: "Rock Band & Guitar Hero", time: "03h", color: "accent"},
       ],
       tournament: [
         {name: "TETRIS", time: "21h", location: "Loundge", vector: require("@/assets/media/vector/tetris-vector.svg")},

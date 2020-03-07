@@ -16,10 +16,13 @@ $body-font-family: 'Source Sans Pro', sans-serif;
 //Custom
 @import "components/_all.scss";
 
-//The Event
+//The_Home Timeline
 $timeline-divider-center: 33% !default;
-
+$timeline-item-padding: 0px !default;
+$timeline-dot-small-size: 0px !default;
+$timeline-inner-dot-small-size:12px !default;
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Teko', sans-serif;
 }
+
