@@ -131,8 +131,8 @@
             <v-card
             v-for="(game, index) in tournament"
             :key="index"
-            width="225"
-            height="325"
+            width=300px
+            height=270px
             tile
             color="black"
             class="text-center ma-4 card justify-end">
@@ -150,10 +150,10 @@
               <v-card-subtitle>
                 <h2>{{game.time}}</h2>
               </v-card-subtitle>
-              <v-card-subtitle
+              <v-card-text
               class="primary--text">
                 <h2>{{game.location}}</h2>
-              </v-card-subtitle>
+              </v-card-text>
             </v-card>
           </v-col>
         </v-row>
@@ -227,11 +227,6 @@ export default {
   name: "TheHome",
   components: {
     CountdownZwip
-  },
-  mounted() {
-    this.$refs.mapRef.$mapPromise.then((map) => {
-      map.panTo(this.map.center)
-    })
   },
   data () {
       return {
