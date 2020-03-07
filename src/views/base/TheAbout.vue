@@ -21,7 +21,23 @@
       </v-col>
     </v-row>
 
-        <v-row>
+    <v-row>
+      <v-card justify="center" justify-md="start" class="transparent">
+        <v-card-title class="title">Pour nous contacter</v-card-title>
+        <v-card-text>Vous pouvez nous rejoindre sur les réseaux suivants:</v-card-text>
+        <v-btn
+          v-for="media in medias"
+          :key="media.link"
+          :href="media.link"
+          target="_blank"
+          class="mx-4"
+          icon
+        >
+          <v-icon size="24px">{{ media.icon }}</v-icon>
+        </v-btn>
+      </v-card>
+    </v-row>
+
     <v-row>
       <div class="title text--primary p">Équipe</div>
       <v-row justify="center" justify-md="start">
@@ -51,6 +67,7 @@
         </v-col>
       </v-row>
     </v-row>
+  </v-col>
 </template>
 
 <script>
@@ -115,7 +132,8 @@ export default {
         {
           name: "Alex",
           title: "Bénévole",
-          description: "Aide depuis le début. Dort encore moins que Karl-Étienne."
+          description:
+            "Aide depuis le début. Dort encore moins que Karl-Étienne."
         },
         {
           name: "Étienne",
@@ -125,7 +143,8 @@ export default {
         {
           name: "Arnaud",
           title: "Bénévole",
-          description: "Bénévole depuis le début. Oublie de s'occuper de son tournoi."
+          description:
+            "Bénévole depuis le début. Oublie de s'occuper de son tournoi."
         },
         {
           name: "Leon",
@@ -136,8 +155,14 @@ export default {
           name: "Sacha",
           title: "Photographe",
           description: "Prends de très jolies photos."
-        },
-      ]
+        }
+      ],
+      medias: [
+            {icon: "mdi-email", link: "mailto:quartdenuitmtl@gmail.com"},
+            {icon: "mdi-instagram", link: "https://www.instagram.com/quartdenuit/"},
+            {icon: "mdi-twitter", link: "https://twitter.com/quartdenuit"},
+            {icon: "mdi-facebook", link: "facebook"}
+        ],
     };
   }
 };
