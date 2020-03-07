@@ -15,9 +15,11 @@
                 <v-col v-for="(teammate, teammateIndex) in team" :key="teammateIndex" cols=10 sm=5 md=4 lg=3>
                     <v-card height="100%" width=250px class="mx-auto text-center">
                         <v-row justify="center">
-                            <v-avatar color="secondary" size="128" class="mt-5" :src="teammate.picture"></v-avatar>
+                            <v-avatar color="secondary" size="128" class="mt-5">
+                              <v-img :src="retrieveAssetByTeamName(teammate.name)"/>
+                            </v-avatar>
                         </v-row>
-                        <v-card-title><v-col>{{teammate.name}}</v-col></v-card-title> <!-- Seems like a bug. The Name should be at the center. -->
+                        <v-card-title><v-col>{{teammate.name}} </v-col></v-card-title> <!-- Seems like a bug. The Name should be at the center. -->
 
                         <v-card-subtitle>{{teammate.title}}</v-card-subtitle>
 
@@ -33,12 +35,22 @@
 export default {
   name: "about",
   components: {},
+  methods: {
+    retrieveAssetByTeamName(name){
+      try {
+        let teamAsset = require(`@/assets/media/team/${name.toLowerCase()}.jpg`);
+        return teamAsset
+      } catch(e){
+        return this.defaultPic
+      }
+    }
+  },
   data() {
     return {
+      defaultPic: require('@/assets/media/team/nopic.jpg'),
       team: [
         {
           name: "Pascal",
-          picture: "",
           title: "Créateur du Quart de nuit",
           description:
             ""
