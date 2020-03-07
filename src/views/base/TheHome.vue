@@ -242,14 +242,12 @@ export default {
 
         ],
         schedule: [
-        {name: "Rock Band & Guitar Hero", time: "20h", color: "accent"},
-        {name: "Trivia Quiz", time: "21h", color: "accent"},
+        {name: "Dance Dance Revolution & Just Dance", time: "20h", color: "accent"},
+        {name: "Trivia Quiz", time: "22h", color: "accent"},
         {name: "", time: "", color: "grey"},
-        {name: "Karaoke", time: "23h", color: "accent"},
+        {name: "Karaoke", time: "00h", color: "accent"},
         {name: "", time: "", color: "grey"},
-        {name: "Tournois de Dance Dance Revolution", time: "01h", color: "accent"},
-        {name: "", time: "", color:"grey"},
-        {name: "Rock Band & Guitar Hero", time: "03h", color: "accent"},
+        {name: "Rock Band & Guitar Hero", time: "02h", color: "accent"},
       ],
       tournament: [
         {name: "TETRIS", time: "21h", location: "Loundge", vector: require("@/assets/media/vector/tetris-vector.svg")},
