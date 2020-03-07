@@ -94,6 +94,96 @@
         <p> Il n’y a pas de garantie de résolution, mais chaque cas sera inspecté individuellement. </p>
 
         <i>Dernières modifications de ce document le 3 mars 2020.</i>
+
+        <v-row>
+            <v-col align=center justify=center>
+                <h1 class="display-3 primary--text"><br>Terms of Use</h1>
+            </v-col>
+        </v-row>
+
+        <div class="title">Introduction</div>
+
+        <p> This document presents your legal obligations and the conditions required for the use of the website quartdenuit.com (now the Site).</p>
+
+        <p>By using or visiting the Site in any way possible, you accept those Terms of Service.</p> 
+
+        <h5 class="title">Intellectual Property</h5>
+
+        <p>The Site and all its original content is the property of Quart de nuit.</p>
+
+        <div class="title">Termination</div>   
+
+        <p> Quart de nuit reserves the right to terminate your use of the Site if you do not respect the Terms of Service. </p>
+
+        <div class="title">Links to Other Websites</div>
+
+        <p> The Site contains numerous links directing to external websites or online resources that are not the property and are not controlled by Quart de nuit.</p>
+
+        <p> Quart de nuit has not control over those sites and therefore cannot be accounted 
+            responsible for the content and practices of those third-party sites/services. 
+            We strongly advice you ton read the Terms of Service and the Privacy Policies of those sites/services.
+        
+        <ul>
+            <li> Terms of Service for Stripe: 
+                <a href="https://stripe.com/en-ca/checkout/legal">https://stripe.com/en-ca/checkout/legal</a>
+            </li>
+
+            <li> Privacy Policy for Stripe: 
+                <a href="https://stripe.com/en-ca/privacy">https://stripe.com/en-ca/privacy</a>
+            </li>
+
+            <li> Terms of Service for Google Maps:
+                <a href="https://www.google.com/help/terms_maps/">https://www.google.com/help/terms_maps/</a>
+            </li>
+        
+            <li>Privacy Policy and Terms of Service for Google (for using Google Maps): 
+                <a href="https://policies.google.com/privacy?hl=en-ca">https://policies.google.com/privacy?hl=en-ca</a> 
+            </li>
+
+        </ul>
+
+        
+        <div class="title">Payment</div>
+        <p>All payments are due upon receipt. If a payment is not received or the method of payment is declined, the buyer 
+            forfeits the ownership of any items purchased. If a payment is not received, no items will be shipped.</p>
+
+        <div class="title">Refund/Return Policy</div>
+        <p> Items are entitled to be refunded or returned based on complaint. The complaint must be valid, meaning the item does not
+             respect the description given by the seller and the buyer is not satisfied. In this case, Quart 
+             de nuit is entitled to reimburse the seller. All other reasons must be shared with
+              Quart de nuit by e-mail (<a href="mailto:quartdenuitmtl@gmail.com">quartdenuitmtl@gmail.com</a>).  Quart de nuit has no
+               obligation to accept those demands. </p>
+
+        
+        <div class="title">Cancellation</div>
+        <p>
+        An item may be cancelled up until payment has been processed. Once payment has been processed, the buyer is responsible for payment.
+        </p>
+
+        <div class="title">Governing Laws</div>
+        <p>
+        This Agreement is governed in accordance with the laws of the province of Quebec (Canada).
+        </p>
+
+        <div class="title">Changes to This Agreement</div>
+
+        <p>Quart de nuit reserves the right to modify these Terms of Service at 
+            any time. Those are updated on our Site upon modification. By continuing using our Site, you consent to those changes.</p>
+
+        <p>Therefore, we ask that you check et review the Terms of Service on an occasional 
+            basis for any changes. Should you not agree to any provision of this Agreement or any
+             changes Quart de nuit makes to this Agreement, we ask and advise that you do not use or 
+             continue to access our Site immediately.</p>
+
+        <div class="title">Contact us/Complaints</div>
+
+        <p> If you have any questions, comments or a complaint, do not hesitate to contact us at 
+        <a href="mailto:quartdenuitmtl@gmail.com">quartdenuitmtl@gmail.com</a> </p>
+
+        <p> There is not guarantee of a resolution but each case will be looked at individually.</p>
+
+        <i>Last modification of this document March 3rd, 2020.</i>
+
     </v-col>
 </template>
 
