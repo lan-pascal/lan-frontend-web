@@ -3,7 +3,15 @@
         <v-row align=center class="fullscreen">
             <v-col class="pr-12" cols=12 md=8>
                 <div class="display-3">Billets</div>
-                <div class="headline"><i>Nous vous présentons les nombreuses options disponibles afin d'assister à l'événement Quart de Nuit.</i></div>
+                <div class="headline">Ici, vous avez la possibilité d'acheter votre billet pour le Quart de nuit V ainsi que consulter les tarifs pour le bar.
+                    <p><br>Où : Au Collège de Maisonneuve dans la salle Vivoir (3800 boul. Pie-IX, Montréal) (proche de station Pie-IX)<br>
+                        Combien : 20,00 $ pour les 50 premiers billets vendus. Ensuite, le prix monte à 25,00 $!<br>
+                        Quand? : le jeudi 9 avril 2020 de 20h00 à 3h00 (à noter qu'il y aura fermeture des portes à 22h00) (aussi noter que le vendredi et lundis sont fériés pour Pâques)<br>
+                        Quoi? : voir la page d'accueil pour ces informations.
+              
+            </p>
+            <p><br>Voici les tarifs pour le bar.
+            </p></div>
             </v-col>
         </v-row>
 
