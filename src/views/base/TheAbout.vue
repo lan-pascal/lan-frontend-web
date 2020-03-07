@@ -90,71 +90,106 @@ export default {
       team: [
         {
           name: "Pascal",
-          title: "Créateur du Quart de nuit",
+          title: "Fondateur & organisateur du Quart de nuit",
           description: ""
         },
         {
           name: "Karl-Étienne",
-          title: "Développeur web & bénévole",
+          title: "Développeur web en chef & assistant-technique",
           description:
-            "Créateur du site web. Bénévole depuis le début. Ne dort pas beaucoup."
+            "Fondateur du site web. Aide bénévolement depuis le début. Ne dort pas beaucoup."
         },
         {
           name: "Stephen",
-          title: "Développeur web & bénévole",
-          description: "Aide avec le site web. Bénévole depuis le début."
+          title: "Développeur web & assistant-technique",
+          description: "Aide bénévolement depuis le début."
         },
         {
           name: "Nicolas",
-          title: "Développeur web",
+          title: "Designer web",
           description: "Maître de l'esthétique du site."
         },
         {
           name: "Simon",
-          title: "Bénévole",
-          description: "Aide depuis Quart de nuit 3. Épicerie du Quart de nuit."
+          title: "Assistant-technique",
+          description: "Aide bénévolement depuis Quart de nuit III. Épicerie du Quart de nuit."
         },
         {
           name: "Lianne",
-          title: "Bénévole",
-          description: "Aide depuis Quart de nuit 4. Épicerie du Quart de nuit."
-        },
-        {
-          name: "Ayman",
-          title: "Bénévole",
-          description: "Bénévole depuis le début. Très très enthousiaste."
-        },
-        {
-          name: "Kevin",
-          title: "Bénévole",
-          description: "Aide depuis le début."
-        },
-        {
-          name: "Alex",
-          title: "Bénévole",
-          description:
-            "Aide depuis le début. Dort encore moins que Karl-Étienne."
-        },
-        {
-          name: "Étienne",
-          title: "Bénévole",
-          description: "Bénévole depuis le début. Fait de la musique!"
-        },
-        {
-          name: "Arnaud",
-          title: "Bénévole",
-          description:
-            "Bénévole depuis le début. Oublie de s'occuper de son tournoi."
+          title: "Conseillère financière & assistante-technique",
+          description: "Aide bénévolement depuis Quart de nuit IV. Épicerie du Quart de nuit."
         },
         {
           name: "Leon",
-          title: "Créateur du logo du LAN",
+          title: "Créateur du logo officiel",
           description: "Fais des caméléons photo-réaliste à la mine."
+        },
+        {
+          name: "Ayman",
+          title: "Assistant-technique",
+          description: "Aide bénévolement depuis le début. Très très enthousiaste."
+        },
+        {
+          name: "Kevin",
+          title: "Assistant-technique & service bar/vestiaire",
+          description: "Aide bénévolement depuis le début."
+        },
+        {
+          name: "Alex",
+          title: "Assistant-technique",
+          description:
+            "Aide bénévolement depuis le début. Dort encore moins que Karl-Étienne."
+        },
+        {
+          name: "Étienne",
+          title: "Assistant-technique",
+          description: "Aide bénévolement depuis le début. Fait de la musique!"
+        },
+        {
+          name: "Arnaud",
+          title: "Assistant-technique & service bar/vestiaire",
+          description:
+            "Aide bénévolement depuis le début. Oublie de s'occuper de son tournoi."
+        },
+        {
+          name: "Roxanne",
+          title: "Assistante-technique",
+          description:
+            "Aide bénévolement depuis le Quart de nuit V."
+        },
+        {
+          name: "Maude",
+          title: "Service bar/vestiaire",
+          description:
+            "Aide bénévolement depuis le Quart de nuit V."
+        },
+        {
+          name: "Raphaëlle",
+          title: "Service bar/vestiaire",
+          description:
+            "Aide bénévolement depuis le Quart de nuit V."
+        },
+        {
+          name: "Maïa",
+          title: "Service bar/vestiaire",
+          description:
+            "Aide bénévolement depuis le Quart de nuit V."
+        },
+        {
+          name: "Chris",
+          title: "Service bar/vestiaire",
+          description:
+            "Aide bénévolement depuis le Quart de nuit V."
         },
         {
           name: "Sacha",
           title: "Photographe",
           description: "Prends de très jolies photos."
+        },
+        {
+          name: "Hugues",
+          title: "DJ & maître du son",
+          description: "Lien vers son site : https://www.facebook.com/karaokedjhugz/"
         }
       ],
       medias: [
