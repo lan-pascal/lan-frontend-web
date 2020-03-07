@@ -15,18 +15,19 @@
           align-self="center">
           <v-col>
             <v-row justify="center">
-              <h1 class="display-1">Le Quart de Nuit, c'est quoi<span class="display-2 primary--text">?</span></h1>
+              <h1 class="display-1">Le Quart de Nuit, c'est quoi <span class="display-2 primary--text">?</span></h1>
             </v-row>
             <v-row class="pa-2">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
-              voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
-              voluptatum impedit laudantium magni dolores. Natus, in quas.
+              <p>Nous sommes un regroupement de personnes motivé à créer des événements, nommés <i>Quart de nuit</i>, 
+              qui incorporent diverses facettes du <i>geek-culture</i> et les rendent accessibles à tous.
             </p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
-              voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
-              voluptatum impedit laudantium magni dolores. Natus, in quas.
+            <p>Notre mission est, qu'à chaque <i>Quart de nuit</i>, tout le monde se sente à sa place, 
+              tout en gardant la nature <i>geek</i> du <i>Quart</i> qui le rend si unique.
             </p>
+            
+            <p>Même si tu n'as jamais touché à quelque chose d'électronique de ta vie, tu y trouveras quelque chose.
+              </p>
             </v-row>
           </v-col>
 
@@ -63,9 +64,7 @@
               <h1 class="primary--text display-1">HORAIRE DE LA SCÈNE</h1>
             </v-row>
             <v-row>
-              <p class="pa-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
-              voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
-              voluptatum impedit laudantium magni dolores. Natus, in quas.
+              <p class="pa-2">Une scène sera présente tout le long de la soirée. Avec son écran-projecteur, diverses activités se tiendront sur celle-ci.
               </p>
             </v-row>
             <v-timeline
@@ -96,9 +95,9 @@
               <h1 class="primary--text display-1">JEUX DE SOCIÉTÉ</h1>
             </v-row>
             <v-row>
-              <p class="pa-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
-              voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
-              voluptatum impedit laudantium magni dolores. Natus, in quas.
+              <p class="pa-2">Plusieurs jeux de société seront disponibles tout au long de la soirée. 
+              Il y aurait même un animateur présent pour aider avec les jeux!
+              Plusieurs tables avec un bar à côté seront dédiées pour les jeux de société.
               </p>
             </v-row>
             <v-row
@@ -119,9 +118,8 @@
                  <h1 class="primary--text display-1">TOURNOIS</h1>
                </v-row>
                <v-row>
-                 <p class="pa-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, 
-                 voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, 
-                 voluptatum impedit laudantium magni dolores. Natus, in quas.
+                 <p class="pa-2">Deux tournois se présenteront à cette 5e édition : un tournoi 2v2 de Super Smash Bros. (le 5e!)
+                   et un tournoi de Tetris 1v1 (le 2e!). Les finales auront lieu sur le grand écran de la scène. Des prix seront remis aux gagnants.
                  </p>
              </v-row>
            </v-col>
@@ -237,10 +235,10 @@ export default {
       return {
         deadline : "2020/04/09 20:00:00",
         quickinfo: [
-          {name: "Collège de Maisonneuve", desc: "Salle Vivoir, 3800 boul. Pie-IX, Montréal", icon:"mdi-map-marker"},
-          {name: "150 places", desc: "Tu peux inviter tes amis!", icon:"mdi-seat"},
-          {name: "20h à 3h00", desc: "Fermeture des portes à 22h00", icon:"mdi-clock-outline"},
-          {name: "Seulement 25$", desc: "PAYER EN LIGNE", icon:"mdi-currency-usd"}
+          {name: "Collège de Maisonneuve", desc: "3800 boul. Pie-IX, Montréal", icon:"mdi-map-marker"},
+          {name: "Jeudi 9 avril 2020", desc: "Fériés vendredi et lundi (Pâques!)", icon:"mdi-calendar-blank"},
+          {name: "20h à 3h", desc: "Fermeture des portes à 22h", icon:"mdi-clock-outline"},
+          {name: "20 $ pour 50 premiers", desc: "25 $ pour 100 dernières places", icon:"mdi-currency-usd"}
 
         ],
         schedule: [
@@ -259,9 +257,9 @@ export default {
         {name: "DANCE DANCE REVOLUTION", time: "01h", location: "Scène principale", vector: require("@/assets/media/vector/ddr-vector.svg")}
       ],
       information: [
-        {name: "COUCH GAMING", vector: require("@/assets/media/vector/sofa-vector.svg") , text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, oluptatum impedit laudantium magni dolores. Natus, in quas."},
-        {name: "HALO REACH & BLACK OPS", vector: require("@/assets/media/vector/military-vector.svg") , text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, oluptatum impedit laudantium magni dolores. Natus, in quas."},
-        {name: "BAR", vector: require("@/assets/media/vector/beer-vector.svg") , text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam minus, voluptatem dolorum repudiandae veniam fugiat quae minima vero porro dolore atque, oluptatum impedit laudantium magni dolores. Natus, in quas."}
+        {name: "COUCH GAMING", vector: require("@/assets/media/vector/sofa-vector.svg") , text:"Couch gaming c'est un terme pour désigner des jeux vidéo qui se jouent à plusieurs sur le même écran. Plusieurs jeux accessibles à tous (et amusants pour tous) se présenteront à ces espaces."},
+        {name: "HALO REACH & BLACK OPS", vector: require("@/assets/media/vector/military-vector.svg") , text:"Honnête à ses origines comme LAN, des méga-batailles Halo: Reach et Call of Duty: Black Ops se dérouleront au courant de la soirée. 12 joueurs par jeu!"},
+        {name: "BAR", vector: require("@/assets/media/vector/beer-vector.svg") , text:"Un bar sera aussi accessible durant toute la soirée. Différentes boissons seront offertes à des prix raisonnables. Les prix sont dans la section Billets."}
       ]
       }
     }
