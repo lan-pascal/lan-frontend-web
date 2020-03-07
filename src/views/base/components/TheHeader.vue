@@ -4,7 +4,7 @@
             dark
             clipped-right
         >  
-            <v-btn :to="{name: 'home'}" :ripple="false" exact text class="noeffect"><v-img width="85px" :src="require('@/assets/logo/LogoWhiteFillEmptyBtns.svg')"/></v-btn>
+            <v-btn :to="{name: 'home'}" :ripple="false" exact text class="noeffect"><v-img width="85px" src="@/assets/logo/LogoWhiteFillEmptyBtns.svg"/></v-btn>
         
             <v-btn v-for="(link, linkIndex) in links" :key="linkIndex" :to="link.to" :ripple="false" text class="title underline noeffect hidden-sm-and-down">
             {{ link.name }}

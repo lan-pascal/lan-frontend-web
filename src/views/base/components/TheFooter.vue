@@ -25,7 +25,7 @@
                         :key="link.route"
                         text
                         x-small
-                        :href="link.route"
+                        :to="link.route"
                         class="my-2"
                     >
                         {{ link.name }}

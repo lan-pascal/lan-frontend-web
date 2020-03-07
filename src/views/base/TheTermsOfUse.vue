@@ -61,7 +61,7 @@
         <p> Les articles sont obligés d’être remboursés ou retournés suite à une plainte. La plainte doit être valide,
         c’est-à-dire, elle est valide si l’article ne respecte pas la description du vendeur et l’acheteur n’est pas
         satisfait. Dans ce cas, Quart de nuit s’oblige à rembourser l’acheteur. Toutes les autres raisons doivent
-        être partagées avec Quart de nuit par courriel (quartdenuitmtl@gmail.com). Quart de nuit n’a aucune
+        être partagées avec Quart de nuit par courriel (<a href="mailto:quartdenuitmtl@gmail.com">quartdenuitmtl@gmail.com</a>). Quart de nuit n’a aucune
         obligation d’accepter ces demandes. </p>
 
         
@@ -89,7 +89,7 @@
         <div class="title">Nous contactez/Plaintes</div>
 
         <p> Si vous avez quelconque questions, des commentaires ou une plainte, n’hésitez pas à nous contacter à
-        quartdenuitmtl@gmail.com </p>
+        <a href="mailto:quartdenuitmtl@gmail.com">quartdenuitmtl@gmail.com</a> </p>
 
         <p> Il n’y a pas de garantie de résolution, mais chaque cas sera inspecté individuellement. </p>
 

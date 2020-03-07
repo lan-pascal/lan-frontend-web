@@ -69,7 +69,7 @@ utilisées et partagées lorsque vous visitez ou faites un achat sur quartdenuit
         <div class="title">Contactez-nous</div>
 
         <p> Pour plus d'informations sur nos pratiques de confidentialité, si vous avez des questions ou si vous
-        souhaitez déposer une plainte, veuillez nous contacter par e-mail à quartdenuitmtl@gmail.com</p>
+        souhaitez déposer une plainte, veuillez nous contacter par e-mail à <a href="mailto:quartdenuitmtl@gmail.com">quartdenuitmtl@gmail.com</a></p>
     
         <i>Dernières modifications de ce document le 3 mars 2020.</i>
     </v-col>
