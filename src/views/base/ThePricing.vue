@@ -7,7 +7,7 @@
                     <p><br>Où : Au Collège de Maisonneuve dans la salle Vivoir (3800 boul. Pie-IX, Montréal) (proche de station Pie-IX)<br>
                         Combien : 20,00 $ pour les 50 premiers billets vendus. Ensuite, le prix monte à 25,00 $!<br>
                         Quand? : le jeudi 9 avril 2020 de 20h00 à 3h00 (à noter qu'il y aura fermeture des portes à 22h00) (aussi noter que le vendredi et lundis sont fériés pour Pâques)<br>
-                        Quoi? : voir la page d'accueil pour ces informations.
+                        Quoi? : voir la <a href="quartdenuit.com">page d'accueil</a> pour ces informations.
               
             </p>
             <p><br>Voici les tarifs pour le bar.
