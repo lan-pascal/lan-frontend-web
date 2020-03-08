@@ -20,6 +20,19 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Teko', sans-serif;
 }
 
+.qdn-top{
+  position: relative;
+  z-index: 4;
+  bottom: -30px;
+}
+
+.qdn-behind{
+  position: relative;
+  top: -65px;
+  font-size:200px;
+  width: fit-content;
+}
+
 .width {
   @include xs {
     width: 100%;
