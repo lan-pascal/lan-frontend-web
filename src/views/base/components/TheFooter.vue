@@ -47,7 +47,6 @@ export default {
         medias: [
             {icon: "mdi-email", link: "mailto:quartdenuitmtl@gmail.com"},
             {icon: "mdi-instagram", link: "https://www.instagram.com/quartdenuit/"},
-            {icon: "mdi-twitter", link: "https://twitter.com/quartdenuit"},
             {icon: "mdi-facebook", link: "facebook"}
         ],
         links:  [
