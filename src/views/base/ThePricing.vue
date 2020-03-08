@@ -7,8 +7,8 @@
           <v-icon size="45px">mdi-ticket</v-icon>
         </div>
       </v-col>
-      <v-col align-self="center" cols="8" sm="7" md="5" lg="4" xl="3">
-        <v-card flat width="100%px" height="120%">
+      <v-col align-self="center" cols="12" sm="7" md="5" lg="4" xl="3">
+        <v-card flat width="100%" height="120%">
           <v-card-title>Quart de nuit V</v-card-title>
           <v-card-subtitle>
             <div>Collège de Maisonneuve</div>
@@ -37,22 +37,26 @@
 
           <v-divider />
           <v-card-text>
+            <v-form
+            v-model="ticket.valid">
             <v-row align="center" justify="center">
               <v-col cols="6">
                 Billet d'entrée générale
                 <v-text-field
+                  v-model.number="ticket.quantity"
                   class="text-right"
                   label="Nombre de billets"
                   type="number"
                   :rules="[rules.maximum]"
-                  min="0"
+                  min="1"
                   max="3"
                 ></v-text-field>
               </v-col>
-              <v-col cols="4">
-                <v-btn class="primary">Acheter</v-btn>
+              <v-col cols="12" md=4>
+                <v-btn :disabled="!ticket.valid" class="primary" @click="checkout">Acheter!</v-btn>
               </v-col>
             </v-row>
+            </v-form>
           </v-card-text>
         </v-card>
       </v-col>
@@ -119,23 +123,30 @@
 
     <v-row>
       <v-row no-gutters justify="center">
-        <v-col align-self=center cols="12" sm="4" md="3" lg="2">
+        <v-col align-self="center" cols="12" sm="4" md="3" lg="2">
           <span class="headline">Mode de paiement accepté</span>
         </v-col>
         <v-col v-for="(icon,iconIndex) in payIcons" cols="2" md="1" :key="iconIndex" align="center">
-          <v-img :src="icon.src" width="45" />
+          <v-img :src="icon.src" aspect-ratio="1" width=40px max-height="40px" min-height="20px" />
         </v-col>
       </v-row>
     </v-row>
-
   </v-col>
 </template>
 
 <script>
+import {loadStripe} from '@stripe/stripe-js';
+
 export default {
   name: "pricing",
   data() {
     return {
+      test: process.env.STRIPE_PK ,
+      ticket : {
+        valid: true,
+        sku: 'sku_GrrvrUDqX5KavF',
+        quantity: 1,
+      },
       rules: {
         maximum: value => {
           return (
@@ -153,6 +164,33 @@ export default {
         { src: require("../../assets/media/vector/pp-vector.svg") }
       ]
     };
-  }
+  },
+  async mounted(){
+    this.stripe = await loadStripe("pk_test_Ayf3gYC9NwjtEyeZbbxtB4Ne00TTnLWJk4");
+  },
+  methods: {
+    checkout() {
+      
+      this.stripe.redirectToCheckout({
+      items: [{sku: this.ticket.sku, quantity: this.ticket.quantity}],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: window.location.protocol + '//quartdenuit.com/success',
+      cancelUrl: window.location.protocol + '//quartdenuit.com/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  },
+  },
 };
 </script>
