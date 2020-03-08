@@ -3,7 +3,7 @@
     <v-row align=center class="fullscreen">
       <v-col class="pr-12" cols=12 md=8>
         <div class="display-3 accent--text">FAQ</div>
-        <div class="headline font-italic"><i>Si vous avez plus de questions, n'hésitez pas à nous contacter. Liens pour nous rejoindre au bas de la page!</i></div>
+        <div class="headline">Si vous avez plus de questions, n'hésitez pas à nous contacter. Liens pour nous rejoindre au bas de la page!</div>
       </v-col>
     </v-row>
 
@@ -105,6 +105,12 @@ export default {
           question: "Puis-je acheter un billet sur place?",
           answer:
             "Malheureusement, à cause des complications que cela engendrerait : non. Mais il est possible, qu’ils restent des billets. Si c’est le cas, ce sera indiqué sur le site et les médias sociaux."
+        },
+        {
+          categories: ["Paiement"],
+          question: "Pourquoi est-ce si cher?",
+          answer:
+            "Le Quart de nuit est un événement assez unique en son genre simplement par ce qu'il offre. Alors, avoir tout cet équipement (TVs, consoles, jeux, karaoké, bar, services, etc.) et organiser tout cela prend beaucoup de temps et d'argent. C'est sans oublier la réservation de salle! Croyez-nous, si on pouvait réduire les prix, on le ferait. Dites-vous qu'en achetant votre billet, vous n'avez pas seulement une place pour le prochain Quart, mais vous aidez à garantir son futur."
         },
         {
           categories: ["Divers"],

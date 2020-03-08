@@ -260,11 +260,12 @@ export default {
       tournament: [
         {name: "TETRIS", time: "21h", location: "Loundge", vector: require("@/assets/media/vector/tetris-vector.svg")},
         {name: "SUPER SMASH BROS.", time: "23h", location: "Loundge", vector: require("@/assets/media/vector/ssb-vector.svg")}, //SVG NEEDS FIX
-        {name: "DANCE DANCE REVOLUTION", time: "01h", location: "Scène principale", vector: require("@/assets/media/vector/ddr-vector.svg")}
       ],
       information: [
         {name: "COUCH GAMING", vector: require("@/assets/media/vector/sofa-vector.svg") , text:"Couch gaming c'est un terme pour désigner des jeux vidéo qui se jouent à plusieurs sur le même écran. Plusieurs jeux accessibles à tous (et amusants pour tous) se présenteront à ces espaces."},
         {name: "HALO REACH & BLACK OPS", vector: require("@/assets/media/vector/military-vector.svg") , text:"Honnête à ses origines comme LAN, des méga-batailles Halo: Reach et Call of Duty: Black Ops se dérouleront au courant de la soirée. 12 joueurs par jeu!"},
+        {name: "Trivia Quiz Une autre plus belle section sera créée bientôt!", vector: require("@/assets/media/vector/beer-vector.svg") , text:"Ici il y aura plein d'infos super intéressante sur le trivia quiz qui risque d'être super cool!"},
+        {name: "Karaoke Une autre plus belle section sera créée bientôt", vector: require("@/assets/media/vector/beer-vector.svg") , text:"Ici il y aura plein d'infos super intéressante sur le Karaoke qui risque d'être super cool!"},
         {name: "BAR", vector: require("@/assets/media/vector/beer-vector.svg") , text:"Un bar sera aussi accessible durant toute la soirée. Différentes boissons seront offertes à des prix raisonnables. Les prix sont dans la section Billets."}
       ]
       }

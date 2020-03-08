@@ -134,6 +134,22 @@
   </v-col>
 </template>
 
+<style lang="scss">
+.posfix {
+    position: relative;
+    top: -15px;
+}
+.front {
+    z-index: 3;
+}
+.qdn-behind{
+    font-size: 70px;
+    position: relative;
+    z-index: 1;
+    top: -30px;
+}
+</style>
+
 <script>
 import {loadStripe} from '@stripe/stripe-js';
 
