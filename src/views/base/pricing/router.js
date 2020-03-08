@@ -1,6 +1,7 @@
 export default [
     {
         path: '/pricing',
+        name: 'pricing',
         component: () => import('@/views/base/pricing/ThePricing.vue'),
     },
     {
