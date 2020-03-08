@@ -36,7 +36,7 @@
           cols=6
           class="d-none d-md-flex">
             <v-img
-            src="@/assets/media/ppl-game-pic.png">
+            src="@/assets/media/waiting.png">
             </v-img>
           </v-col>
         </v-row>
