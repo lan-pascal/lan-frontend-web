@@ -16,6 +16,10 @@ export default {
 </script>
 
 <style lang="scss">
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Teko', sans-serif;
+}
+
 .width {
   @include xs {
     width: 100%;

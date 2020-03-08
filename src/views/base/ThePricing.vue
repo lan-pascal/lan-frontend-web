@@ -124,7 +124,7 @@
     <v-row>
       <v-row no-gutters justify="center">
         <v-col align-self="center" cols="12" sm="4" md="3" lg="2">
-          <span class="headline">Mode de paiement accepté</span>
+          <span class="headline">Modes de paiement acceptés</span>
         </v-col>
         <v-col v-for="(icon,iconIndex) in payIcons" cols="2" md="1" :key="iconIndex" align="center">
           <v-img :src="icon.src" aspect-ratio="1" width=40px max-height="40px" min-height="20px" />
