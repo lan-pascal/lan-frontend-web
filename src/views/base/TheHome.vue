@@ -1,10 +1,10 @@
 <template>
     <div class="justify-center width">
-        <v-row class="fullscreen ml-0" align="center" >
-            <v-col align="center">
+        <v-row class="fullscreen ml-1" align="center" justify=center >
+            <v-col align="center" class="ma-0 pa-0">
                 <v-img  class="my-0" src="@/assets/logo/LogoWhiteFillEmptyBtns.svg" contain aspect-ratio="1.5" max-width="600px" min-width=275px />
                 <div class="display-4 font-weight-bold"><div class="qdn-top">QUART DE NUIT</div> <div class="primary--text qdn-behind">V</div></div>
-                <CountdownZwip :deadline="deadline"/>
+                <Countdown class="mt-n5" :deadline="deadline"/>
             </v-col>
         </v-row>
     <!-- QdN c'est quoi? -->
@@ -232,12 +232,12 @@
 </style>
 
 <script>
-import CountdownZwip from "@/components/countdown/CountdownZwip";
+import Countdown from "@/components/countdown/CountdownNormal";
 
 export default {
   name: "TheHome",
   components: {
-    CountdownZwip
+    Countdown
   },
   data () {
       return {
