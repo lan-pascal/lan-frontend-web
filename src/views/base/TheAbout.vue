@@ -193,7 +193,7 @@ export default {
         {
           name: "Hugues",
           title: "DJ & maître du son",
-          description: "Lien vers son site : https://www.facebook.com/karaokedjhugz/"
+          description: "Grâce à lui si le Quart est pas un malaise silencieux! Son site : https://www.facebook.com/karaokedjhugz/"
         }
       ],
       medias: [
