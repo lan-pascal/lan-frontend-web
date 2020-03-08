@@ -1,3 +1,5 @@
+import pricing from '@/views/base/pricing/router'
+
 export default [
     {
         path: '/',
@@ -31,11 +33,6 @@ export default [
                 component: () => import('@/views/base/TheAbout.vue')
             },
             {
-                path: '/pricing',
-                name: 'pricing',
-                component: () => import('@/views/base/ThePricing.vue')
-            },
-            {
                 path: '/privacy_policy',
                 name: 'privacy_policy',
                 component: () => import('@/views/base/ThePrivacyPolicy.vue')
@@ -45,6 +42,6 @@ export default [
                 name: 'terms_of_use',
                 component: () => import('@/views/base/TheTermsOfUse.vue')
             },
-        ]
+        ].concat(pricing)
     },
 ]

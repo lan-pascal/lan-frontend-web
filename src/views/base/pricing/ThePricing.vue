@@ -172,12 +172,12 @@ export default {
       },
 
       payIcons: [
-        { src: require("../../assets/media/vector/coin-vector.svg") },
-        { src: require("../../assets/media/vector/cc-vector.svg") },
-        { src: require("../../assets/media/vector/gpay-vector.svg") },
-        { src: require("../../assets/media/vector/apay-vector.svg") },
-        { src: require("../../assets/media/vector/interac-vector.svg") },
-        { src: require("../../assets/media/vector/pp-vector.svg") }
+        { src: require("@/assets/media/vector/coin-vector.svg") },
+        { src: require("@/assets/media/vector/cc-vector.svg") },
+        { src: require("@/assets/media/vector/gpay-vector.svg") },
+        { src: require("@/assets/media/vector/apay-vector.svg") },
+        { src: require("@/assets/media/vector/interac-vector.svg") },
+        { src: require("@/assets/media/vector/pp-vector.svg") }
       ]
     };
   },
