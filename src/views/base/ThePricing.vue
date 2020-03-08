@@ -1,5 +1,5 @@
 <template>
-  <v-col>
+  <div class="width">
     <v-row align="center" justify="center">
       <v-col class="pr-12" cols="12" md="4">
         <div class="display-3 text-md-end text-center">
@@ -131,7 +131,7 @@
         </v-col>
       </v-row>
     </v-row>
-  </v-col>
+  </div>
 </template>
 
 <style lang="scss">
