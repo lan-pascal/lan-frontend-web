@@ -26,7 +26,8 @@
               tout en gardant la nature <i>geek</i> du <i>Quart</i> qui le rend si unique.
             </p>
             
-            <p>Même si tu n'as jamais touché à quelque chose d'électronique de ta vie, tu y trouveras quelque chose.
+            <p>Si tu lis ça, oui tu es invité.e! Et oui tu peux inviter tes ami.e.s!
+              Même si tu n'as jamais touché à quelque chose d'électronique de ta vie, tu y trouveras quelque chose.
               </p>
             </v-row>
           </v-col>
