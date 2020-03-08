@@ -3,6 +3,7 @@
         <v-app-bar
             dark
             clipped-right
+            app
         >  
             <v-btn :to="{name: 'home'}" :ripple="false" exact text class="noeffect"><v-img width="85px" src="@/assets/logo/LogoWhiteFillEmptyBtns.svg"/></v-btn>
         
@@ -13,7 +14,7 @@
             <v-spacer> </v-spacer>
             
             <v-btn :to="{name:'pricing'}" class="accent hidden-sm-and-down">
-                Billets
+                Tarifs
             </v-btn>
 
             <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
@@ -22,6 +23,7 @@
         <v-navigation-drawer
                 v-model="drawer"
                 absolute
+                temporary
                 floating
                 right
                 clipped
@@ -59,12 +61,6 @@
         {name: "À propos", to: "/about", icon: "mdi-information-outline"}
         ]
     }),
-    computed: {
-    size () {
-      const size = {xs:'small',sm:'',lg:'',xl:''}[this.$vuetify.breakpoint.name];
-      return size ? { [size]: true } : {}
-    }
-  }
   }
 </script>
 

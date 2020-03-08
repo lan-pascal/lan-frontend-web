@@ -22,24 +22,28 @@
     </v-row>
 
     <v-row>
-      <v-card justify="center" justify-md="start" class="transparent">
-        <v-card-title class="title">Pour nous contacter</v-card-title>
-        <v-card-text>Vous pouvez nous rejoindre sur les réseaux suivants:</v-card-text>
-        <v-btn
-          v-for="media in medias"
-          :key="media.link"
-          :href="media.link"
-          target="_blank"
-          class="mx-4"
-          icon
-        >
-          <v-icon size="24px">{{ media.icon }}</v-icon>
-        </v-btn>
-      </v-card>
+        <v-col cols=12>
+          <h1 class="title text--primary ">Contactez-nous</h1>
+        </v-col>
+        <v-col>
+          <p class="pl-2">Vous pouvez nous rejoindre à l'aide des réseaux suivants:</p>
+          <v-btn
+            v-for="media in medias"
+            :key="media.link"
+            :href="media.link"
+            target="_blank"
+            class="mx-4"
+            icon
+          >
+            <v-icon size="24px">{{ media.icon }}</v-icon>
+          </v-btn>
+        </v-col>
     </v-row>
 
     <v-row>
-      <div class="title text--primary p">Équipe</div>
+      <v-col>
+        <div class="title text--primary">Équipe</div>
+      </v-col>
       <v-row justify="center" justify-md="start">
         <v-col
           v-for="(teammate, teammateIndex) in team"
@@ -195,8 +199,7 @@ export default {
       medias: [
             {icon: "mdi-email", link: "mailto:quartdenuitmtl@gmail.com"},
             {icon: "mdi-instagram", link: "https://www.instagram.com/quartdenuit/"},
-            {icon: "mdi-twitter", link: "https://twitter.com/quartdenuit"},
-            {icon: "mdi-facebook", link: "facebook"}
+            {icon: "mdi-facebook", link: "https://www.facebook.com/groups/1950288465097742/"}
         ],
     };
   }

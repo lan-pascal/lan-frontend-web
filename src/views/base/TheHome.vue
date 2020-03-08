@@ -2,7 +2,7 @@
     <div class="justify-center width">
         <v-row class="fullscreen ml-0" align="center" >
             <v-col align="center">
-                <v-img  class="my-0" src="@/assets/logo/LogoWhiteFillEmptyBtns.svg" contain width="100%" aspect-ratio="1.5" max-width="600px" min-width=275px />
+                <v-img  class="my-0" src="@/assets/logo/LogoWhiteFillEmptyBtns.svg" contain aspect-ratio="1.5" max-width="600px" min-width=275px />
                 <div class="display-4 font-weight-bold"><div class="qdn-top">QUART DE NUIT</div> <div class="primary--text qdn-behind">V</div></div>
                 <CountdownZwip :deadline="deadline"/>
             </v-col>
@@ -109,6 +109,7 @@
             justify="center">
               <v-img 
               class="ma-6"
+              aspect-ratio="0.8"
               max-width="275"
               src="@/assets/media/vector/board-game-stack.svg"></v-img>
             </v-row>  
@@ -153,6 +154,7 @@
               justify="center">
                 <v-img
                 :src="game.vector"
+                aspect-ratio="1"
                 max-width="100">
                 </v-img>
               </v-row>
