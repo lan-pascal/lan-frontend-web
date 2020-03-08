@@ -1,51 +1,118 @@
 <template>
-    <v-col>
-        <v-row align=center class="fullscreen">
-            <v-col class="pr-12" cols=12 md=8>
-                <div class="display-3">Billets</div>
-                <div class="headline">Ici, vous avez la possibilité d'acheter votre billet pour le Quart de nuit V ainsi que consulter les tarifs pour le bar.
-                    <p><br>Où : Au Collège de Maisonneuve dans la salle Vivoir (3800 boul. Pie-IX, Montréal) (proche de station Pie-IX)<br>
-                        Combien : 20,00 $ pour les 50 premiers billets vendus. Ensuite, le prix monte à 25,00 $!<br>
-                        Quand? : le jeudi 9 avril 2020 de 20h00 à 3h00 (à noter qu'il y aura fermeture des portes à 22h00) (aussi noter que le vendredi et lundis sont fériés pour Pâques)<br>
-                        Quoi? : voir la page d'accueil pour ces informations.
-              
-            </p>
-            <p><br>Voici les tarifs pour le bar.
-            </p></div>
-            </v-col>
-        </v-row>
+  <v-col>
+    <v-row align="center">
+      <v-col class="pr-12" cols="12" md="6">
+        <div class="display-3 text-center">Billets</div>
+      </v-col>
+      <v-col>
 
+          <v-card flat width="100%px" height="120%">
+            <v-card-title>Quart de nuit V</v-card-title>
+            <v-card-subtitle>
+              <div>Collège de Maisonneuve</div>
+              <div><i>Jeudi 9 avril 2020, 20h à 3h (Vendredi et Lundi fériés)</i></div>
+              <div><strong><i>Fermeture des portes à 22h</i></strong></div>
+            </v-card-subtitle>
+
+            <v-card-text class="text-center">
+              <div><span class="display-1 primary--text"><strike>$24</strike></span>.99
+              <span class="display-1 pl-3 secondary--text">$19</span>.99</div>
+              <div>pour les 50 premiers billets vendus</div>
+            </v-card-text>
+            
+            <v-divider />
+            <v-card-text>
+              <v-row align=center justify=center>
+              <v-col cols=6>
+                Billet d'entrée générale
+                <v-text-field
+                  class="text-right"
+                  label="Nombre de billets"
+                  type=number
+                  :rules="[rules.number, rules.maximum]"
+                  min=0
+                  max=3
+                ></v-text-field>
+              </v-col>
+              <v-col cols=4>
+                <v-btn class="primary">Acheter</v-btn>
+              </v-col>
+              </v-row>
+             </v-card-text>
+          </v-card>
+      </v-col>
+    </v-row>
+
+    <v-divider />
+
+    <v-row >
+      <v-col>
         <v-row>
-            <v-col>
-                <div class="display-1 align-center">Billets disponibles</div>
-                <v-row justify=center align=center>
-                    <v-col cols=10 sm=5 md=4 lg=3>
-                        <v-card width=200px height=120%>
-                                <v-card-title>Quart de nuit 2020</v-card-title> <!-- Seems like a bug. The Name should be at the center. -->
-                                
-                                <v-card-text><span class="display-1">$ 25</span>.<span class="body">00</span></v-card-text> <!-- Seems like a bug. The Name should be at the center. -->
-                                <v-divider/>
-                                <v-card-text><v-text-field class="text-right" suffix="x" label="Nombre de billets" placeholder=2 :rules="[rules.number, rules.maximum]" width=30px height=30px></v-text-field>Billet d'entrée générale</v-card-text>
-
-                                <v-card-actions class="justify-center"><v-btn class="primary">Acheter</v-btn></v-card-actions>
-                        </v-card>
-                    </v-col>
-                </v-row>
-            </v-col>
+          <v-col align=center justify=center>
+              <h1 class="display-3">Boissons</h1>
+          </v-col>
         </v-row>
-    </v-col>
+        <v-row no-gutters justify=center>
+          <v-col cols=6 md=3>
+            <v-card light flat height=100% width=250px class="secondary darken-1" >
+              <v-card-title>Alcool</v-card-title>
+              <v-card-subtitle>
+                <div>1 pour 3.99$</div>
+                <div>2 pour 6.99$</div>
+                <div>10 shot pour 24.99$</div>
+              </v-card-subtitle>
+
+              <v-card-text>
+                
+                <ul>
+                  <li>Corona Extra</li>
+                  <li>Coors Light</li>
+                  <li>Stella Artois</li>
+                  <li>Pepito Sangria</li>
+                  <li>Palm Bay</li>
+                  <li>Shot de vodka</li>
+                  <li>Shot de Tequila</li>
+                </ul>
+              </v-card-text>
+
+              <v-card-text></v-card-text>
+            </v-card>
+          </v-col>
+          <v-col cols=6 md=3>
+            <v-card flat height=100% width=250px class="transparent">
+              <v-card-title>Sans Alcool</v-card-title>
+
+              <v-card-subtitle class="">2.50$</v-card-subtitle>
+
+              <v-card-text>
+                Eau offerte sur place
+                <ul>
+                  <li>Coca-Cola</li>
+                  <li>Sprite</li>
+                  <li>Thé Glacé</li>
+                  <li>Fruitopia</li>
+                  <li>Eau pétillante</li>
+                </ul>
+              </v-card-text>
+
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+  </v-col>
 </template>
 
 <script>
 export default {
   name: "pricing",
-  data(){
-      return {
-          rules: {
-              number: value => isFinite(value) || "Ceci n'est pas un chiffre valide",
-              maximum: value => (value <= 3 & value > 0) || "Maximum de 3 billets par personne",
-          }
+  data() {
+    return {
+      rules: {
+        maximum: value =>
+          (value <= 3) & (value > 0) || "Maximum de 3 billets par personne"
       }
+    };
   }
 };
 </script>
