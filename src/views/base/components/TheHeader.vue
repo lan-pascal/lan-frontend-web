@@ -3,10 +3,10 @@
     <v-app-bar dark app>
       <v-btn :to="{name: 'home'}" :ripple="false" exact text class="noeffect pa-0 pr-6">
         <v-img
-          aspect-ratio="1.8"
-          min-width="70"
+          aspect-ratio="1"
+          min-width="50"
           max-width="150"
-          src="@/assets/logo/LogoWhiteFillEmptyBtns.svg"
+          src="@/assets/logo/logo-bleu-blanc.svg"
         />
       </v-btn>
 
@@ -53,7 +53,7 @@
 
         <v-list-item link :to="{name: 'home'}" exact>
           <v-list-item-avatar>
-            <img src="@/assets/logo/LogoWhiteFillEmptyBtns.svg">
+            <img src="@/assets/logo/logo-bleu-blanc.svg">
           </v-list-item-avatar>
 
           <v-list-item-content>

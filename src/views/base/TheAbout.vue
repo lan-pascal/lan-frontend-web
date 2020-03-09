@@ -95,7 +95,7 @@ export default {
         {
           name: "Pascal",
           title: "Fondateur & organisateur du Quart de nuit",
-          description: ""
+          description: "Veut rendre le Quart de nuit au niveau des Olympiques. Parle à la troisième personne."
         },
         {
           name: "Karl-Étienne",
@@ -131,7 +131,7 @@ export default {
         {
           name: "Ayman",
           title: "Assistant-technique",
-          description: "Aide bénévolement depuis le début. Très très enthousiaste."
+          description: "Aide bénévolement depuis le début."
         },
         {
           name: "Kevin",
