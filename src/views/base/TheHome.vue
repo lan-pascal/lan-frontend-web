@@ -57,10 +57,11 @@
           
         </v-row>
     <!-- SCÈNE / LIGNE DU TEMPS -->
-        <v-row class="py-12 mt-12">
+        <v-row class="pt-12 mt-12">
           <v-col
           cols=12
-          md=6>
+          md=6
+          class="my-2">
             <v-row justify="center">
               <h1 class="primary--text display-1">HORAIRE DE LA SCÈNE</h1>
             </v-row>
@@ -90,7 +91,7 @@
             <!-- JEUX DE SOCIÉTÉ -->
 
 
-            <v-row justify="center">
+            <v-row justify="center my-2">
               <h1 class="primary--text display-1">JEUX DE SOCIÉTÉ</h1>
             </v-row>
             <v-row>
@@ -121,7 +122,7 @@
                <v-row justify="center">
                  <v-col cols=12
                  md=10>
-                   <p class="pa-2">Deux tournois se présenteront à cette 5e édition : un tournoi 2v2 de Super Smash Bros. (le 5e!)
+                   <p class="px-2 ma-0">Deux tournois se présenteront à cette 5e édition : un tournoi 2v2 de Super Smash Bros. (le 5e!)
                    et un tournoi de Tetris 1v1 (le 2e!). Les finales auront lieu sur le grand écran de la scène. Des prix seront remis aux gagnants.
                    Pour vous inscrire aux tournois, vous recevrez un courriel quelques jours avant le Quart si vous avez votre billet.
                  </p>
@@ -131,7 +132,7 @@
            </v-col>
         </v-row>
         <v-row>
-          <v-col class="scrolling-wrapper justify-md-center" align="center">
+          <v-col class="scrolling-wrapper justify-md-center">
             <v-card
             v-for="(game, index) in tournament"
             :key="index"
@@ -139,9 +140,10 @@
             width=225px
             tile
             color="black"
-            class="text-center ma-4 card justify-end">
+            class="text-center ma-4 card">
+            <v-col>
               <v-card-title
-              class="primary--text justify-center display-1"
+              class="justify-center display-1 font-weight-light mb-5"
               style="word-break: break-word;">
               {{game.name}}
               </v-card-title>
@@ -149,21 +151,17 @@
               justify="center">
                 <v-img
                 :src="game.vector"
-                aspect-ratio="1"
-                max-width="100">
+                max-width="125">
                 </v-img>
               </v-row>
-              <v-card-subtitle>
-                <h2>{{game.time}}</h2>
-              </v-card-subtitle>
-              <v-card-text
-              class="primary--text">
-                <h2>{{game.location}}</h2>
-              </v-card-text>
+            </v-col>
             </v-card>
           </v-col>
         </v-row>
     <!-- AUTRES INFOS GÉNÉRAUX (Couch/Halo/Bar) -->
+        <v-row class="mt-4" justify="center">
+            <h1 class="primary--text display-1">AUTRES ACTIVITÉS</h1>
+        </v-row>
         <v-row 
         wrap
         justify="space-around">
@@ -175,7 +173,7 @@
             md=5
 
             >
-            <v-row>
+            <v-row align="center">
               <v-col
               cols=3>
                 <v-row>
@@ -189,11 +187,11 @@
               </v-col>
               <v-col
               cols=9>
-                <v-row justify="center">
+                <v-row>
                  <h2 class="primary--text">{{info.name}}</h2>
                </v-row>
                <v-row>
-                 <p class="pa-2 font-weight-regular">
+                 <p class="py-2 font-weight-regular">
                    {{info.text}}
                  </p>
                </v-row>
