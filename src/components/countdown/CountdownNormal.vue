@@ -3,7 +3,7 @@
     <v-row dense justify="center">
         <template v-for="(time,index) in times">
             <v-col class="d-flex-inline flex-grow-0" :key=index>
-                <CountdownZwipPiece class="clock__piece" :digits="time"></CountdownZwipPiece>
+                <CountdownPiece class="clock__piece" :digits="time"/>
             </v-col>
       </template>
     </v-row>
@@ -13,7 +13,7 @@
 
 <script>
 import countdownMixin from "@/mixins/countdownMixin"
-import CountdownZwipPiece from "@/components/countdown/CountdownZwipPiece"
+import CountdownPiece from "@/components/countdown/CountdownNormalPiece"
 
 export default {
     template: "countdown-zwip",
@@ -21,7 +21,7 @@ export default {
         countdownMixin
     ],
     components : {
-        CountdownZwipPiece
+        CountdownPiece
     },
     mounted(){
       const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric' };
