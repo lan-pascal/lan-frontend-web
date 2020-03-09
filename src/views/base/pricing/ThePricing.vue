@@ -1,65 +1,50 @@
 <template>
   <div class="width">
-    <v-row align="center" justify="center">
-      <v-col class="pr-12" cols="12" md="4">
-        <div class="display-3 text-md-end text-center">
+    
+    <v-row align=center>
+        <v-col class="pr-12" cols=12>
+          <v-row class="display-3 text-md-end justify-center">
           Billeterie
-          <v-icon size="45px">mdi-ticket</v-icon>
-        </div>
-      </v-col>
-      <v-col align-self="center" cols="12" sm="7" md="5" lg="4" xl="3">
-        <v-card flat width="100%" height="120%">
-          <v-card-title>Quart de nuit V</v-card-title>
-          <v-card-subtitle>
-            <div>Collège de Maisonneuve</div>
-            <div>
-              <i>Jeudi 9 avril 2020, 20h à 3h (Vendredi et Lundi fériés)</i>
-            </div>
-            <div>
-              <strong>
-                <i>Fermeture des portes à 22h</i>
-              </strong>
-            </div>
-          </v-card-subtitle>
+          <v-icon class="pl-3" size="45px">mdi-ticket</v-icon>
+        </v-row>
+        </v-col>
+    </v-row>
 
-          <v-card-text class="text-center">
-            <div>
-              <span class="display-1 primary--text">
-                <strike>$24</strike>
-              </span>.99
-              <span class="display-1 pl-3 secondary--text">$19</span>.99
-              <i>par billet</i>
-            </div>
-            <div>
-              <u>pour les 50 premiers billets vendus</u>
-            </div>
-          </v-card-text>
+    <v-row>
+        <v-col>
+            <v-row justify=center align=center>
+                <v-col cols=10 sm=5 md=4 lg=3>
+                    <v-card width=250px height=415>
+                            <v-col class="pa-7"><v-img  src="../../../assets/media/vector/qdn-logo-vector.svg"></v-img></v-col>
+                            
+                            <v-card-text class="py-0 white--text posfix" align="center"><i>Early Bird</i><br>50 premiers billets</v-card-text>
+                            <v-card-text><span class="display-1">$ 20</span>.<span class="body">00</span></v-card-text> <!-- Seems like a bug. The Name should be at the center. -->
+                            <v-divider/>
+                            <v-card-text><v-text-field class="text-right" suffix="x" label="Nombre de billets" placeholder=2 :rules="[rules.number, rules.maximum]" width=30px height=30px></v-text-field>Billet d'entrée générale</v-card-text>
+                            <v-card-actions class="justify-center pb-6"><v-btn class="secondary">Acheter</v-btn></v-card-actions>
+                    </v-card>
+                </v-col>
+                <v-col cols=10 sm=5 md=4 lg=3>
+                    <v-card width=250px height=415 disabled>
+                            <v-col class="pa-7"><v-img  src="../../../assets/media/vector/qdn-logo-vector.svg"></v-img></v-col>
+                            
+                            <v-card-text class="py-0 white--text posfix pb-5" align="center"><i>Régulier</i><br></v-card-text>
+                            <v-card-text><span class="display-1">$ 25</span>.<span class="body">00</span></v-card-text> <!-- Seems like a bug. The Name should be at the center. -->
+                            <v-divider/>
+                            <v-card-text><v-text-field class="text-right" suffix="x" label="Nombre de billets" placeholder=2 :rules="[rules.number, rules.maximum]" width=30px height=30px></v-text-field>Billet d'entrée générale</v-card-text>
+                            <v-card-actions class="justify-center pb-6"><v-btn class="secondary">Acheter</v-btn></v-card-actions>
+                    </v-card>
+                </v-col>
 
-          <v-divider />
-          <v-card-text>
-            <v-form
-            v-model="ticket.valid">
-            <v-row align="center" justify="center">
-              <v-col cols="6">
-                Billet d'entrée générale
-                <v-text-field
-                  v-model.number="ticket.quantity"
-                  class="text-right"
-                  label="Nombre de billets"
-                  type="number"
-                  :rules="[rules.maximum]"
-                  min="1"
-                  max="3"
-                ></v-text-field>
-              </v-col>
-              <v-col cols="12" md=4>
-                <v-btn :disabled="!ticket.valid" class="primary" @click="checkout">Acheter!</v-btn>
-              </v-col>
             </v-row>
-            </v-form>
-          </v-card-text>
-        </v-card>
-      </v-col>
+            <div>
+                <p><br>
+                    <b>Où :</b> Au Collège de Maisonneuve dans la salle Vivoir (3800 boul. Pie-IX, Montréal) (proche de station Pie-IX)<br>
+                    <b>Quand? :</b> Le jeudi 9 avril 2020 de 20h00 à 3h00 (à noter qu'il y aura fermeture des portes à 22h00) (aussi noter que le vendredi et lundis sont fériés pour Pâques)<br>
+                    <b>Quoi? :</b> Voir la <a href="/">page d'accueil</a> pour ces informations.
+
+        </p></div>
+        </v-col>
     </v-row>
 
     <v-divider />
@@ -76,7 +61,7 @@
         </v-row>
         <v-row no-gutters justify="center">
           <v-col cols="6" sm="4" md="3" lg="2">
-            <v-card light flat height="100%" width="250px" class="secondary darken-1">
+            <v-card light flat height="100%" width="250px" class="accent">
               <v-card-title>Alcool</v-card-title>
               <v-card-subtitle>
                 <div>1 pour 3.99$</div>
@@ -123,9 +108,6 @@
 
     <v-row>
       <v-row no-gutters justify="center">
-        <v-col align-self="center" cols="12" sm="4" md="3" lg="2">
-          <span class="headline">Modes de paiement acceptés</span>
-        </v-col>
         <v-col v-for="(icon,iconIndex) in payIcons" cols="2" md="1" :key="iconIndex" align="center">
           <v-img :src="icon.src" aspect-ratio="1" width=40px max-height="40px" min-height="20px" />
         </v-col>
