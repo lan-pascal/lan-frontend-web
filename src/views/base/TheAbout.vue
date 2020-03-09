@@ -5,9 +5,9 @@
   <v-col>
     
     <v-row align="center" class="pt-12 my-12">
-      <v-col class="pr-12" cols="12" md="8">
+      <v-col class="pr-12" cols="12" md="10">
         <div class="display-3 primary--text">À propos</div>
-        <div class="headline font">
+        <div class="font-weight-light headline" style="font-family:'Teko', sans-serif;">
           <p>
             Nous sommes un regroupement de personnes motivé à créer des événements, nommés
             <i>Quart de nuit</i>, qui incorporent diverse facettes du geek-culture et les rendent accessibles à tous.
@@ -25,28 +25,26 @@
       </v-col>
     </v-row>
 
-    <v-row class="grey">
-        <v-col cols=12>
-          <h1 class="title text--primary ">Contactez-nous</h1>
-        </v-col>
-        <v-col>
-          <p class="pl-2">Vous pouvez nous rejoindre à l'aide des réseaux suivants:</p>
+    <v-row align="center">
+          <h1 class="title text--primary mr-5">Contactez-nous</h1>
+
           <v-btn
             v-for="media in medias"
             :key="media.link"
             :href="media.link"
             target="_blank"
-            class="mx-4"
+            class="mx-3"
             icon
+            color="primary"
+            x-large
           >
             <v-icon size="24px">{{ media.icon }}</v-icon>
           </v-btn>
-        </v-col>
     </v-row>
 
     <v-row class="py-12 my-12">
       <v-col>
-        <div class="title text--primary">Équipe</div>
+        <h1 class="text--primary display-1">Équipe</h1>
       </v-col>
       <v-row justify="center" justify-md="start">
         <v-col
@@ -78,6 +76,11 @@
   </v-col>
   </div>
 </template>
+
+<style>
+
+
+</style>
 
 <script>
 export default {

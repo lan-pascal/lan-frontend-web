@@ -21,7 +21,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn :to="{name:'pricing'}" class="secondary hidden-sm-and-down">Tarifs</v-btn>
+      <v-btn :to="{name:'pricing'}" class="secondary hidden-sm-and-down"><b>Tarifs</b></v-btn>
 
       <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
     </v-app-bar>
