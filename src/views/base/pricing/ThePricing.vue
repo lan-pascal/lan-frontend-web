@@ -2,7 +2,7 @@
   <div class="width">
     
     <v-row align=center>
-        <v-col class="pr-12" cols=12>
+        <v-col class="" cols=12>
           <v-row class="display-3 text-md-end justify-center">
           Billeterie
           <v-icon class="pl-3" size="45px">mdi-ticket</v-icon>
@@ -12,7 +12,7 @@
 
     <v-row>
         <v-col>
-            <v-row justify=center align=center>
+            <v-row justify="center" align=center>
                 <v-col cols=10 sm=5 md=4 lg=3>
                     <v-card width=250px height=415>
                             <v-col class="pa-7"><v-img  src="../../../assets/media/vector/qdn-logo-vector.svg"></v-img></v-col>
