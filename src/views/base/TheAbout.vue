@@ -101,7 +101,7 @@ export default {
           name: "Karl-Étienne",
           title: "Développeur web en chef & assistant-technique",
           description:
-            "Fondateur du site web. Aide bénévolement depuis le début. Ne dort pas beaucoup."
+            "Fondateur du site web. Aide bénévolement depuis le début. Côté rationnel à Pascal."
         },
         {
           name: "Stephen",
@@ -121,7 +121,7 @@ export default {
         {
           name: "Lianne",
           title: "Conseillère financière & assistante-technique",
-          description: "Aide bénévolement depuis Quart de nuit IV. Épicerie du Quart de nuit."
+          description: "Aide bénévolement depuis Quart de nuit IV. Épicerie du Quart de nuit. Grâce à elle si le Quart n'est pas bankrupt."
         },
         {
           name: "Leon",

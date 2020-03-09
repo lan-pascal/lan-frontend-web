@@ -266,14 +266,14 @@ export default {
         {name: "Rock Band & Guitar Hero", time: "02h", color: "accent"},
       ],
       tournament: [
-        {name: "TETRIS", time: "21h", location: "Loundge", vector: require("@/assets/media/vector/tetris-vector.svg")},
-        {name: "SUPER SMASH BROS.", time: "23h", location: "Loundge", vector: require("@/assets/media/vector/ssb-vector.svg")}, //SVG NEEDS FIX
+        {name: "TETRIS", vector: require("@/assets/media/vector/tetris-vector.svg")},
+        {name: "SMASH BROS.", vector: require("@/assets/media/vector/ssb-vector.svg")}, //SVG NEEDS FIX
       ],
       information: [
         {name: "COUCH GAMING", vector: require("@/assets/media/vector/sofa-vector.svg") , text:"Couch gaming c'est un terme pour désigner des jeux vidéo qui se jouent à plusieurs sur le même écran. Plusieurs jeux accessibles à tous (et amusants pour tous) se présenteront à ces espaces."},
         {name: "HALO REACH & BLACK OPS", vector: require("@/assets/media/vector/military-vector.svg") , text:"Honnête à ses origines comme LAN, des méga-batailles Halo: Reach et Call of Duty: Black Ops se dérouleront au courant de la soirée. 12 joueurs par jeu!"},
-        {name: "Trivia quiz", vector: require("@/assets/media/vector/beer-vector.svg") , text:"Un trivia quiz vous attend lors de la soirée! En équipe de trois et en utilisant Kahoot, une série de question portant sur le cinéma, les jeux vidéo et la musique défileront sur le grand écran. Le quiz est conçu de manière à ce qu'il soit accessible à tous : des connaissances en films Barbie peuvent autant aider que des connaissances en musique classique. Il y aura des prix pour les trois premières équipes!"},
-        {name: "Karaoke", vector: require("@/assets/media/vector/beer-vector.svg") , text:"Un karaoke sera de mise lors de la soirée grâce à la générosité de Karaoke DJ Hugz. C'est le temps de vous laisser aller avec vos chansons préférées!"},
+        {name: "TRIVIA QUIZ", vector: require("@/assets/media/vector/head-vector.svg") , text:"Un trivia quiz vous attend lors de la soirée! En équipe de trois et en utilisant Kahoot, une série de question portant sur le cinéma, les jeux vidéo et la musique défileront sur le grand écran. Le quiz est conçu de manière à ce qu'il soit accessible à tous : des connaissances en films Barbie peuvent autant aider que des connaissances en musique classique. Il y aura des prix pour les trois premières équipes!"},
+        {name: "KARAOKE", vector: require("@/assets/media/vector/music-vector.svg") , text:"Un karaoke sera de mise lors de la soirée grâce à la générosité de Karaoke DJ Hugz. C'est le temps de vous laisser aller avec vos chansons préférées!"},
         {name: "BAR", vector: require("@/assets/media/vector/beer-vector.svg") , text:"Un bar sera aussi accessible durant toute la soirée. Différentes boissons seront offertes à des prix raisonnables. Les prix sont dans la section Tarifs (en haut à droite)."}
       ]
       }
