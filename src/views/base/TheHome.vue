@@ -41,7 +41,8 @@
             </v-img>
           </v-col>
         </v-row>
-        <v-row>
+        <v-row
+        class="grey py-3 fullwidth">
           
             <v-col
           v-for="info in quickinfo"
@@ -56,10 +57,7 @@
           
         </v-row>
     <!-- SCÈNE / LIGNE DU TEMPS -->
-        <v-row class=" pa-4">
-          <v-col>
-          
-          </v-col>
+        <v-row class="py-12">
           <v-col
           cols=12
           md=6>
@@ -88,15 +86,10 @@
               </v-timeline-item>
             </v-timeline>
           </v-col>
+          <v-col>
+            <!-- JEUX DE SOCIÉTÉ -->
 
-        </v-row>
-    <!-- JEUX DE SOCIÉTÉ -->
-        <v-row
-        class=" pa-4"
-        align="center">
-          <v-col
-          cols=12
-          md=6>
+
             <v-row justify="center">
               <h1 class="primary--text display-1">JEUX DE SOCIÉTÉ</h1>
             </v-row>
@@ -114,11 +107,12 @@
               max-width="275"
               src="@/assets/media/vector/board-game-stack.svg"></v-img>
             </v-row>  
-          </v-col>
-        </v-row>
+        </v-col>
+
+      </v-row>
+    
     <!-- TOURNOIS -->
         <v-row
-        class=" pa-4"
         align="center">
            <v-col>
                <v-row justify="center">
@@ -126,7 +120,7 @@
                </v-row>
                <v-row justify="center">
                  <v-col cols=12
-                 md=7>
+                 md=10>
                    <p class="pa-2">Deux tournois se présenteront à cette 5e édition : un tournoi 2v2 de Super Smash Bros. (le 5e!)
                    et un tournoi de Tetris 1v1 (le 2e!). Les finales auront lieu sur le grand écran de la scène. Des prix seront remis aux gagnants.
                    Pour vous inscrire aux tournois, vous recevrez un courriel quelques jours avant le Quart si vous avez votre billet.
@@ -181,26 +175,39 @@
             md=5
 
             >
-               <v-row justify="center">
-                 <h1 class="primary--text display-1">{{info.name}}</h1>
+            <v-row>
+              <v-col
+              cols=3>
+                <v-row>
+                  <v-col>
+                    <v-img
+                 max-width="100"
+                 :src="info.vector"></v-img>
+                  </v-col>
+                 
+               </v-row>
+              </v-col>
+              <v-col
+              cols=9>
+                <v-row justify="center">
+                 <h2 class="primary--text">{{info.name}}</h2>
                </v-row>
                <v-row>
                  <p class="pa-2">
                    {{info.text}}
                  </p>
                </v-row>
-               <v-row
-               justify="center">
-                 <v-img
-                 max-width="100"
-                 :src="info.vector"></v-img>
-               </v-row>
+              </v-col>
+            </v-row>
+               
+               
            </v-col>
         </v-row>
     </div>
 </template>
 
 <style scoped lang="scss">
+
 .midscreen {
   width: 100%;
   height: 30rem;

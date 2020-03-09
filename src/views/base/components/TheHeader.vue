@@ -1,10 +1,10 @@
 <template>
   <div>
     <v-app-bar dark app>
-      <v-btn :to="{name: 'home'}" :ripple="false" exact text class="noeffect">
+      <v-btn :to="{name: 'home'}" :ripple="false" exact text class="noeffect pa-0 pr-6">
         <v-img
           aspect-ratio="1.8"
-          min-width="110"
+          min-width="70"
           max-width="150"
           src="@/assets/logo/LogoWhiteFillEmptyBtns.svg"
         />
@@ -21,7 +21,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn :to="{name:'pricing'}" class="accent hidden-sm-and-down">Tarifs</v-btn>
+      <v-btn :to="{name:'pricing'}" class="secondary hidden-sm-and-down">Tarifs</v-btn>
 
       <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
     </v-app-bar>
