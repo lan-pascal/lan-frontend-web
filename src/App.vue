@@ -46,8 +46,8 @@ p {
     width: 100%;
   }
   @include md {
-    min-width: 900px;
-    max-width:1500px;
+    min-width: 959px;
+    max-width:1000px;
     width: 70%; 
   }
   margin: 0 auto;

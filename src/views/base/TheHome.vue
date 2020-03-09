@@ -1,14 +1,14 @@
 <template>
     <div class="justify-center width">
-        <v-row class="fullscreen ml-1" align="center" justify=center >
+        <v-row class="fullscreen ml-1" align="top" justify=center >
             <v-col align="center" class="ma-0 pa-0">
-                <v-img  class="my-0" src="@/assets/logo/logo-bleu-blanc.svg" contain aspect-ratio="1.5" max-width="600px" min-width=275px />
+                <v-img  class="my-12 py-0" src="@/assets/logo/logo-bleu-blanc.svg" contain aspect-ratio="1.5" max-width="600px" min-width=275px />
                 <div class="display-4 font-weight-bold"><div class="qdn-top">QUART DE NUIT</div> <div class="primary--text qdn-behind">V</div></div>
                 <Countdown class="mt-n5" :deadline="deadline"/>
             </v-col>
         </v-row>
     <!-- QdN c'est quoi? -->
-        <v-row class="pa-4">
+        <v-row class="py-12 my-6">
           <v-col
           cols=12
           md=6
@@ -42,7 +42,7 @@
           </v-col>
         </v-row>
         <v-row
-        class="grey py-3 fullwidth">
+        class="grey py-3 my-8 fullwidth">
           
             <v-col
           v-for="info in quickinfo"
@@ -57,7 +57,7 @@
           
         </v-row>
     <!-- SCÈNE / LIGNE DU TEMPS -->
-        <v-row class="py-12">
+        <v-row class="py-12 mt-12">
           <v-col
           cols=12
           md=6>
@@ -193,7 +193,7 @@
                  <h2 class="primary--text">{{info.name}}</h2>
                </v-row>
                <v-row>
-                 <p class="pa-2">
+                 <p class="pa-2 font-weight-regular">
                    {{info.text}}
                  </p>
                </v-row>
