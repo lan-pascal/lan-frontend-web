@@ -32,22 +32,17 @@
         <v-list-item>
            <v-list-item-content>
             <v-list-item-title class="display-1">
-              <v-col align="center" class="pa-0 ma-0">
-                <div class="font-weight-bold"><div class="qdn-top">QUART DE NUIT</div> <div class="primary--text qdn-behind">V</div></div>
+              <v-row justify="center" class="py-12">
+                <v-col cols=9 align="center" class="pa-0 ma-0">
+               <v-img src="../../../assets/media/vector/qdn-logo-vector.svg"></v-img>
               </v-col>
+              </v-row>
+              
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         
-        <v-list-item link :to="{name: 'pricing'}">
-          <v-list-item-icon>
-            <v-icon class="primary--text">mdi-currency-usd</v-icon>
-          </v-list-item-icon>
-
-          <v-list-item-content>
-            <v-list-item-title class="primary--text">Tarifs</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+        
 
         <v-divider/>
 
@@ -71,6 +66,16 @@
           </v-list-item-content>
         </v-list-item>
 
+        <v-divider />
+        <v-list-item link :to="{name: 'pricing'}">
+          <v-list-item-icon>
+            <v-icon class="primary--text">mdi-currency-usd</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title class="primary--text"><b>Tarifs</b></v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
 
       <template v-slot:append>
