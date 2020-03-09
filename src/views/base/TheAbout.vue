@@ -1,6 +1,10 @@
 <template>
+  <div class="width">
+
+  
   <v-col>
-    <v-row align="center" class="fullscreen">
+    
+    <v-row align="center" class="pt-12 my-12">
       <v-col class="pr-12" cols="12" md="8">
         <div class="display-3 primary--text">À propos</div>
         <div class="headline font">
@@ -21,7 +25,7 @@
       </v-col>
     </v-row>
 
-    <v-row>
+    <v-row class="grey">
         <v-col cols=12>
           <h1 class="title text--primary ">Contactez-nous</h1>
         </v-col>
@@ -40,7 +44,7 @@
         </v-col>
     </v-row>
 
-    <v-row>
+    <v-row class="py-12 my-12">
       <v-col>
         <div class="title text--primary">Équipe</div>
       </v-col>
@@ -72,6 +76,7 @@
       </v-row>
     </v-row>
   </v-col>
+  </div>
 </template>
 
 <script>
@@ -110,7 +115,7 @@ export default {
         },
         {
           name: "Nicolas",
-          title: "Designer web",
+          title: "Développeur web",
           description: "Maître de l'esthétique du site."
         },
         {

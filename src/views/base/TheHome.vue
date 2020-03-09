@@ -202,6 +202,40 @@
                
                
            </v-col>
+           <v-col
+            class="pa-4"
+            cols=12
+            sm=6
+            md=5
+
+            >
+            <v-row>
+              <v-col
+              cols=3>
+                <v-row>
+                  <v-col>
+                    <v-img
+                 max-width="100"
+                 src="@/assets/media/vector/beer-vector.svg"></v-img>
+                  </v-col>
+                 
+               </v-row>
+              </v-col>
+              <v-col
+              cols=9>
+                <v-row justify="center">
+                 <h2 class="primary--text">BAR</h2>
+               </v-row>
+               <v-row>
+                 <p class="pa-2">
+                  Un bar sera aussi accessible durant toute la soirée. Différentes boissons seront offertes à des prix raisonnables. Voir les <a href="/pricing" >Tarifs</a>.
+                 </p>
+               </v-row>
+              </v-col>
+            </v-row>
+               
+               
+           </v-col>
         </v-row>
     </div>
 </template>
@@ -274,7 +308,6 @@ export default {
         {name: "HALO REACH & BLACK OPS", vector: require("@/assets/media/vector/military-vector.svg") , text:"Honnête à ses origines comme LAN, des méga-batailles Halo: Reach et Call of Duty: Black Ops se dérouleront au courant de la soirée. 12 joueurs par jeu!"},
         {name: "TRIVIA QUIZ", vector: require("@/assets/media/vector/head-vector.svg") , text:"Un trivia quiz vous attend lors de la soirée! En équipe de trois et en utilisant Kahoot, une série de question portant sur le cinéma, les jeux vidéo et la musique défileront sur le grand écran. Le quiz est conçu de manière à ce qu'il soit accessible à tous : des connaissances en films Barbie peuvent autant aider que des connaissances en musique classique. Il y aura des prix pour les trois premières équipes!"},
         {name: "KARAOKE", vector: require("@/assets/media/vector/music-vector.svg") , text:"Un karaoke sera de mise lors de la soirée grâce à la générosité de Karaoke DJ Hugz. C'est le temps de vous laisser aller avec vos chansons préférées!"},
-        {name: "BAR", vector: require("@/assets/media/vector/beer-vector.svg") , text:"Un bar sera aussi accessible durant toute la soirée. Différentes boissons seront offertes à des prix raisonnables. Les prix sont dans la section Tarifs (en haut à droite)."}
       ]
       }
     }

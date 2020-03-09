@@ -1,6 +1,6 @@
 <template>
   <v-col>
-    <v-row align=center class="fullscreen">
+    <v-row class="py-12 my-12" align=center>
       <v-col class="pr-12" cols=12 md=8>
         <div class="display-3 accent--text">FAQ</div>
         <div class="headline">Si vous avez plus de questions, n'hésitez pas à nous contacter. Liens pour nous rejoindre au bas de la page!</div>
