@@ -34,6 +34,10 @@ h1, h2, h3, h4, h5, h6 {
   width: fit-content;
 }
 
+a{
+  word-break: break-word;
+}
+
 .width {
   @include xs {
     width: 100%;
