@@ -1,0 +1,17 @@
+@use "countdown.scss";
+
+@mixin xs {
+    @media (max-width: 599px) { @content; }
+  }
+@mixin sm {
+    @media (min-width: 600px) { @content; }
+  }
+ @mixin md {
+    @media (min-width: 1025px) { @content; }
+  }
+@mixin lg {
+    @media (min-width: 1264px) { @content; }
+  }
+@mixin xl {
+    @media (min-width: 1904px) { @content; }
+  }
