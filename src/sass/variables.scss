@@ -1,0 +1,16 @@
+
+//Vuetify
+$heading-font-family: 'Teko', sans-serif;
+$body-font-family: 'Source Sans Pro', sans-serif;
+
+//The_Home Timeline
+$timeline-divider-center: 33% !default;
+$timeline-item-padding: 0px !default;
+$timeline-dot-small-size: 0px !default;
+$timeline-inner-dot-small-size:12px !default;
+
+@import "~vuetify/src/styles/styles.sass";
+
+//Custom
+@import "components/_all.scss";
+
