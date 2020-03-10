@@ -112,14 +112,19 @@ export default {
             "Fondateur du site web. Aide bénévolement depuis le début. Côté rationnel à Pascal."
         },
         {
-          name: "Stephen",
-          title: "Développeur web & assistant-technique",
-          description: "Aide bénévolement depuis le début."
+          name: "Lianne",
+          title: "Conseillère financière & assistante-technique",
+          description: "Aide bénévolement depuis Quart de nuit IV. Épicerie du Quart de nuit. Grâce à elle si le Quart n'est pas bankrupt."
         },
         {
           name: "Nicolas",
-          title: "Développeur web",
+          title: "Designer web",
           description: "Maître de l'esthétique du site."
+        },
+        {
+          name: "Stephen",
+          title: "Développeur web & assistant-technique",
+          description: "Aide bénévolement depuis le début."
         },
         {
           name: "Simon",
@@ -127,19 +132,19 @@ export default {
           description: "Aide bénévolement depuis Quart de nuit III. Épicerie du Quart de nuit."
         },
         {
-          name: "Lianne",
-          title: "Conseillère financière & assistante-technique",
-          description: "Aide bénévolement depuis Quart de nuit IV. Épicerie du Quart de nuit. Grâce à elle si le Quart n'est pas bankrupt."
-        },
-        {
           name: "Leon",
           title: "Créateur du logo officiel",
           description: "Fais des caméléons photo-réaliste à la mine."
         },
         {
-          name: "Ayman",
-          title: "Assistant-technique",
-          description: "Aide bénévolement depuis le début."
+          name: "Sacha",
+          title: "Photographe",
+          description: "Prends de très jolies photos."
+        },
+        {
+          name: "Hugues",
+          title: "DJ & maître du son",
+          description: "Grâce à lui si le Quart est pas un malaise silencieux! Son site : https://www.facebook.com/karaokedjhugz/"
         },
         {
           name: "Kevin",
@@ -147,27 +152,10 @@ export default {
           description: "Aide bénévolement depuis le début."
         },
         {
-          name: "Alex",
-          title: "Assistant-technique",
-          description:
-            "Aide bénévolement depuis le début. Dort encore moins que Karl-Étienne."
-        },
-        {
-          name: "Étienne",
-          title: "Assistant-technique",
-          description: "Aide bénévolement depuis le début. Fait de la musique!"
-        },
-        {
           name: "Arnaud",
           title: "Assistant-technique & service bar/vestiaire",
           description:
             "Aide bénévolement depuis le début. Oublie de s'occuper de son tournoi."
-        },
-        {
-          name: "Roxanne",
-          title: "Assistante-technique",
-          description:
-            "Aide bénévolement depuis le Quart de nuit V."
         },
         {
           name: "Maude",
@@ -194,14 +182,26 @@ export default {
             "Aide bénévolement depuis le Quart de nuit V."
         },
         {
-          name: "Sacha",
-          title: "Photographe",
-          description: "Prends de très jolies photos."
+          name: "Ayman",
+          title: "Assistant-technique",
+          description: "Aide bénévolement depuis le début."
         },
         {
-          name: "Hugues",
-          title: "DJ & maître du son",
-          description: "Grâce à lui si le Quart est pas un malaise silencieux! Son site : https://www.facebook.com/karaokedjhugz/"
+          name: "Alex",
+          title: "Assistant-technique",
+          description:
+            "Aide bénévolement depuis le début. Dort encore moins que Karl-Étienne."
+        },
+        {
+          name: "Étienne",
+          title: "Assistant-technique",
+          description: "Aide bénévolement depuis le début. Fait de la musique!"
+        },
+        {
+          name: "Roxanne",
+          title: "Assistante-technique",
+          description:
+            "Aide bénévolement depuis le Quart de nuit V."
         }
       ],
       medias: [
