@@ -129,7 +129,7 @@ utilisées et partagées lorsque vous visitez ou faites un achat sur quartdenuit
         <ul>
             <li>“Cookies” are data files that are placed on your device or computer and often include an
                  anonymous unique identifier. For more information about cookies, and how to 
-                 disable cookies, visit http://www.allaboutcookies.org.<a href="http://www.allaboutcookies.org">http://www.allaboutcookies.org</a>
+                 disable cookies, visit <a href="http://www.allaboutcookies.org">http://www.allaboutcookies.org</a>.
             </li>
             <li>“Log files” track actions occurring on the Site, and 
                 collect data including your IP address, browser type, Internet service provider, referring/exit pages, and date/time stamps.

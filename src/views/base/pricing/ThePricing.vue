@@ -15,24 +15,28 @@
             <v-row justify="center" align=center>
                 <v-col cols=10 sm=5 md=4 lg=3>
                     <v-card width=250px height=415>
-                            <v-col class="pa-7"><v-img  src="../../../assets/media/vector/qdn-logo-vector.svg"></v-img></v-col>
+                            <v-col class="pa-7"><v-img  src="@/assets/media/vector/qdn-logo-vector.svg"></v-img></v-col>
                             
                             <v-card-text class="py-0 white--text posfix" align="center"><i>Early Bird</i><br>50 premiers billets</v-card-text>
                             <v-card-text><span class="display-1">$ 20</span>.<span class="body">00</span></v-card-text> <!-- Seems like a bug. The Name should be at the center. -->
                             <v-divider/>
-                            <v-card-text><v-text-field class="text-right" suffix="x" label="Nombre de billets" placeholder=2 :rules="[rules.number, rules.maximum]" width=30px height=30px></v-text-field>Billet d'entrée générale</v-card-text>
-                            <v-card-actions class="justify-center pb-6"><v-btn class="secondary">Acheter</v-btn></v-card-actions>
+                            <v-form v-model="tickets[0].valid">
+                              <v-card-text><v-text-field class="text-right" suffix="x" label="Nombre de billets" placeholder=2 :rules="[rules.number, rules.maximum]" width=30px height=30px></v-text-field>Billet d'entrée générale</v-card-text>
+                              <v-card-actions class="justify-center pb-6"><v-btn :disabled="!tickets[0].valid" class="secondary">Acheter</v-btn></v-card-actions>
+                            </v-form>
                     </v-card>
                 </v-col>
                 <v-col cols=10 sm=5 md=4 lg=3>
                     <v-card width=250px height=415 disabled>
-                            <v-col class="pa-7"><v-img  src="../../../assets/media/vector/qdn-logo-vector.svg"></v-img></v-col>
+                            <v-col class="pa-7"><v-img  src="@/assets/media/vector/qdn-logo-vector.svg"></v-img></v-col>
                             
                             <v-card-text class="py-0 white--text posfix pb-5" align="center"><i>Régulier</i><br></v-card-text>
                             <v-card-text><span class="display-1">$ 25</span>.<span class="body">00</span></v-card-text> <!-- Seems like a bug. The Name should be at the center. -->
                             <v-divider/>
-                            <v-card-text><v-text-field class="text-right" suffix="x" label="Nombre de billets" placeholder=2 :rules="[rules.number, rules.maximum]" width=30px height=30px></v-text-field>Billet d'entrée générale</v-card-text>
-                            <v-card-actions class="justify-center pb-6"><v-btn class="secondary">Acheter</v-btn></v-card-actions>
+                            <v-form v-model="tickets[1].valid">
+                              <v-card-text><v-text-field class="text-right" suffix="x" label="Nombre de billets" placeholder=2 :rules="[rules.number, rules.maximum]" width=30px height=30px></v-text-field>Billet d'entrée générale</v-card-text>
+                              <v-card-actions class="justify-center pb-6"><v-btn :disabled="!tickets[1].valid" class="secondary">Acheter</v-btn></v-card-actions>
+                            </v-form>
                     </v-card>
                 </v-col>
 
@@ -139,12 +143,19 @@ export default {
   name: "pricing",
   data() {
     return {
-      test: process.env.STRIPE_PK ,
-      ticket : {
-        valid: true,
-        sku: 'sku_GrrvrUDqX5KavF',
-        quantity: 1,
-      },
+      test: process.env.VUE_APP_STRIPE_PK ,
+      tickets : [
+        {
+          valid: true,
+          sku: 'sku_GrrvrUDqX5KavF',
+          quantity: 1,
+        },
+        {
+          valid: true,
+          sku: 'sku_GrrvrUDqX5KavF',
+          quantity: 1,
+        }
+      ],
       rules: {
         maximum: value => {
           return (
