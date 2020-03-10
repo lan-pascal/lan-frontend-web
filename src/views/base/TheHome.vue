@@ -19,7 +19,16 @@
               <h1 class="display-1">Le Quart de Nuit, c'est quoi <span class="display-2 primary--text">?</span></h1>
             </v-row>
             <v-row class="pa-2">
-              <p>Nous sommes un regroupement de personnes motivé à créer des événements, nommés <i>Quart de nuit</i>, 
+              <p>Vous avez envie de relaxer avec des amis en jouant à des jeux vidéo de tous les genres? De prendre une petite bière en jouant
+                à des jeux de société? De tester vos connaissances en pop-culture avec un trivia en équipe? De découvrir un talent musical caché au karaoké?</p>
+
+                <p>Tout cela et plus encore vous attend au prochain Quart de nuit!</p>
+                
+                <p>Si tu lis ça, oui tu es invité.e! Et oui tu peux inviter tes ami.e.s!
+              Même si tu n'as jamais touché à quelque chose d'électronique de ta vie, tu y trouveras quelque chose.
+              </p>
+                
+                <p>Nous sommes un regroupement de personnes motivé à créer des événements, nommés <i>Quart de nuit</i>, 
               qui incorporent diverses facettes du <i>geek-culture</i> et les rendent accessibles à tous.
             </p>
 
@@ -27,9 +36,7 @@
               tout en gardant la nature <i>geek</i> du <i>Quart</i> qui le rend si unique.
             </p>
             
-            <p>Si tu lis ça, oui tu es invité.e! Et oui tu peux inviter tes ami.e.s!
-              Même si tu n'as jamais touché à quelque chose d'électronique de ta vie, tu y trouveras quelque chose.
-              </p>
+            
             </v-row>
           </v-col>
 
