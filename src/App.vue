@@ -47,8 +47,8 @@ a{
   }
   @include md {
     min-width: 959px;
-    max-width:1000px;
-    width: 70%; 
+    max-width:1200px;
+    width: 80%; 
   }
   margin: 0 auto;
 }
