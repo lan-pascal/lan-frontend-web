@@ -2,7 +2,7 @@
     <div class="justify-center width">
         <v-row class="fullscreen ml-1" align="top" justify=center >
             <v-col align="center" class="ma-0 pa-0">
-                <v-img  class="my-12 py-0" src="@/assets/logo/logo-bleu-blanc.svg" contain aspect-ratio="1.5" max-width="600px" min-width=275px />
+                <v-img  class="my-12 py-0" src="@/assets/logo/logo-bleu-noir.svg" contain aspect-ratio="1.5" max-width="600px" min-width=275px />
                 <!--<v-img  src="../../assets/media/vector/qdn-logo-vector.svg"></v-img>-->
                 <div class="display-4 font-weight-bold"><div class="qdn-top">QUART DE NUIT</div> <div class="primary--text qdn-behind">V</div></div>
                 <Countdown class="mt-n5" :deadline="deadline"/>

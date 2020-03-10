@@ -6,7 +6,7 @@
           aspect-ratio="1"
           min-width="50"
           max-width="150"
-          src="@/assets/logo/logo-bleu-blanc.svg"
+          src="@/assets/logo/logo-bleu-noir.svg"
         />
       </v-btn>
 
@@ -48,7 +48,7 @@
 
         <v-list-item link :to="{name: 'home'}" exact>
           <v-list-item-avatar>
-            <img src="@/assets/logo/logo-bleu-blanc.svg">
+            <img src="@/assets/logo/logo-bleu-noir.svg">
           </v-list-item-avatar>
 
           <v-list-item-content>
