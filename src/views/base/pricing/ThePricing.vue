@@ -13,8 +13,8 @@
     <v-row>
         <v-col>
             <v-row justify="center" align=center>
-                <v-col cols=10 sm=5 md=4 lg=3>
-                    <v-card width=250px height=415>
+                <v-col class="scrolling-wrapper justify-md-center align-center">
+                  <v-card width=250px height=415 class="mx-4">
                             <v-col class="pa-7"><v-img  src="@/assets/media/vector/qdn-logo-vector.svg"></v-img></v-col>
                             
                             <v-card-text class="py-0 white--text posfix" align="center"><i>Early Bird</i><br>50 premiers billets</v-card-text>
@@ -25,9 +25,9 @@
                               <v-card-actions class="justify-center pb-6"><v-btn :disabled="!tickets[0].valid" class="secondary">Acheter</v-btn></v-card-actions>
                             </v-form>
                     </v-card>
-                </v-col>
-                <v-col cols=10 sm=5 md=4 lg=3>
-                    <v-card width=250px height=415 disabled>
+                
+                
+                    <v-card width=250px height=415 class="mr-6" disabled>
                             <v-col class="pa-7"><v-img  src="@/assets/media/vector/qdn-logo-vector.svg"></v-img></v-col>
                             
                             <v-card-text class="py-0 white--text posfix pb-5" align="center"><i>Régulier</i><br></v-card-text>
@@ -39,6 +39,8 @@
                             </v-form>
                     </v-card>
                 </v-col>
+                    
+                
 
             </v-row>
             <div>
@@ -133,6 +135,18 @@
     position: relative;
     z-index: 1;
     top: -30px;
+}
+.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
+  display:flex;
+  flex-wrap: nowrap;
+  overflow-x:auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .card {
+    flex: 0 0 auto;
+  }
 }
 </style>
 
