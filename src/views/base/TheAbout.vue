@@ -113,7 +113,7 @@ export default {
         },
         {
           name: "Lianne",
-          title: "Conseillère financière & assistante-technique",
+          title: "Conseillère financière & communications",
           description: "Aide bénévolement depuis Quart de nuit IV. Épicerie du Quart de nuit. Grâce à elle si le Quart n'est pas bankrupt."
         },
         {
@@ -138,7 +138,7 @@ export default {
         },
         {
           name: "Sacha",
-          title: "Photographe",
+          title: "Photographe & maître-t-shirtier",
           description: "Prends de très jolies photos."
         },
         {
