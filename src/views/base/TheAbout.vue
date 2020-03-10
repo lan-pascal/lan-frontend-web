@@ -10,16 +10,16 @@
         <div class="font-weight-light headline" style="font-family:'Teko', sans-serif;">
           <p>
             Nous sommes un regroupement de personnes motivé à créer des événements, nommés
-            <i>Quart de nuit</i>, qui incorporent diverse facettes du geek-culture et les rendent accessibles à tous.
+            Quart de nuit, qui incorporent diverse facettes du geek-culture et les rendent accessibles à tous.
           </p>
           <p>
             Notre mission est, qu'à chaque
-            <i>Quart de nuit</i>, tout le monde se sente à sa place, tout en gardant la nature geek du
-            <i>Quart</i> qui le rend si unique.
+            Quart de nuit, tout le monde se sente à sa place, tout en gardant la nature geek du
+            Quart qui le rend si unique.
           </p>
           <p>
-            <i>Les Quarts de nuits</i> vont souvent incorporer jeux vidéo, jeux de société, trivia, bar et karaoke. Il y en a, en général, deux par année. Le premier
-            <i>Quart de nuit</i> date de janvier 2018 et comportait seulement 24 personnes!
+            Les Quarts de nuits vont souvent incorporer jeux vidéo, jeux de société, trivia, bar et karaoke. Il y en a, en général, deux par année. Le premier
+            Quart de nuit date de janvier 2018 et comportait seulement 24 personnes!
           </p>
         </div>
       </v-col>
