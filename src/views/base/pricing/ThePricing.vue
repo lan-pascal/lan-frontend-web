@@ -143,7 +143,7 @@ export default {
   name: "pricing",
   data() {
     return {
-      test: process.env.STRIPE_PK ,
+      test: process.env.VUE_APP_STRIPE_PK ,
       tickets : [
         {
           valid: true,
