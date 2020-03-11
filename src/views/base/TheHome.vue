@@ -300,11 +300,14 @@ export default {
         ],
         schedule: [
         {name: "Dance Dance Revolution & Just Dance", time: "20h", color: "accent"},
+        {name: "", time: "", color: "grey"},
         {name: "Trivia Quiz", time: "22h", color: "accent"},
         {name: "", time: "", color: "grey"},
         {name: "Karaoke", time: "00h", color: "accent"},
         {name: "", time: "", color: "grey"},
         {name: "Rock Band & Guitar Hero", time: "02h", color: "accent"},
+         {name: "", time: "", color: "grey"},
+
       ],
       tournament: [
         {name: "TETRIS", vector: require("@/assets/media/vector/tetris-vector.svg")},

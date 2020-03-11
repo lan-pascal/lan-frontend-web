@@ -78,7 +78,7 @@ export default {
         {
           categories: ["Aide"],
           question: "Où sont les informations sur le prochain Quart de nuit?",
-          answer: "Clique <a href='https://quartdenuit.com/'>ici</a>."
+          answer: "Clique <a href='/'>ici</a>."
         },
         {
           categories: ["Aide"],
@@ -89,7 +89,7 @@ export default {
          {
           categories: ["Paiement", "Aide"],
           question: "Où puis-je acheter mon billet?",
-          answer: "Clique <a href='https://quartdenuit.com/pricing'>ici</a>."
+          answer: "Clique <a href='/pricing'>ici</a>."
         },
         {
           categories: ["Paiement"],
