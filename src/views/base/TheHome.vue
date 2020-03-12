@@ -107,7 +107,7 @@
               class="ma-6"
               aspect-ratio="0.8"
               max-width="275"
-              src="@/assets/media/vector/board-game-stack.svg"></v-img>
+              ></v-img>
             </v-row>  
         </v-col>
 
@@ -278,7 +278,7 @@ import Countdown from "@/components/countdown/CountdownNormal";
 export default {
   name: "TheHome",
   components: {
-    Countdown
+    Countdown,
   },
   data () {
       return {

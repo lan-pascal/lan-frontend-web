@@ -97,7 +97,7 @@
           <v-img 
           class="ma-6"
           max-width="275"
-          src="../../assets/media/vector/board-game-stack.svg"></v-img>
+          ></v-img>
         </v-row>  
       </v-col>
     </v-row>
