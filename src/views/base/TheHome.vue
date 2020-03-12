@@ -48,7 +48,7 @@
         </v-col>
       </v-col>
       <v-col cols="6" class="d-none d-md-flex">
-        <v-img contain src="@/assets/media/ppl-game-pic.jpg"></v-img>
+        <img width="120%" height="85%" src="@/assets/media/ppl-game-pic.jpg"/>
       </v-col>
     </v-row>
     <v-row class="grey py-3 my-8 fullwidth">
