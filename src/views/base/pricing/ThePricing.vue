@@ -15,7 +15,7 @@
             <v-row justify="center" align=center>
                 <v-col class="scrolling-wrapper justify-md-center align-center">
                   <v-card width=250px height=415 class="mx-4">
-                            <v-col class="pa-7"><v-img  src="@/assets/media/vector/qdn-logo-vector.svg"></v-img></v-col>
+                            <v-col class="pa-7"><QdnTitleSVG width="200"/></v-col>
                             
                             <v-card-text class="py-0 white--text posfix" align="center"><i>Early Bird</i><br>50 premiers billets</v-card-text>
                             <v-card-text><span class="display-1">$ 20</span>.<span class="body">00</span></v-card-text> <!-- Seems like a bug. The Name should be at the center. -->
@@ -28,7 +28,7 @@
                 
                 
                     <v-card width=250px height=415 class="mr-6" disabled>
-                            <v-col class="pa-7"><v-img  src="@/assets/media/vector/qdn-logo-vector.svg"></v-img></v-col>
+                            <v-col class="pa-7"><QdnTitleSVG width="200"/></v-col>
                             
                             <v-card-text class="py-0 white--text posfix pb-5" align="center"><i>Régulier</i><br></v-card-text>
                             <v-card-text><span class="display-1">$ 25</span>.<span class="body">00</span></v-card-text> <!-- Seems like a bug. The Name should be at the center. -->
@@ -115,7 +115,7 @@
     <v-row>
       <v-row no-gutters justify="center">
         <v-col v-for="(icon,iconIndex) in payIcons" cols="2" md="1" :key="iconIndex" align="center">
-          <v-img :src="icon.src" aspect-ratio="1" width=40px max-height="40px" min-height="20px" />
+          <inline-svg :src="icon.src" width=40px height="40px"/>
         </v-col>
       </v-row>
     </v-row>
@@ -151,10 +151,14 @@
 </style>
 
 <script>
+import QdnTitleSVG from "@/assets/media/vector/qdn-logo-vector.svg?inline"
 import {loadStripe} from '@stripe/stripe-js';
 
 export default {
   name: "pricing",
+  components: {
+    QdnTitleSVG,
+  },
   data() {
     return {
       test: process.env.VUE_APP_STRIPE_PK ,

@@ -2,11 +2,8 @@
   <div>
     <v-app-bar dark app>
       <v-btn :to="{name: 'home'}" :ripple="false" exact text class="noeffect pa-0 pr-6">
-        <v-img
-          aspect-ratio="1"
-          min-width="50"
-          max-width="150"
-          src="@/assets/logo/logo-bleu-noir.svg"
+        <LogoSVG
+          width="50"
         />
       </v-btn>
 
@@ -34,10 +31,9 @@
             <v-list-item-title class="display-1">
               <v-row justify="center" class="py-12">
                 <v-col cols=9 align="center" class="pa-0 ma-0">
-               <v-img src="../../../assets/media/vector/qdn-logo-vector.svg"></v-img>
+                <QdnTitleSVG/>
               </v-col>
               </v-row>
-              
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -48,7 +44,7 @@
 
         <v-list-item link :to="{name: 'home'}" exact>
           <v-list-item-avatar>
-            <img src="@/assets/logo/logo-bleu-noir.svg">
+            <LogoSVG/>
           </v-list-item-avatar>
 
           <v-list-item-content>
@@ -104,7 +100,14 @@
 </template>
 
 <script>
+import LogoSVG from "@/assets/logo/logo-bleu-noir.svg?inline";
+import QdnTitleSVG from "@/assets/media/vector/qdn-logo-vector.svg?inline"
+
 export default {
+  components: {
+    LogoSVG,
+    QdnTitleSVG
+  },
   data: () => ({
     drawer: false,
     links: [
