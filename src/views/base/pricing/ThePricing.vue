@@ -188,7 +188,7 @@ export default {
       ]
     };
   },
-  async mounted(){
+  async created(){
     this.stripe = await loadStripe("pk_test_Ayf3gYC9NwjtEyeZbbxtB4Ne00TTnLWJk4");
   },
   methods: {
