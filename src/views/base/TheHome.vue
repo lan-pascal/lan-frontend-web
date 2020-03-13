@@ -244,6 +244,102 @@
                
            </v-col>
         </v-row>
+
+        <v-row justify="center" align="center">
+          <v-card
+          tile
+          flat>
+            <v-window continuous v-model="onboarding">
+              <v-window-item>
+                <v-col cols=12 sm=6 md=6>
+                  <v-row>
+                    <v-col
+                    cols=3>
+                      <v-row>
+                        <v-col>
+                          <v-img
+                       max-width="100"
+                       src="@/assets/media/vector/beer-vector.svg"></v-img>
+                        </v-col>
+                      </v-row>
+                    </v-col>
+                    <v-col
+                    cols=9>
+                    <v-row justify="center">
+                       <h2 class="primary--text">BAR</h2>
+                    </v-row>
+                     <v-row>
+                       <p class="pa-2">
+                        Un bar sera aussi accessible durant toute la soirée. Différentes boissons seront offertes à des prix raisonnables. Voir les <a href="/pricing" >Tarifs</a>.
+                       </p>
+                     </v-row>
+                    </v-col>
+                  </v-row>
+                </v-col>
+                <v-col cols=12 sm=6 md=6>
+                  <v-row>
+                    <v-col
+                    cols=3>
+                      <v-row>
+                        <v-col>
+                          <v-img
+                       max-width="100"
+                       src="@/assets/media/vector/beer-vector.svg"></v-img>
+                        </v-col>
+                      </v-row>
+                    </v-col>
+                    <v-col
+                    cols=9>
+                    <v-row justify="center">
+                       <h2 class="primary--text">BAR</h2>
+                    </v-row>
+                     <v-row>
+                       <p class="pa-2">
+                        Un bar sera aussi accessible durant toute la soirée. Différentes boissons seront offertes à des prix raisonnables. Voir les <a href="/pricing" >Tarifs</a>.
+                       </p>
+                     </v-row>
+                    </v-col>
+                  </v-row>
+                </v-col>
+
+              </v-window-item>
+            </v-window>
+            <v-card-actions class="justify-space-between">
+              <v-btn
+                text
+                @click="prev"
+              >
+                <v-icon>mdi-chevron-left</v-icon>
+              </v-btn>
+              <v-item-group
+                v-model="onboarding"
+                class="text-center"
+                mandatory
+              >
+                <v-item
+                  v-for="n in length"
+                  :key="`btn-${n}`"
+                  v-slot:default="{ active, toggle }"
+                >
+                  <v-btn
+                    :input-value="active"
+                    icon
+                    @click="toggle"
+                  >
+                    <v-icon>mdi-record</v-icon>
+                  </v-btn>
+                </v-item>
+              </v-item-group>
+              <v-btn
+                text
+                @click="next"
+              >
+                <v-icon>mdi-chevron-right</v-icon>
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+          
+        </v-row>
     </div>
 </template>
 
@@ -284,6 +380,8 @@
 import Countdown from "@/components/countdown/CountdownNormal";
 
 export default {
+  length: 3,
+  onboarding: 0,
   name: "TheHome",
   components: {
     Countdown
@@ -317,7 +415,19 @@ export default {
         {name: "KARAOKE", vector: require("@/assets/media/vector/music-vector.svg") , text:"Un karaoke sera de mise lors de la soirée grâce à la générosité de Karaoke DJ Hugz. C'est le temps de vous laisser aller avec vos chansons préférées!"},
       ]
       }
-    }
+    },
+    methods: {
+    next () {
+      this.onboarding = this.onboarding + 1 === this.length
+        ? 0
+        : this.onboarding + 1
+    },
+    prev () {
+      this.onboarding = this.onboarding - 1 < 0
+        ? this.length - 1
+        : this.onboarding - 1
+    },
+  },
 }
 </script>
 
