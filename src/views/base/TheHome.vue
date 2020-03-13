@@ -149,6 +149,7 @@
     <v-row class="mt-4" justify="center">
       <h1 class="primary--text display-1">AUTRES ACTIVITÉS</h1>
     </v-row>
+
     <v-row wrap justify="space-around">
       <v-col v-for="info in information" :key="info" class="pa-4" cols="12" sm="6" md="5">
         <v-row align="center">
@@ -196,8 +197,6 @@
           <v-card
           tile
           flat>
-            <v-window continuous v-model="onboarding">
-              <v-window-item>
                 <v-col cols=12 sm=6 md=6>
                   <v-row>
                     <v-col
@@ -248,9 +247,6 @@
                     </v-col>
                   </v-row>
                 </v-col>
-
-              </v-window-item>
-            </v-window>
             <v-card-actions class="justify-space-between">
               <v-btn
                 text
@@ -287,6 +283,8 @@
           </v-card>
           
         </v-row>
+      </v-col>
+    </v-row>
     </div>
 </template>
 
