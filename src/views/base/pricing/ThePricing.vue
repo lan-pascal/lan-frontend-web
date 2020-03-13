@@ -151,7 +151,7 @@
 </style>
 
 <script>
-import QdnTitleSVG from "@/assets/media/vector/qdn-logo-vector.svg?inline"
+import QdnTitleSVG from "@/assets/logo/qdn-logo-vector.svg?inline"
 import {loadStripe} from '@stripe/stripe-js';
 
 export default {
