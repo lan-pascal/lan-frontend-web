@@ -118,7 +118,7 @@ export default {
           categories: ["Divers"],
           question: "Puis-je apporter mon alcool et/ou ma nourriture?",
           answer:
-            "Ça dépend d'année en année (notamment selon l'organisme qui nous loue la salle). Pour le Quart de Nuit 5, il est interdit d'apporter de l'alcool, mais permis d'apporter de la nourriture. Clique ici pour t’informer par rapport au prochain Quart de nuit."
+            "Ça dépend d'année en année (notamment selon l'organisme qui nous loue la salle). Pour le Quart de Nuit V, il est interdit d'apporter de l'alcool, mais permis d'apporter de la nourriture. Clique ici pour t’informer par rapport au prochain Quart de nuit."
         },
         {
           categories: ["Divers", "Contribuer"],
@@ -131,7 +131,7 @@ export default {
           categories: ["Contribuer"],
           question: "Je veux aider avec le Quart de nuit, comment faire?",
           answer:
-            "Cool! Contacte-nous <a href='mailto:quartdenuitmtl@gmail.com'>ici</a>. Peu importe ce que tu sais faire, on est ouvert! De plus, on cherche souvent du matériel, donc tu peux nous faire part de ce que tu as (surtout en matière de jeux vidéo, de jeux de société)"
+            "Cool! Contacte-nous <a href='mailto:quartdenuitmtl@gmail.com'>ici</a>. Peu importe ce que tu sais faire, on est ouvert! De plus, on cherche souvent du matériel, donc tu peux nous faire part de ce que tu as (surtout en matière de jeux vidéo et de jeux de société)"
         },
         {
           categories: ["Contribuer"],
