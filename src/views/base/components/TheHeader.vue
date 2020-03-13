@@ -100,7 +100,7 @@
 </template>
 
 <script>
-import LogoSVG from "@/assets/logo/logo-bleu-noir.svg?inline";
+import LogoSVG from "@/assets/logo/logo-bleu.svg?inline";
 import QdnTitleSVG from "@/assets/logo/qdn-logo-vector.svg?inline"
 
 export default {
