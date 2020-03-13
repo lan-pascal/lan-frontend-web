@@ -33,7 +33,7 @@
           <v-expansion-panel-header>
             <div v-html="faq.question" class="headline">{{faq.question}}</div>
           </v-expansion-panel-header>
-          <v-expansion-panel-content class="pl-5">
+          <v-expansion-panel-content eager class="pl-5">
             <div v-html="faq.answer"></div>
           </v-expansion-panel-content>
         </v-expansion-panel>
