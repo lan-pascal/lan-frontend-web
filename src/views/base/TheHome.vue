@@ -1,10 +1,20 @@
 <template>
   <div class="justify-center width">
     <v-row class="fullscreen ml-1" align="top" justify="center">
-      <v-col align="center" class="ma-0 pa-0">
-        <LogoSVG width="300" height="300" />
-        <QdnTitleSVG class="py-5"/>
-        <Countdown class="mt-n5" :deadline="deadline" />
+      <v-col justify="center" align="center" class="ma-0 pa-0">
+
+        <v-row justify="center" class="mt-md-5 pa-md-7 px-7">
+          <LogoSVG width="350" height="350" />
+        </v-row>
+        
+        <v-row justify="center" class="pa-5">
+          <QdnTitleSVG width="500" class="py-md-5"/>
+        </v-row>
+
+        <v-row justify="center" class="px-4 py-12">
+          <Countdown class="mt-n5" :deadline="deadline" />
+        </v-row>
+
       </v-col>
     </v-row>
     <!-- QdN c'est quoi? -->
