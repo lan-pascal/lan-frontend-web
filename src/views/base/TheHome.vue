@@ -332,7 +332,7 @@
 
 <script>
 import QdnTitleSVG from "@/assets/logo/qdn-logo-vector.svg?inline"
-import LogoSVG from "@/assets/logo/logo-bleu-noir.svg?inline";
+import LogoSVG from "@/assets/logo/logo-noir.svg?inline";
 import Countdown from "@/components/countdown/CountdownNormal";
 
 export default {
