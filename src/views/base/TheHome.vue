@@ -110,7 +110,7 @@
           </p>
         </v-row>
         <v-row justify="center">
-          <v-img contain class="ma-6" aspect-ratio="0.8" max-width="300" src="@/assets/media/activities/game-board-stack.svg"></v-img>
+          <GameStackSVG width="300px"/>
         </v-row>
       </v-col>
     </v-row>
@@ -333,7 +333,7 @@
 <script>
 import QdnTitleSVG from "@/assets/logo/qdn-logo-vector.svg?inline"
 import LogoSVG from "@/assets/logo/logo-bleu.svg?inline";
-//import GameStackSVG from "@/assets/media/activities/game-board-stack.svg?inline"
+import GameStackSVG from "@/assets/media/activities/game-board-stack.svg?inline"
 import Countdown from "@/components/countdown/CountdownNormal";
 
 export default {
@@ -343,7 +343,8 @@ export default {
   components: {
     Countdown,
     LogoSVG,
-    QdnTitleSVG
+    QdnTitleSVG,
+    GameStackSVG
   },
   data() {
     return {
