@@ -61,8 +61,8 @@
         >
           <v-card height="100%" width="250px" class="mx-auto text-center">
             <v-row justify="center">
-              <v-avatar color="secondary" size="128" class="mt-5">
-                <img :src="retrieveAssetByTeamName(teammate.name)" />
+              <v-avatar color="grey" size="128" class="mt-5">
+                <v-img :src="retrieveAssetByTeamName(teammate.name)" />
               </v-avatar>
             </v-row>
             <v-card-title>
