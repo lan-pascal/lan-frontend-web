@@ -26,8 +26,11 @@
     </v-row>
 
     <v-row align="center">
+        <v-col cols=12 sm=2>
           <h1 class="title text--primary mr-5">Contactez-nous</h1>
+        </v-col>
 
+        <v-col align=start>
           <v-btn
             v-for="media in medias"
             :key="media.link"
@@ -40,6 +43,7 @@
           >
             <v-icon size="24px">{{ media.icon }}</v-icon>
           </v-btn>
+        </v-col>
     </v-row>
 
     <v-row class="py-12 my-12">
@@ -58,7 +62,7 @@
           <v-card height="100%" width="250px" class="mx-auto text-center">
             <v-row justify="center">
               <v-avatar color="secondary" size="128" class="mt-5">
-                <v-img :src="retrieveAssetByTeamName(teammate.name)" />
+                <img :src="retrieveAssetByTeamName(teammate.name)" />
               </v-avatar>
             </v-row>
             <v-card-title>
