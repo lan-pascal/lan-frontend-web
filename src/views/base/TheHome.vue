@@ -159,47 +159,46 @@
     </v-row>
 
     <v-row wrap justify="space-around">
-      <v-col v-for="info in information" :key="info" class="pa-4" cols="12" sm="6" md="5">
+      <v-col
+        v-for="(info,infoIndex) in information"
+        :key="infoIndex"
+        cols="12"
+        sm="8"
+        md="5"
+      >
         <v-row align="center">
-          <v-col cols="3">
-            <v-row>
-              <v-col>
-                <inline-svg width="70" :src="info.vector" />
-              </v-col>
-            </v-row>
+          <v-col cols="3" :order="(infoIndex % 2 === 0) ? '1' : '2'">
+            <inline-svg width="70" :src="info.vector" />
           </v-col>
-          <v-col cols="9">
-            <v-row>
-              <h2 class="primary--text">{{info.name}}</h2>
-            </v-row>
-            <v-row>
-              <p class="py-2 font-weight-regular">{{info.text}}</p>
-            </v-row>
+          <v-col cols="9" :order="(infoIndex % 2 === 1) ? '1' : '2'">
+            <v-card flat class="transparent">
+              <v-card-title class="primary--text">
+                {{info.name}}
+              </v-card-title>
+              <v-card-text class="font-weight-regular">{{info.text}}</v-card-text>
+            </v-card>
           </v-col>
         </v-row>
+        <v-divider class="hidden-md-and-up"/>
       </v-col>
 
-      <v-col class="pa-4" cols="12" sm="6" md="5">
-        <v-row>
-          <v-col cols="3">
-            <v-row>
-              <v-col>
-                <inline-svg width="70" :src="require('@/assets/media/activities/beer.svg')" />
-              </v-col>
-            </v-row>
+      <v-col cols="12" sm="8" md="6">
+        <v-row align="center" >
+          <v-col cols="3" order=1>
+            <inline-svg width="70" :src="require('@/assets/media/activities/beer.svg')" />
           </v-col>
-          <v-col cols="9">
-            <v-row justify="center">
-              <h2 class="primary--text">BAR</h2>
-            </v-row>
-            <v-row>
-              <p class="pa-2">
-                Un bar sera aussi accessible durant toute la soirée. Différentes boissons seront offertes à des prix raisonnables. Voir les
-                <a
-                  href="/pricing"
-                >Tarifs</a>.
-              </p>
-            </v-row>
+          <v-col cols="9" order=2>
+            <v-card flat class="transparent">
+              <v-card-title class="primary--text">
+                BAR
+              </v-card-title>
+              <v-card-text
+                class="font-weight-regular"
+              >Un bar sera aussi accessible durant toute la soirée. Différentes boissons seront offertes à des prix raisonnables.</v-card-text>
+              <v-card-actions class="pl-4">
+                <v-btn :to="{name:'pricing'}" class="secondary">Tarif</v-btn>
+              </v-card-actions>
+            </v-card>
           </v-col>
         </v-row>
       </v-col>
