@@ -2,19 +2,17 @@
   <div class="justify-center width">
     <v-row class="fullscreen ml-1" align="top" justify="center">
       <v-col justify="center" align="center" class="ma-0 pa-0">
-
         <v-row justify="center" class="mt-md-5 pa-md-7 px-7">
           <LogoSVG width="350" height="350" />
         </v-row>
-        
+
         <v-row justify="center" class="pa-5">
-          <QdnTitleSVG width="500" class="py-md-5"/>
+          <QdnTitleSVG width="500" class="py-md-5" />
         </v-row>
 
         <v-row justify="center" class="px-4 py-12">
           <Countdown class="mt-n5" :deadline="deadline" />
         </v-row>
-
       </v-col>
     </v-row>
     <!-- QdN c'est quoi? -->
@@ -58,7 +56,7 @@
         </v-col>
       </v-col>
       <v-col cols="6" class="d-none d-md-flex">
-        <v-img contain src="@/assets/media/ppl-game-pic.jpg"/>
+        <v-img contain src="@/assets/media/ppl-game-pic.jpg" />
       </v-col>
     </v-row>
     <v-row class="grey py-3 my-8 fullwidth">
@@ -110,7 +108,7 @@
           </p>
         </v-row>
         <v-row justify="center">
-          <GameStackSVG width="300px"/>
+          <GameStackSVG width="300px" />
         </v-row>
       </v-col>
     </v-row>
@@ -186,7 +184,7 @@
           <v-col cols="3">
             <v-row>
               <v-col>
-                <inline-svg width="70" :src="require('@/assets/media/activities/beer.svg')"/>
+                <inline-svg width="70" :src="require('@/assets/media/activities/beer.svg')" />
               </v-col>
             </v-row>
           </v-col>
@@ -197,105 +195,16 @@
             <v-row>
               <p class="pa-2">
                 Un bar sera aussi accessible durant toute la soirée. Différentes boissons seront offertes à des prix raisonnables. Voir les
-                <a href="/pricing">Tarifs</a>.
+                <a
+                  href="/pricing"
+                >Tarifs</a>.
               </p>
             </v-row>
           </v-col>
         </v-row>
-
-        <v-row justify="center" align="center">
-          <v-card
-          tile
-          flat>
-                <v-col cols=12 sm=6 md=6>
-                  <v-row>
-                    <v-col
-                    cols=3>
-                      <v-row>
-                        <v-col>
-                          <v-img
-                       max-width="100"
-                       src="@/assets/media/vector/beer-vector.svg"></v-img>
-                        </v-col>
-                      </v-row>
-                    </v-col>
-                    <v-col
-                    cols=9>
-                    <v-row justify="center">
-                       <h2 class="primary--text">BAR</h2>
-                    </v-row>
-                     <v-row>
-                       <p class="pa-2">
-                        Un bar sera aussi accessible durant toute la soirée. Différentes boissons seront offertes à des prix raisonnables. Voir les <a href="/pricing" >Tarifs</a>.
-                       </p>
-                     </v-row>
-                    </v-col>
-                  </v-row>
-                </v-col>
-                <v-col cols=12 sm=6 md=6>
-                  <v-row>
-                    <v-col
-                    cols=3>
-                      <v-row>
-                        <v-col>
-                          <v-img
-                       max-width="100"
-                       src="@/assets/media/vector/beer-vector.svg"></v-img>
-                        </v-col>
-                      </v-row>
-                    </v-col>
-                    <v-col
-                    cols=9>
-                    <v-row justify="center">
-                       <h2 class="primary--text">BAR</h2>
-                    </v-row>
-                     <v-row>
-                       <p class="pa-2">
-                        Un bar sera aussi accessible durant toute la soirée. Différentes boissons seront offertes à des prix raisonnables. Voir les <a href="/pricing" >Tarifs</a>.
-                       </p>
-                     </v-row>
-                    </v-col>
-                  </v-row>
-                </v-col>
-            <v-card-actions class="justify-space-between">
-              <v-btn
-                text
-                @click="prev"
-              >
-                <v-icon>mdi-chevron-left</v-icon>
-              </v-btn>
-              <v-item-group
-                v-model="onboarding"
-                class="text-center"
-                mandatory
-              >
-                <v-item
-                  v-for="n in length"
-                  :key="`btn-${n}`"
-                  v-slot:default="{ active, toggle }"
-                >
-                  <v-btn
-                    :input-value="active"
-                    icon
-                    @click="toggle"
-                  >
-                    <v-icon>mdi-record</v-icon>
-                  </v-btn>
-                </v-item>
-              </v-item-group>
-              <v-btn
-                text
-                @click="next"
-              >
-                <v-icon>mdi-chevron-right</v-icon>
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-          
-        </v-row>
       </v-col>
     </v-row>
-    </div>
+  </div>
 </template>
 
 <style scoped lang="scss">
@@ -331,9 +240,9 @@
 </style>
 
 <script>
-import QdnTitleSVG from "@/assets/logo/qdn-logo-vector.svg?inline"
+import QdnTitleSVG from "@/assets/logo/qdn-logo-vector.svg?inline";
 import LogoSVG from "@/assets/logo/logo-bleu.svg?inline";
-import GameStackSVG from "@/assets/media/activities/game-board-stack.svg?inline"
+import GameStackSVG from "@/assets/media/activities/game-board-stack.svg?inline";
 import Countdown from "@/components/countdown/CountdownNormal";
 
 export default {
@@ -421,20 +330,18 @@ export default {
             "Un karaoke sera de mise lors de la soirée grâce à la générosité de Karaoke DJ Hugz. C'est le temps de vous laisser aller avec vos chansons préférées!"
         }
       ]
-      }
-    },
-    methods: {
-    next () {
-      this.onboarding = this.onboarding + 1 === this.length
-        ? 0
-        : this.onboarding + 1
-    },
-    prev () {
-      this.onboarding = this.onboarding - 1 < 0
-        ? this.length - 1
-        : this.onboarding - 1
-    },
+    };
   },
-}
+  methods: {
+    next() {
+      this.onboarding =
+        this.onboarding + 1 === this.length ? 0 : this.onboarding + 1;
+    },
+    prev() {
+      this.onboarding =
+        this.onboarding - 1 < 0 ? this.length - 1 : this.onboarding - 1;
+    }
+  }
+};
 </script>
 
