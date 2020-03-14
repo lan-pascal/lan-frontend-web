@@ -13,32 +13,43 @@
     <v-row>
         <v-col>
             <v-row justify="center" align=center>
-                <v-col cols=10 sm=5 md=4 lg=3>
-                    <v-card width=250px height=415>
-                            <v-col class="pa-7"><v-img  src="@/assets/media/vector/qdn-logo-vector.svg"></v-img></v-col>
+                <v-col class="scrolling-wrapper justify-md-center align-center">
+                  <v-card width=250px height=435 class="mx-4" disabled>
+                            <v-col class="pa-7"><QdnTitleSVG width="200"/></v-col>
                             
                             <v-card-text class="py-0 white--text posfix" align="center"><i>Early Bird</i><br>50 premiers billets</v-card-text>
                             <v-card-text><span class="display-1">$ 20</span>.<span class="body">00</span></v-card-text> <!-- Seems like a bug. The Name should be at the center. -->
                             <v-divider/>
                             <v-form v-model="tickets[0].valid">
-                              <v-card-text><v-text-field class="text-right" suffix="x" label="Nombre de billets" placeholder=2 :rules="[rules.number, rules.maximum]" width=30px height=30px></v-text-field>Billet d'entrée générale</v-card-text>
+                              <v-card-text align="center">
+                                <v-text-field class="text-right" suffix="x" label="Nombre de billets" placeholder=2 :rules="[rules.number, rules.maximum]" width=30px height=30px></v-text-field>
+                                Billet d'entrée générale
+                                <br>
+                                <b>Collège Maisonneuve</b>
+                                </v-card-text>
                               <v-card-actions class="justify-center pb-6"><v-btn :disabled="!tickets[0].valid" class="secondary">Acheter</v-btn></v-card-actions>
                             </v-form>
                     </v-card>
-                </v-col>
-                <v-col cols=10 sm=5 md=4 lg=3>
-                    <v-card width=250px height=415 disabled>
-                            <v-col class="pa-7"><v-img  src="@/assets/media/vector/qdn-logo-vector.svg"></v-img></v-col>
+                
+                
+                    <v-card width=250px height=435 class="mr-6" disabled>
+                            <v-col class="pa-7"><QdnTitleSVG width="200"/></v-col>
                             
                             <v-card-text class="py-0 white--text posfix pb-5" align="center"><i>Régulier</i><br></v-card-text>
                             <v-card-text><span class="display-1">$ 25</span>.<span class="body">00</span></v-card-text> <!-- Seems like a bug. The Name should be at the center. -->
                             <v-divider/>
                             <v-form v-model="tickets[1].valid">
-                              <v-card-text><v-text-field class="text-right" suffix="x" label="Nombre de billets" placeholder=2 :rules="[rules.number, rules.maximum]" width=30px height=30px></v-text-field>Billet d'entrée générale</v-card-text>
+                              <v-card-text align="center">
+                                <v-text-field class="text-right" suffix="x" label="Nombre de billets" placeholder=2 :rules="[rules.number, rules.maximum]" width=30px height=30px></v-text-field>
+                                Billet d'entrée générale
+                                <br>
+                                <b>Collège Maisonneuve</b></v-card-text>
                               <v-card-actions class="justify-center pb-6"><v-btn :disabled="!tickets[1].valid" class="secondary">Acheter</v-btn></v-card-actions>
                             </v-form>
                     </v-card>
                 </v-col>
+                    
+                
 
             </v-row>
             <div>
@@ -113,7 +124,7 @@
     <v-row>
       <v-row no-gutters justify="center">
         <v-col v-for="(icon,iconIndex) in payIcons" cols="2" md="1" :key="iconIndex" align="center">
-          <v-img :src="icon.src" aspect-ratio="1" width=40px max-height="40px" min-height="20px" />
+          <inline-svg :src="icon.src" width=40px height="40px"/>
         </v-col>
       </v-row>
     </v-row>
@@ -134,16 +145,32 @@
     z-index: 1;
     top: -30px;
 }
+.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
+  display:flex;
+  flex-wrap: nowrap;
+  overflow-x:auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .card {
+    flex: 0 0 auto;
+  }
+}
 </style>
 
 <script>
+import QdnTitleSVG from "@/assets/logo/qdn-logo-vector.svg?inline"
 import {loadStripe} from '@stripe/stripe-js';
 
 export default {
   name: "pricing",
+  components: {
+    QdnTitleSVG,
+  },
   data() {
     return {
-      test: process.env.STRIPE_PK ,
+      test: process.env.VUE_APP_STRIPE_PK ,
       tickets : [
         {
           valid: true,
@@ -174,7 +201,7 @@ export default {
       ]
     };
   },
-  async mounted(){
+  async created(){
     this.stripe = await loadStripe("pk_test_Ayf3gYC9NwjtEyeZbbxtB4Ne00TTnLWJk4");
   },
   methods: {

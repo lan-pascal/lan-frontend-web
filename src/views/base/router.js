@@ -1,26 +1,19 @@
 import pricing from '@/views/base/pricing/router'
 
+import Home from '@/views/base/TheHome.vue'
+import BaseLayout from '@/views/base/BaseLayout.vue'
+
 export default [
     {
         path: '/',
         name: 'layout',
-        component: () => import('@/views/base/BaseLayout.vue'),
+        component: BaseLayout,
         redirect: {name: "home"},
         children: [
             {
                 path: '/',
                 name: 'home',
-                component: () => import('@/views/base/TheHome.vue')
-            },
-            {
-                path: '/event',
-                name: 'event',
-                component: () => import('@/views/base/TheEvent.vue')
-            },
-            {
-                path: '/archive',
-                name: 'archive',
-                component: () => import('@/views/base/TheArchive.vue')
+                component: Home
             },
             {
                 path: '/faq',

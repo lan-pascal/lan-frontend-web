@@ -10,24 +10,27 @@
         <div class="font-weight-light headline" style="font-family:'Teko', sans-serif;">
           <p>
             Nous sommes un regroupement de personnes motivé à créer des événements, nommés
-            <i>Quart de nuit</i>, qui incorporent diverse facettes du geek-culture et les rendent accessibles à tous.
+            Quart de nuit, qui incorporent diverse facettes du geek-culture et les rendent accessibles à tous.
           </p>
           <p>
             Notre mission est, qu'à chaque
-            <i>Quart de nuit</i>, tout le monde se sente à sa place, tout en gardant la nature geek du
-            <i>Quart</i> qui le rend si unique.
+            Quart de nuit, tout le monde se sente à sa place, tout en gardant la nature geek du
+            Quart qui le rend si unique.
           </p>
           <p>
-            <i>Les Quarts de nuits</i> vont souvent incorporer jeux vidéo, jeux de société, trivia, bar et karaoke. Il y en a, en général, deux par année. Le premier
-            <i>Quart de nuit</i> date de janvier 2018 et comportait seulement 24 personnes!
+            Les Quarts de nuits vont souvent incorporer jeux vidéo, jeux de société, trivia, bar et karaoke. Il y en a, en général, deux par année. Le premier
+            Quart de nuit date de janvier 2018 et comportait seulement 24 personnes!
           </p>
         </div>
       </v-col>
     </v-row>
 
     <v-row align="center">
+        <v-col cols=12 sm=2>
           <h1 class="title text--primary mr-5">Contactez-nous</h1>
+        </v-col>
 
+        <v-col align=start>
           <v-btn
             v-for="media in medias"
             :key="media.link"
@@ -40,6 +43,7 @@
           >
             <v-icon size="24px">{{ media.icon }}</v-icon>
           </v-btn>
+        </v-col>
     </v-row>
 
     <v-row class="py-12 my-12">
@@ -57,7 +61,7 @@
         >
           <v-card height="100%" width="250px" class="mx-auto text-center">
             <v-row justify="center">
-              <v-avatar color="secondary" size="128" class="mt-5">
+              <v-avatar color="grey" size="128" class="mt-5">
                 <v-img :src="retrieveAssetByTeamName(teammate.name)" />
               </v-avatar>
             </v-row>
@@ -112,14 +116,19 @@ export default {
             "Fondateur du site web. Aide bénévolement depuis le début. Côté rationnel à Pascal."
         },
         {
-          name: "Stephen",
-          title: "Développeur web & assistant-technique",
-          description: "Aide bénévolement depuis le début."
+          name: "Lianne",
+          title: "Conseillère financière & communications",
+          description: "Aide bénévolement depuis Quart de nuit IV. Épicerie du Quart de nuit. Grâce à elle si le Quart n'est pas bankrupt."
         },
         {
           name: "Nicolas",
-          title: "Développeur web",
+          title: "Designer web",
           description: "Maître de l'esthétique du site."
+        },
+        {
+          name: "Stephen",
+          title: "Développeur web & assistant-technique",
+          description: "Aide bénévolement depuis le début."
         },
         {
           name: "Simon",
@@ -127,19 +136,19 @@ export default {
           description: "Aide bénévolement depuis Quart de nuit III. Épicerie du Quart de nuit."
         },
         {
-          name: "Lianne",
-          title: "Conseillère financière & assistante-technique",
-          description: "Aide bénévolement depuis Quart de nuit IV. Épicerie du Quart de nuit. Grâce à elle si le Quart n'est pas bankrupt."
-        },
-        {
           name: "Leon",
           title: "Créateur du logo officiel",
           description: "Fais des caméléons photo-réaliste à la mine."
         },
         {
-          name: "Ayman",
-          title: "Assistant-technique",
-          description: "Aide bénévolement depuis le début."
+          name: "Sacha",
+          title: "Photographe & maître-t-shirtier",
+          description: "Prends de très jolies photos."
+        },
+        {
+          name: "Hugues",
+          title: "DJ & maître du son",
+          description: "Grâce à lui si le Quart est pas un malaise silencieux! Son site : https://www.facebook.com/karaokedjhugz/"
         },
         {
           name: "Kevin",
@@ -147,27 +156,10 @@ export default {
           description: "Aide bénévolement depuis le début."
         },
         {
-          name: "Alex",
-          title: "Assistant-technique",
-          description:
-            "Aide bénévolement depuis le début. Dort encore moins que Karl-Étienne."
-        },
-        {
-          name: "Étienne",
-          title: "Assistant-technique",
-          description: "Aide bénévolement depuis le début. Fait de la musique!"
-        },
-        {
           name: "Arnaud",
           title: "Assistant-technique & service bar/vestiaire",
           description:
             "Aide bénévolement depuis le début. Oublie de s'occuper de son tournoi."
-        },
-        {
-          name: "Roxanne",
-          title: "Assistante-technique",
-          description:
-            "Aide bénévolement depuis le Quart de nuit V."
         },
         {
           name: "Maude",
@@ -194,20 +186,32 @@ export default {
             "Aide bénévolement depuis le Quart de nuit V."
         },
         {
-          name: "Sacha",
-          title: "Photographe",
-          description: "Prends de très jolies photos."
+          name: "Ayman",
+          title: "Assistant-technique",
+          description: "Aide bénévolement depuis le début."
         },
         {
-          name: "Hugues",
-          title: "DJ & maître du son",
-          description: "Grâce à lui si le Quart est pas un malaise silencieux! Son site : https://www.facebook.com/karaokedjhugz/"
+          name: "Alex",
+          title: "Assistant-technique",
+          description:
+            "Aide bénévolement depuis le début. Dort encore moins que Karl-Étienne."
+        },
+        {
+          name: "Étienne",
+          title: "Assistant-technique",
+          description: "Aide bénévolement depuis le début. Fait de la musique!"
+        },
+        {
+          name: "Roxanne",
+          title: "Assistante-technique",
+          description:
+            "Aide bénévolement depuis le Quart de nuit V."
         }
       ],
       medias: [
             {icon: "mdi-email", link: "mailto:quartdenuitmtl@gmail.com"},
             {icon: "mdi-instagram", link: "https://www.instagram.com/quartdenuit/"},
-            {icon: "mdi-facebook", link: "https://www.facebook.com/groups/1950288465097742/"}
+            {icon: "mdi-facebook", link: "https://www.facebook.com/quartdenuitofficiel/"}
         ],
     };
   }
