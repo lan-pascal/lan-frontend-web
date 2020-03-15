@@ -1,5 +1,6 @@
 <template>
   <div class="justify-center width">
+    <!-- Présentation -->
     <v-row class="fullscreen ml-1" align="top" justify="center">
       <v-col justify="center" align="center" class="ma-0 pa-0">
         <v-row justify="center" class="mt-md-5 pa-md-7 px-7">
@@ -15,226 +16,231 @@
         </v-row>
       </v-col>
     </v-row>
-    <!-- QdN c'est quoi? -->
-    <v-row class="py-12 my-6">
-      <v-col cols="12" md="6" align-self="center">
-        <v-col>
-          <v-row justify="center">
-            <h1 class="display-1">
-              Le Quart de Nuit, c'est quoi
-              <span class="display-2 primary--text">?</span>
-            </h1>
-          </v-row>
-          <v-row class="pa-2">
-            <p>
-              Vous avez envie de relaxer avec des amis en jouant à des jeux vidéo de tous les genres? De prendre une petite bière en jouant
-              à des jeux de société? De tester vos connaissances en pop-culture avec un trivia en équipe? De découvrir un talent musical caché au karaoké?
-            </p>
 
-            <p>Tout cela et plus encore vous attend au prochain Quart de nuit!</p>
-
-            <p>
-              Si tu lis ça, oui tu es invité.e! Et oui tu peux inviter tes ami.e.s!
-              Même si tu n'as jamais touché à quelque chose d'électronique de ta vie, tu y trouveras quelque chose.
-            </p>
-
-            <p>
-              Nous sommes un regroupement de personnes motivé à créer des événements, nommés
-              <i>Quart de nuit</i>,
-              qui incorporent diverses facettes du
-              <i>geek-culture</i> et les rendent accessibles à tous.
-            </p>
-
-            <p>
-              Notre mission est, qu'à chaque
-              <i>Quart de nuit</i>, tout le monde se sente à sa place,
-              tout en gardant la nature
-              <i>geek</i> du
-              <i>Quart</i> qui le rend si unique.
-            </p>
-          </v-row>
-        </v-col>
-      </v-col>
-      <v-col cols="6" class="d-none d-md-flex">
-        <v-img contain src="@/assets/media/ppl-game-pic.jpg" />
-      </v-col>
-    </v-row>
-    <v-row class="grey py-3 my-8 fullwidth">
-      <v-col v-for="info in quickinfo" :key="info" align="center" cols="6" md="3">
-        <v-icon x-large color="primary">{{info.icon}}</v-icon>
-        <h2>{{info.name}}</h2>
-        <p>{{info.desc}}</p>
-      </v-col>
-    </v-row>
-    <!-- SCÈNE / LIGNE DU TEMPS -->
-    <v-row class="pt-12 mt-12">
-      <v-col cols="12" md="6" class="my-2">
-        <v-row justify="center">
-          <h1 class="primary--text display-1">HORAIRE DE LA SCÈNE</h1>
-        </v-row>
-        <v-row>
-          <p
-            class="ma-0 ma-md-2 pa-2"
-          >Une scène sera présente tout le long de la soirée. Avec son écran-projecteur, diverses activités se tiendront sur celle-ci.</p>
-        </v-row>
-        <v-timeline>
-          <v-timeline-item
-            v-for="(activity, index) in schedule"
-            :key="index"
-            small
-            right
-            :color="activity.color"
-          >
-            <template v-slot:opposite>
-              <h3 v-text="activity.time"></h3>
-            </template>
-            <div class="py-4">
-              <h3>{{activity.name}}</h3>
-            </div>
-          </v-timeline-item>
-        </v-timeline>
-      </v-col>
-      <v-col>
-        <!-- JEUX DE SOCIÉTÉ -->
-
-        <v-row justify="center my-2">
-          <h1 class="primary--text display-1">JEUX DE SOCIÉTÉ</h1>
-        </v-row>
-        <v-row>
-          <p class="pa-2">
-            Plusieurs jeux de société seront disponibles tout au long de la soirée.
-            Il y aurait même un animateur présent pour aider avec les jeux!
-            Plusieurs tables avec un bar à côté seront dédiées pour les jeux de société.
-          </p>
-        </v-row>
-        <v-row justify="center">
-          <GameStackSVG width="300px" />
-        </v-row>
-      </v-col>
-    </v-row>
-
-    <!-- TOURNOIS -->
-    <v-row align="center">
-      <v-col>
-        <v-row justify="center">
-          <h1 class="primary--text display-1">TOURNOIS</h1>
-        </v-row>
-        <v-row justify="center">
-          <v-col cols="12" md="10">
-            <p class="px-2 ma-0">
-              Deux tournois se présenteront à cette 5e édition : un tournoi 2v2 de Super Smash Bros. (le 5e!)
-              et un tournoi de Tetris 1v1 (le 2e!). Les finales auront lieu sur le grand écran de la scène. Des prix seront remis aux gagnants.
-              Pour vous inscrire aux tournois, vous recevrez un courriel quelques jours avant le Quart si vous avez votre billet.
-            </p>
-          </v-col>
-        </v-row>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col class="scrolling-wrapper justify-md-center">
-        <v-card
-          v-for="(game, index) in tournament"
-          :key="index"
-          height="300px"
-          width="225px"
-          tile
-          color="black"
-          class="text-center ma-4 card"
-        >
+    <!-- Introduction -->
+    <section>
+      <!-- QdN c'est quoi? -->
+      <v-row>
+        <v-col cols="12" md="6" align-self="center">
           <v-col>
-            <v-card-title
-              class="justify-center display-1 font-weight-light mb-5"
-              style="word-break: break-word;"
-            >{{game.name}}</v-card-title>
             <v-row justify="center">
-              <inline-svg :src="game.vector" width="125" />
+              <h1 class="display-1">
+                Le Quart de Nuit, c'est quoi
+                <span class="display-2 primary--text">?</span>
+              </h1>
+            </v-row>
+            <v-row class="pa-2">
+              <p>
+                Vous avez envie de relaxer avec des amis en jouant à des jeux vidéo de tous les genres? De prendre une petite bière en jouant
+                à des jeux de société? De tester vos connaissances en pop-culture avec un trivia en équipe? De découvrir un talent musical caché au karaoké?
+              </p>
+
+              <p>Tout cela et plus encore vous attend au prochain Quart de nuit!</p>
+
+              <p>
+                Si tu lis ça, oui tu es invité.e! Et oui tu peux inviter tes ami.e.s!
+                Même si tu n'as jamais touché à quelque chose d'électronique de ta vie, tu y trouveras quelque chose.
+              </p>
+
+              <p>
+                Nous sommes un regroupement de personnes motivé à créer des événements, nommés
+                <i>Quart de nuit</i>,
+                qui incorporent diverses facettes du
+                <i>geek-culture</i> et les rendent accessibles à tous.
+              </p>
+
+              <p>
+                Notre mission est, qu'à chaque
+                <i>Quart de nuit</i>, tout le monde se sente à sa place,
+                tout en gardant la nature
+                <i>geek</i> du
+                <i>Quart</i> qui le rend si unique.
+              </p>
             </v-row>
           </v-col>
-        </v-card>
-      </v-col>
-    </v-row>
-    <!-- AUTRES INFOS GÉNÉRAUX (Couch/Halo/Bar) -->
-    <v-row class="mt-4" justify="center">
-      <h1 class="primary--text display-1">AUTRES ACTIVITÉS</h1>
-    </v-row>
+        </v-col>
+        <v-col cols="6" class="d-none d-md-flex">
+          <v-img contain src="@/assets/media/ppl-game-pic.jpg" style="transfrom: skewY(4deg);"/>
+        </v-col>
+      </v-row>
 
-    <v-row wrap justify="space-around">
-      <v-col
-        v-for="(info,infoIndex) in information"
-        :key="infoIndex"
-        cols="12"
-        sm="8"
-        md="5"
-      >
-        <v-row align="center">
-          <v-col cols="3" :order="(infoIndex % 2 === 0) ? '1' : '2'">
-            <inline-svg width="70" :src="info.vector" />
-          </v-col>
-          <v-col cols="9" :order="(infoIndex % 2 === 1) ? '1' : '2'">
-            <v-card flat class="transparent">
-              <v-card-title class="primary--text">
-                {{info.name}}
-              </v-card-title>
-              <v-card-text class="font-weight-regular">{{info.text}}</v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
-        <v-divider class="hidden-md-and-up"/>
-      </v-col>
+      <!-- Quick Info -->
+      <v-row id="quickinfo" class="pt-2 mx-2" align="center">
+        <v-col v-for="info in quickinfo" :key="info" align="center" cols="6" md="3">
+          <v-icon x-large color="primary">{{info.icon}}</v-icon>
+          <h2>{{info.name}}</h2>
+          <p>{{info.desc}}</p>
+        </v-col>
+      </v-row>
+    </section>
 
-      <v-col cols="12" sm="8" md="6">
-        <v-row align="center" >
-          <v-col cols="3" order=1>
-            <inline-svg width="70" :src="require('@/assets/media/activities/beer.svg')" />
-          </v-col>
-          <v-col cols="9" order=2>
-            <v-card flat class="transparent">
-              <v-card-title class="primary--text">
-                BAR
-              </v-card-title>
-              <v-card-text
-                class="font-weight-regular"
-              >Un bar sera aussi accessible durant toute la soirée. Différentes boissons seront offertes à des prix raisonnables.</v-card-text>
-              <v-card-actions class="pl-4">
-                <v-btn :to="{name:'pricing'}" class="secondary">Tarif</v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-col>
-    </v-row>
+    <!-- Activities -->
+    <section>
+      <v-divider class="white"/>
+
+      <v-row wrap justify="center">`
+        
+        <v-col v-for="(info,infoIndex) in information" :key="infoIndex" cols="12" sm="8" md="5">
+          <v-row align="center">
+            <v-col cols="3" :order="(infoIndex % 2 === 0) ? '1' : '2'">
+              <inline-svg width="70" :src="info.vector" />
+            </v-col>
+
+            <v-col cols="9" :order="(infoIndex % 2 === 1) ? '1' : '2'">
+              <v-card flat class="transparent">
+                <v-card-title class="primary--text">{{info.name}}</v-card-title>
+                <v-card-text class="font-weight-regular">{{info.text}}</v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+          <v-divider class="hidden-md-and-up" />
+        </v-col>
+
+        <v-col cols="12" sm="8" md="5">
+          <v-row align="center">
+            <v-col cols="3" order="1">
+              <inline-svg width="70" :src="require('@/assets/media/activities/beer.svg')" />
+            </v-col>
+            <v-col cols="9" order="2">
+              <v-card flat class="transparent">
+                <v-card-title class="primary--text">BAR</v-card-title>
+                <v-card-text
+                  class="font-weight-regular"
+                >Un bar sera aussi accessible durant toute la soirée. Différentes boissons seront offertes à des prix raisonnables.</v-card-text>
+                <v-card-actions class="pl-4">
+                  <v-btn :to="{name:'pricing'}" class="secondary">Tarif</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+     
+      <v-divider/>
+
+      <v-row align="center">
+        <!-- Tournois-->
+        <v-col cols="12" md="6">
+          <v-row justify="center">
+            <h1 class="primary--text display-1">TOURNOIS</h1>
+          </v-row>
+          <v-row justify="center">
+            <v-col cols="12" md="10">
+              <p class="px-2 ma-0">
+                Deux tournois se présenteront à cette 5e édition : un tournoi 2v2 de Super Smash Bros. (le 5e!)
+                et un tournoi de Tetris 1v1 (le 2e!). Les finales auront lieu sur le grand écran de la scène. Des prix seront remis aux gagnants.
+                Pour vous inscrire aux tournois, vous recevrez un courriel quelques jours avant le Quart si vous avez votre billet.
+              </p>
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-slide-group center-active v-model="slide">
+              <v-slide-item
+                v-for="(game, index) in tournament"
+                :key="index"
+                v-slot:default="{ toggle }"
+              >
+                <v-card
+                  height="300px"
+                  width="225px"
+                  tile
+                  color="black"
+                  class="text-center ma-4 card"
+                  @click="toggle"
+                >
+                  <v-card-title
+                    class="justify-center display-1 font-weight-light mb-5"
+                    style="word-break: break-word;"
+                  >{{game.name}}</v-card-title>
+                  <v-card-text>
+                    <inline-svg :src="game.vector" width="125" />
+                  </v-card-text>
+                </v-card>
+              </v-slide-item>
+            </v-slide-group>
+          </v-row>
+        </v-col>
+        <v-divider vertical/>
+        <!-- Jeux de sociétés -->
+        <v-col cols="12" md="5">
+          <!-- JEUX DE SOCIÉTÉ -->
+
+          <v-row justify="center my-2">
+            <h1 class="primary--text display-1">JEUX DE SOCIÉTÉ</h1>
+          </v-row>
+          <v-row>
+            <p class="pa-2">
+              Plusieurs jeux de société seront disponibles tout au long de la soirée.
+              Il y aurait même un animateur présent pour aider avec les jeux!
+              Plusieurs tables avec un bar à côté seront dédiées pour les jeux de société.
+            </p>
+          </v-row>
+          <v-row justify="center">
+            <GameStackSVG width="300px" />
+          </v-row>
+        </v-col>
+      </v-row>
+      <v-divider class="white"/>
+    </section>
+
+    <!-- SCÈNE / LIGNE DU TEMPS -->
+    <section>
+      <v-row align=center>
+        <v-col cols="12" md="6" class="my-2">
+          <v-row justify="center">
+            <h1 class="primary--text display-1">HORAIRE DE LA SCÈNE</h1>
+          </v-row>
+          <v-row>
+            <p
+              class="ma-0 ma-md-2 pa-2"
+            >Une scène sera présente tout le long de la soirée. Avec son écran-projecteur, diverses activités se tiendront sur celle-ci.</p>
+          </v-row>
+        </v-col>
+        <v-col>
+          <v-timeline height="100%">
+            <v-timeline-item
+              v-for="(activity, index) in schedule"
+              :key="index"
+              small
+              right
+              :color="activity.color"
+            >
+              <template v-slot:opposite>
+                <h3 v-text="activity.time"></h3>
+              </template>
+              <div class="py-4">
+                <h3>{{activity.name}}</h3>
+              </div>
+            </v-timeline-item>
+          </v-timeline>
+        </v-col>
+      </v-row>
+    </section>
   </div>
 </template>
 
 <style scoped lang="scss">
-.midscreen {
-  width: 100%;
-  height: 30rem;
+#activities {
+  &::before {
+    content: "";
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 180px;
+    top: 0;
+    background: var(--v-secondary-base);
+    transform: skewY(12deg);
+  }
 }
 
-.qdn-top {
-  position: relative;
-  z-index: 4;
-  bottom: -30px;
+#quickinfo {
+  background: var(--v-grey-base);
+  transform: skewY(-3deg);
+  border-radius: 20px;
 }
 
-.qdn-behind {
-  position: relative;
-  top: -65px;
-  font-size: 200px;
-  width: fit-content;
-}
-.scrolling-wrapper {
-  -webkit-overflow-scrolling: touch;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  .card {
-    flex: 0 0 auto;
-  }
+section {
+  padding-top: 96px;
 }
 </style>
 
@@ -242,6 +248,7 @@
 import QdnTitleSVG from "@/assets/logo/qdn-logo-vector.svg?inline";
 import LogoSVG from "@/assets/logo/logo-bleu.svg?inline";
 import GameStackSVG from "@/assets/media/activities/game-board-stack.svg?inline";
+
 import Countdown from "@/components/countdown/CountdownNormal";
 
 export default {
@@ -265,7 +272,7 @@ export default {
         },
         {
           name: "Jeudi 9 avril 2020",
-          desc: "Fériés vendredi et lundi (Pâques!)",
+          desc: "Fériés vendredi et lundi",
           icon: "mdi-calendar-blank"
         },
         {
@@ -274,8 +281,8 @@ export default {
           icon: "mdi-clock-outline"
         },
         {
-          name: "20 $ pour 50 premiers",
-          desc: "25 $ pour 100 dernières places",
+          name: "20$",
+          desc: "pour 50 premiers et 25$ pour 100 dernières places",
           icon: "mdi-currency-usd"
         }
       ],
