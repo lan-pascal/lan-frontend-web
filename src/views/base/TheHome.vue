@@ -71,7 +71,7 @@
       <v-divider class="white" />
 
       <v-row wrap justify="center">
-        <v-col v-for="(info,infoIndex) in information" :key="infoIndex" cols="12" sm="8" md="5">
+        <v-col v-for="(info,infoIndex) in information" :key="infoIndex" cols="12" md="5">
           <v-row align="center">
             <v-col cols="3" :order="(infoIndex % 2 === 0) ? '1' : '2'">
               <inline-svg width="70" :src="info.vector" />
@@ -112,18 +112,14 @@
       <v-row align="start">
         <!-- Tournois-->
         <v-col cols="12" md="6">
+          <v-card flat class="transparent">
+            <v-card-title class="primary--text"><v-row justify=center>TOURNOIS</v-row></v-card-title>
+            <v-card-text class="text-center">
+              Deux tournois : Tetris (1v1) et Super Smash Bros. Ultimate (2v2). Tu peux déjà penser à ton
+              coéquipier pour Smash! Vous recevrez un courriel quelques jours avant l’événement pour vous inscrire.
+            </v-card-text>
+          </v-card>
           <v-row justify="center">
-            <h1 class="primary--text display-1">TOURNOIS</h1>
-          </v-row>
-          <v-row justify="center">
-            <v-col cols="12" md="10">
-              <p class="px-2 ma-0">
-                Deux tournois : Tetris (1v1) et Super Smash Bros. Ultimate (2v2). Tu peux déjà penser à ton
-                coéquipier pour Smash! Vous recevrez un courriel quelques jours avant l’événement pour vous inscrire.
-              </p>
-            </v-col>
-          </v-row>
-          <v-row justify=center>
             <v-slide-group center-active v-model="slide">
               <v-slide-item
                 v-for="(game, index) in tournament"
@@ -150,19 +146,18 @@
             </v-slide-group>
           </v-row>
         </v-col>
-        <v-divider vertical />
-        <!-- Jeux de sociétés -->
-        <v-col cols="12" md="5">
-          <!-- JEUX DE SOCIÉTÉ -->
 
-          <v-row justify="center my-2">
-            <h1 class="primary--text display-1">JEUX DE SOCIÉTÉ</h1>
-          </v-row>
-          <v-row>
-            <p
-              class="pa-2"
-            >Plusieurs tables avec un bar à côté seront dédiées pour les jeux de société. Animateur inclus!</p>
-          </v-row>
+        <v-divider vertical />
+
+        <!-- JEUX DE SOCIÉTÉ -->
+        <v-col cols="12" md="5">
+          <v-card flat class="transparent">
+            <v-card-title class="primary--text"><v-row justify=center>JEUX DE SOCIÉTÉ</v-row></v-card-title>
+            <v-card-text
+              class="pa-2 text-center"
+            >Plusieurs tables avec un bar à côté seront dédiées pour les jeux de société. Animateur inclus!</v-card-text>
+          </v-card>
+
           <v-row justify="center">
             <GameStackSVG width="300px" />
           </v-row>
@@ -173,7 +168,7 @@
 
     <!-- SCÈNE / LIGNE DU TEMPS -->
     <section>
-      <v-row align="center" justify=center>
+      <v-row align="center" justify="center">
         <v-col cols="12" md="6" class="my-2">
           <v-row justify="center">
             <h1 class="primary--text display-1">HORAIRE DE LA SCÈNE</h1>
