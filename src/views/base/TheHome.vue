@@ -3,8 +3,8 @@
     <!-- Présentation -->
     <v-row class="fullscreen ml-1" align="top" justify="center">
       <v-col justify="center" align="center" class="ma-0 pa-0">
-        <v-row justify="center" class="mt-md-5 pa-md-7 px-7">
-          <LogoSVG width="350" height="350" />
+        <v-row justify="center" class="">
+          <LogoSVG width="40vh"/>
         </v-row>
 
         <v-row justify="center" class="pa-5">
