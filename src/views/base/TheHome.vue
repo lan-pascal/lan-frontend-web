@@ -22,32 +22,34 @@
       <!-- QdN c'est quoi? -->
       <v-row>
         <v-col cols="12" md="6">
-            <v-row class="pa-2">
-              <v-col>
-                
-              <v-row justify=center>
-                <div class="display-1">Le Quart de quoi <span class="secondary--text">?</span></div>
+          <v-row class="pa-2">
+            <v-col>
+              <v-row justify="center">
+                <div class="display-1">
+                  Le Quart de quoi
+                  <span class="secondary--text">?</span>
+                </div>
               </v-row>
-              <p class="pl-3">
-                Le Quart de nuit! Un événement pour tous qui tourne autour du geek-culture!
-              </p>
+              <p
+                class="pl-3"
+              >Le Quart de nuit! Un événement pour tous qui tourne autour du geek-culture!</p>
 
               <div class="headline pl-3">Pour y faire quoi?</div>
-              <p class="pl-8">
-                Jeux vidéo, jeux de société et bar sont à vous toute la soirée! Trivia quiz et karaoké vont aussi s’inviter lors de celle-ci!
-              </p>
+              <p
+                class="pl-8"
+              >Jeux vidéo, jeux de société et bar sont à vous toute la soirée! Trivia quiz et karaoké vont aussi s’inviter lors de celle-ci!</p>
 
               <div class="headline pl-3">Pour qui?</div>
-              <p class="pl-8">
-                Pour toi! Si tu lis ça, oui tu es invité.e! Et oui tu peux inviter tes ami.e.s! Même si tu n'as jamais touché à quelque chose d'électronique de ta vie, tu y trouveras quelque chose.
-              </p>
+              <p
+                class="pl-8"
+              >Pour toi! Si tu lis ça, oui tu es invité.e! Et oui tu peux inviter tes ami.e.s! Même si tu n'as jamais touché à quelque chose d'électronique de ta vie, tu y trouveras quelque chose.</p>
 
               <div class="headline pl-3">Par qui?</div>
-              <p class="pl-8">
-                Nous sommes un regroupement de personnes motivé à créer des événements, nommés Quart de nuit, qui incorporent diverses facettes du geek-culture et les rendent accessibles à tous.
-              </p>
-              </v-col>
-            </v-row>
+              <p
+                class="pl-8"
+              >Nous sommes un regroupement de personnes motivé à créer des événements, nommés Quart de nuit, qui incorporent diverses facettes du geek-culture et les rendent accessibles à tous.</p>
+            </v-col>
+          </v-row>
         </v-col>
         <v-col cols="6" class="d-none d-md-flex">
           <v-img contain src="@/assets/media/ppl-game-pic.jpg" />
