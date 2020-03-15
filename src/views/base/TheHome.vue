@@ -21,46 +21,36 @@
     <section>
       <!-- QdN c'est quoi? -->
       <v-row>
-        <v-col cols="12" md="6" align-self="center">
-          <v-col>
-            <v-row justify="center">
-              <h1 class="display-1">
-                Le Quart de Nuit, c'est quoi
-                <span class="display-2 primary--text">?</span>
-              </h1>
-            </v-row>
+        <v-col cols="12" md="6">
             <v-row class="pa-2">
-              <p>
-                Vous avez envie de relaxer avec des amis en jouant à des jeux vidéo de tous les genres? De prendre une petite bière en jouant
-                à des jeux de société? De tester vos connaissances en pop-culture avec un trivia en équipe? De découvrir un talent musical caché au karaoké?
+              <v-col>
+                
+              <v-row justify=center>
+                <div class="display-1">Le Quart de quoi <span class="secondary--text">?</span></div>
+              </v-row>
+              <p class="pl-3">
+                Le Quart de nuit! Un événement pour tous qui tourne autour du geek-culture!
               </p>
 
-              <p>Tout cela et plus encore vous attend au prochain Quart de nuit!</p>
-
-              <p>
-                Si tu lis ça, oui tu es invité.e! Et oui tu peux inviter tes ami.e.s!
-                Même si tu n'as jamais touché à quelque chose d'électronique de ta vie, tu y trouveras quelque chose.
+              <div class="headline pl-3">Pour y faire quoi?</div>
+              <p class="pl-8">
+                Jeux vidéo, jeux de société et bar sont à vous toute la soirée! Trivia quiz et karaoké vont aussi s’inviter lors de celle-ci!
               </p>
 
-              <p>
-                Nous sommes un regroupement de personnes motivé à créer des événements, nommés
-                <i>Quart de nuit</i>,
-                qui incorporent diverses facettes du
-                <i>geek-culture</i> et les rendent accessibles à tous.
+              <div class="headline pl-3">Pour qui?</div>
+              <p class="pl-8">
+                Pour toi! Si tu lis ça, oui tu es invité.e! Et oui tu peux inviter tes ami.e.s! Même si tu n'as jamais touché à quelque chose d'électronique de ta vie, tu y trouveras quelque chose.
               </p>
 
-              <p>
-                Notre mission est, qu'à chaque
-                <i>Quart de nuit</i>, tout le monde se sente à sa place,
-                tout en gardant la nature
-                <i>geek</i> du
-                <i>Quart</i> qui le rend si unique.
+              <div class="headline pl-3">Par qui?</div>
+              <p class="pl-8">
+                Nous sommes un regroupement de personnes motivé à créer des événements, nommés Quart de nuit, qui incorporent diverses facettes du geek-culture et les rendent accessibles à tous.
               </p>
+              </v-col>
             </v-row>
-          </v-col>
         </v-col>
         <v-col cols="6" class="d-none d-md-flex">
-          <v-img contain src="@/assets/media/ppl-game-pic.jpg" style="transfrom: skewY(4deg);"/>
+          <v-img contain src="@/assets/media/ppl-game-pic.jpg" />
         </v-col>
       </v-row>
 
@@ -76,10 +66,9 @@
 
     <!-- Activities -->
     <section>
-      <v-divider class="white"/>
+      <v-divider class="white" />
 
-      <v-row wrap justify="center">`
-        
+      <v-row wrap justify="center">
         <v-col v-for="(info,infoIndex) in information" :key="infoIndex" cols="12" sm="8" md="5">
           <v-row align="center">
             <v-col cols="3" :order="(infoIndex % 2 === 0) ? '1' : '2'">
@@ -115,10 +104,10 @@
           </v-row>
         </v-col>
       </v-row>
-     
-      <v-divider/>
 
-      <v-row align="center">
+      <v-divider />
+
+      <v-row align="start">
         <!-- Tournois-->
         <v-col cols="12" md="6">
           <v-row justify="center">
@@ -127,13 +116,12 @@
           <v-row justify="center">
             <v-col cols="12" md="10">
               <p class="px-2 ma-0">
-                Deux tournois se présenteront à cette 5e édition : un tournoi 2v2 de Super Smash Bros. (le 5e!)
-                et un tournoi de Tetris 1v1 (le 2e!). Les finales auront lieu sur le grand écran de la scène. Des prix seront remis aux gagnants.
-                Pour vous inscrire aux tournois, vous recevrez un courriel quelques jours avant le Quart si vous avez votre billet.
+                Deux tournois : Tetris (1v1) et Super Smash Bros. Ultimate (2v2). Tu peux déjà penser à ton
+                coéquipier pour Smash! Vous recevrez un courriel quelques jours avant l’événement pour vous inscrire.
               </p>
             </v-col>
           </v-row>
-          <v-row>
+          <v-row justify=center>
             <v-slide-group center-active v-model="slide">
               <v-slide-item
                 v-for="(game, index) in tournament"
@@ -160,7 +148,7 @@
             </v-slide-group>
           </v-row>
         </v-col>
-        <v-divider vertical/>
+        <v-divider vertical />
         <!-- Jeux de sociétés -->
         <v-col cols="12" md="5">
           <!-- JEUX DE SOCIÉTÉ -->
@@ -169,31 +157,24 @@
             <h1 class="primary--text display-1">JEUX DE SOCIÉTÉ</h1>
           </v-row>
           <v-row>
-            <p class="pa-2">
-              Plusieurs jeux de société seront disponibles tout au long de la soirée.
-              Il y aurait même un animateur présent pour aider avec les jeux!
-              Plusieurs tables avec un bar à côté seront dédiées pour les jeux de société.
-            </p>
+            <p
+              class="pa-2"
+            >Plusieurs tables avec un bar à côté seront dédiées pour les jeux de société. Animateur inclus!</p>
           </v-row>
           <v-row justify="center">
             <GameStackSVG width="300px" />
           </v-row>
         </v-col>
       </v-row>
-      <v-divider class="white"/>
+      <v-divider class="white" />
     </section>
 
     <!-- SCÈNE / LIGNE DU TEMPS -->
     <section>
-      <v-row align=center>
+      <v-row align="center" justify=center>
         <v-col cols="12" md="6" class="my-2">
           <v-row justify="center">
             <h1 class="primary--text display-1">HORAIRE DE LA SCÈNE</h1>
-          </v-row>
-          <v-row>
-            <p
-              class="ma-0 ma-md-2 pa-2"
-            >Une scène sera présente tout le long de la soirée. Avec son écran-projecteur, diverses activités se tiendront sur celle-ci.</p>
           </v-row>
         </v-col>
         <v-col>
@@ -315,7 +296,7 @@ export default {
           name: "COUCH GAMING",
           vector: require("@/assets/media/activities/sofa.svg"),
           text:
-            "Couch gaming c'est un terme pour désigner des jeux vidéo qui se jouent à plusieurs sur le même écran. Plusieurs jeux accessibles à tous (et amusants pour tous) se présenteront à ces espaces."
+            "Des jeux vidéo rigolos et accessibles à tous avec des amis sur le même écran comme dans le bon vieux temps!"
         },
         {
           name: "HALO REACH & BLACK OPS",
@@ -327,13 +308,13 @@ export default {
           name: "TRIVIA QUIZ",
           vector: require("@/assets/media/activities/head.svg"),
           text:
-            "Un trivia quiz vous attend lors de la soirée! En équipe de trois et en utilisant Kahoot, une série de question portant sur le cinéma, les jeux vidéo et la musique défileront sur le grand écran. Le quiz est conçu de manière à ce qu'il soit accessible à tous : des connaissances en films Barbie peuvent autant aider que des connaissances en musique classique. Il y aura des prix pour les trois premières équipes!"
+            "Trivia en équipe de trois qui testera vos connaissances sur la pop culture. Questions portant sur des films Barbie jusqu’à la musique des années 70!"
         },
         {
           name: "KARAOKE",
           vector: require("@/assets/media/activities/music.svg"),
           text:
-            "Un karaoke sera de mise lors de la soirée grâce à la générosité de Karaoke DJ Hugz. C'est le temps de vous laisser aller avec vos chansons préférées!"
+            "Un karaoké sera de mise lors de la soirée. C’est le temps de vous laisser aller avec vos chansons préférées!"
         }
       ]
     };
