@@ -1,7 +1,7 @@
 <template>
   <div class="justify-center width">
     <!-- Présentation -->
-    <v-row class="fullscreen ml-1" align="top" justify="center">
+    <v-row class="fullscreen ml-1" align="start" justify="center">
       <v-col justify="center" align="center" class="ma-0 pa-0">
         <v-row justify="center" class="">
           <LogoSVG width="40vh"/>
@@ -58,7 +58,7 @@
 
       <!-- Quick Info -->
       <v-row id="quickinfo" class="pt-2 mx-2" align="start">
-        <v-col v-for="info in quickinfo" :key="info" align="center" cols="6" md="3">
+        <v-col v-for="(info,infoIndex) in quickinfo" :key="infoIndex" align="center" cols="6" md="3">
           <v-icon x-large color="primary">{{info.icon}}</v-icon>
           <h2>{{info.name}}</h2>
           <p>{{info.desc}}</p>
@@ -300,7 +300,8 @@ export default {
           text:
             "Un karaoké sera de mise lors de la soirée. C’est le temps de vous laisser aller avec vos chansons préférées!"
         }
-      ]
+      ],
+      slide: null,
     };
   },
 };
