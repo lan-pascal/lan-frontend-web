@@ -39,8 +39,6 @@
                         width="30px"
                         height="30px"
                       ></v-text-field>Billet d'entrée générale
-                      <br />
-                      <b>Collège Maisonneuve</b>
                     </v-card-text>
                     <v-card-actions class="justify-center pb-6">
                       <v-btn :disabled="!tickets[0].valid" class="secondary">Acheter</v-btn>
@@ -74,8 +72,6 @@
                         width="30px"
                         height="30px"
                       ></v-text-field>Billet d'entrée générale
-                      <br />
-                      <b>Collège Maisonneuve</b>
                     </v-card-text>
                     <v-card-actions class="justify-center pb-6">
                       <v-btn :disabled="!tickets[1].valid" class="secondary">Acheter</v-btn>
@@ -85,16 +81,15 @@
               </v-col>
             </v-row>
             <div>
-              <p>
-                <br />
-                <b>Où :</b> Au Collège de Maisonneuve dans la salle Vivoir (3800 boul. Pie-IX, Montréal) (proche de station Pie-IX)
-                <br />
-                <b>Quand? :</b> Le jeudi 9 avril 2020 de 20h00 à 3h00 (à noter qu'il y aura fermeture des portes à 22h00) (aussi noter que le vendredi et lundis sont fériés pour Pâques)
-                <br />
-                <b>Quoi? :</b> Voir la
-                <a href="/">page d'accueil</a>
-                pour ces informations.
-              </p>
+                <p> 
+                  <b>Où :</b> <span class="title error--text"> Information inconnue dù aux circonstances présentes</span> 
+                </p>
+                <p>
+                  <b>Quand? :</b> <span class="title error--text"> Information inconnue dù aux circonstances présentes</span>
+                </p>
+                <p>
+                  <b>Quoi? : </b> <span class="title error--text"> Information inconnue dù aux circonstances présentes</span>
+                </p>
             </div>
           </v-col>
         </v-row>
@@ -102,67 +97,8 @@
 
       <!--Bar-->
       <v-tab-item>
-        <v-row>
-          <v-col>
-            <v-row no-gutters justify="center">
-              <v-col cols="6" sm="4" md="3" lg="2">
-                <v-card light flat height="100%" width="250px" class="accent">
-                  <v-card-title>Alcool</v-card-title>
-                  <v-card-subtitle>
-                    <div>1 pour 3.99$</div>
-                    <div>2 pour 6.99$</div>
-                    <div>10 shot pour 24.99$</div>
-                  </v-card-subtitle>
-
-                  <v-card-text>
-                    <ul>
-                      <li>Corona Extra</li>
-                      <li>Coors Light</li>
-                      <li>Stella Artois</li>
-                      <li>Pepito Sangria</li>
-                      <li>Palm Bay</li>
-                      <li>Shot de vodka</li>
-                      <li>Shot de Tequila</li>
-                    </ul>
-                  </v-card-text>
-
-                  <v-card-text></v-card-text>
-                </v-card>
-              </v-col>
-              <v-col cols="6" sm="4" md="3" lg="2">
-                <v-card flat height="100%" width="250px" class="transparent">
-                  <v-card-title>Sans Alcool</v-card-title>
-
-                  <v-card-subtitle class>2.50$</v-card-subtitle>
-
-                  <v-card-text>
-                    Eau offerte sur place
-                    <ul>
-                      <li>Coca-Cola</li>
-                      <li>Sprite</li>
-                      <li>Thé Glacé</li>
-                      <li>Fruitopia</li>
-                      <li>Eau pétillante</li>
-                    </ul>
-                  </v-card-text>
-                </v-card>
-              </v-col>
-            </v-row>
-          </v-col>
-        </v-row>
-
-        <v-row>
-          <v-row no-gutters justify="center">
-            <v-col
-              v-for="(icon,iconIndex) in payIcons"
-              cols="2"
-              md="1"
-              :key="iconIndex"
-              align="center"
-            >
-              <inline-svg :src="icon.src" width="40px" height="40px" />
-            </v-col>
-          </v-row>
+        <v-row justify=center>
+          <div class="display-2 error--text">Information inconnue dù aux circonstances présentes</div>
         </v-row>
       </v-tab-item>
     </v-tabs-items>

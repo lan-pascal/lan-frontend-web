@@ -1,8 +1,13 @@
 <template>
     <div>
         <TheHeader/>
-        
         <v-content class="bg">
+            <v-alert dismissible type="error" class="mb-0">
+               Dû au COVID-19, le Quart de nuit V est reporté. Toutes les informations concernant ce report sont dans <v-btn outlined :to="{name : 'faq'}">FAQ <v-icon class="pl-1" size="20px">mdi-open-in-new</v-icon></v-btn> . À noter que toutes les informations promotionnelles sont à titre indicatif seulement et ne sont plus actuelles.
+            </v-alert>
+            <v-alert dismissible type="info" class="mb-0">
+                Une nouvelle version du site est (déjà!) en construction. Alors, tout commentaire est plus que le bienvenu sur nos réseaux sociaux!
+            </v-alert>
             <v-container>
                 <router-view/>
             </v-container>

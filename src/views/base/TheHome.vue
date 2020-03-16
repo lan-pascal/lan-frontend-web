@@ -12,7 +12,7 @@
         </v-row>
 
         <v-row justify="center" class="px-4 py-12">
-          <Countdown class="mt-n5" :deadline="deadline" />
+          <Countdown class="mt-n5" deadline="0/0/0" />
         </v-row>
       </v-col>
     </v-row>
@@ -27,7 +27,7 @@
               <v-row justify="center">
                 <div class="display-1">
                   Le Quart de quoi
-                  <span class="secondary--text">?</span>
+                  <span class="primary--text">?</span>
                 </div>
               </v-row>
               <p
@@ -175,22 +175,9 @@
           </v-row>
         </v-col>
         <v-col>
-          <v-timeline height="100%">
-            <v-timeline-item
-              v-for="(activity, index) in schedule"
-              :key="index"
-              small
-              right
-              :color="activity.color"
-            >
-              <template v-slot:opposite>
-                <h3 v-text="activity.time"></h3>
-              </template>
-              <div class="py-4">
-                <h3>{{activity.name}}</h3>
-              </div>
-            </v-timeline-item>
-          </v-timeline>
+          <v-row>
+            <div class="display-2 error--text text-center">Information inconnue dù aux circonstances présentes</div>
+          </v-row>
         </v-col>
       </v-row>
     </section>
@@ -213,7 +200,7 @@
 
 #quickinfo {
   background: var(--v-grey-base);
-  transform: skewY(-3deg);
+  //transform: skewY(-3deg); Pascal aime pas
   border-radius: 20px;
 }
 
@@ -244,18 +231,18 @@ export default {
       deadline: "2020/04/09 20:00:00",
       quickinfo: [
         {
-          name: "Collège de Maisonneuve",
-          desc: "3800 boul. Pie-IX, Montréal",
+          name: "Information inconnue dù aux circonstances présentes",
+          desc: "",
           icon: "mdi-map-marker"
         },
         {
-          name: "Jeudi 9 avril 2020",
-          desc: "Fériés vendredi et lundi",
+          name: "Information inconnue dù aux circonstances présentes",
+          desc: "",
           icon: "mdi-calendar-blank"
         },
         {
-          name: "20h à 3h",
-          desc: "Fermeture des portes à 22h",
+          name: "Information inconnue dù aux circonstances présentes",
+          desc: "",
           icon: "mdi-clock-outline"
         },
         {
