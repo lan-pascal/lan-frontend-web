@@ -76,9 +76,24 @@ export default {
       selection: "Tous",
       faqs: [
         {
+          categories: ["COVID-19 (corona virus)"],
+          question: "Que se passe-t-il avec le Quart de nuit V compte tenu de la nouvelle épidémie?",
+          answer: "Compte tenu l'ampleur de l'événement, il n'est pas jugé sécuritaire de le tenir lors de l'épidémie actuelle. Le Quart de nuit V est alors reporté à une date non-déterminée. Nous visons tout de même toujours 2020.<br>Voir <a href='/pricing'>ici</a> pour l'annonce complète"
+        },
+        {
+          categories: ["COVID-19 (corona virus)"],
+          question: "À quand le Quart de nuit V alors?",
+          answer: "On ne peut pas dire en ce moment. Nous visons 2020, mais ne faisons aucune promesse. Dès que nous allons le savoir, ce sera annoncé sur nos réseaux sociaux (qui sont au bas de la page) et le site sera mis à jour."
+        },
+        {
+          categories: ["COVID-19 (corona virus)"],
+          question: "Le Quart de nuit V reporté sera-t-il identique au Quart de nuit V du 9 avril?",
+          answer: "Probablement pas. Tout ce qui est encore sur le site est relativement fiable pour le Quart de nuit V reporté. Par contre, étant donné le temps supplémentaire que nous avons, tout est sujet à changement (pour le mieux!)."
+        },
+        {
           categories: ["Aide"],
           question: "Où sont les informations sur le prochain Quart de nuit?",
-          answer: "Clique <a href='/'>ici</a>."
+          answer: "ATTENTION : sujet à changement avec le report dû au COVID-19. Clique <a href='/'>ici</a>."
         },
         {
           categories: ["Aide"],
@@ -92,6 +107,12 @@ export default {
           answer: "Clique <a href='/pricing'>ici</a>."
         },
         {
+          categories: ["Aide", "COVID-19 (corona virus)"],
+          question:
+            "J'ai une question/comment vous contactez?",
+          answer: "Clique <a href='mailto:quartdenuitmtl@gmail.com'>ici</a> pour nous envoyer un courriel. Sinon, au bas de la page, il y a un lien vers notre Messenger."
+        },
+        {
           categories: ["Paiement"],
           question: "Quelle méthode de paiement acceptez-vous?",
           answer: "On accepte seulement les cartes de crédit!"
@@ -100,7 +121,7 @@ export default {
           categories: ["Paiement"],
           question: "Puis-je me faire rembourser une fois mon billet acheté?",
           answer:
-            "Normalement, toute vente est finale. Toutefois, on est des humains et on comprend que ça arrive des empêchements dernière minute. Si tu crois que tu as une bonne raison pour te faire rembourser (garde en tête qu’on ne roule pas sur l’or et donc que nos options sont limitées), contacte-nous <a href='mailto:quartdenuitmtl@gmail.com'>ici</a>."
+            "Normalement, toute vente est finale. Toutefois, on est des humains et on comprend que ça arrive des empêchements dernière minute. Si tu crois que tu as une bonne raison pour te faire rembourser (garde en tête qu’on ne roule pas sur l’or et donc que nos options sont limitées), contacte-nous par courriel <a href='mailto:quartdenuitmtl@gmail.com'>ici</a> ou par Messenger au bas de la page."
         },
         {
           categories: ["Paiement"],
@@ -118,7 +139,7 @@ export default {
           categories: ["Divers"],
           question: "Puis-je apporter mon alcool et/ou ma nourriture?",
           answer:
-            "Ça dépend d'année en année (notamment selon l'organisme qui nous loue la salle). Pour le Quart de Nuit V, il est interdit d'apporter de l'alcool, mais permis d'apporter de la nourriture. Clique ici pour t’informer par rapport au prochain Quart de nuit."
+            "Ça dépend d'année en année (notamment selon l'organisme qui nous loue la salle). ATTENTION : sujet à changement avec le report dû au COVID-19. Pour le Quart de Nuit V, il est interdit d'apporter de l'alcool, mais permis d'apporter de la nourriture. Clique ici pour t’informer par rapport au prochain Quart de nuit."
         },
         {
           categories: ["Divers", "Contribuer"],
@@ -131,23 +152,23 @@ export default {
           categories: ["Contribuer"],
           question: "Je veux aider avec le Quart de nuit, comment faire?",
           answer:
-            "Cool! Contacte-nous <a href='mailto:quartdenuitmtl@gmail.com'>ici</a>. Peu importe ce que tu sais faire, on est ouvert! De plus, on cherche souvent du matériel, donc tu peux nous faire part de ce que tu as (surtout en matière de jeux vidéo et de jeux de société)"
+            "Cool! Contacte-nous <a href='mailto:quartdenuitmtl@gmail.com'>ici</a> ou sur Messenger (bas de la page). Peu importe ce que tu sais faire, on est ouvert! De plus, on cherche souvent du matériel, donc tu peux nous faire part de ce que tu as (surtout en matière de jeux vidéo et de jeux de société)"
         },
         {
           categories: ["Contribuer"],
           question:
             "J’ai des suggestions pour le prochain Quart de nuit/le futur du Quart de nuit. Comment les partager?",
-          answer: "Super! Vas <a href='mailto:quartdenuitmtl@gmail.com'>ici</a> pour nous en faire part."
+          answer: "Super! Envoie un courriel <a href='mailto:quartdenuitmtl@gmail.com'>ici</a> ou contacte nous sur Messenger (bas de la page) pour nous en faire part."
         },
         {
           categories: ["Contribuer"],
           question: "Acceptez-vous les dons?",
-          answer: "De l’argent??? Oui!! Clique <a href='mailto:quartdenuitmtl@gmail.com'>ici</a> (xoxoxoxo)."
+          answer: "De l’argent??? Oui!! Envoie-nous un courriel! <a href='mailto:quartdenuitmtl@gmail.com'>Ici</a> (xoxoxoxo)."
         },
         {
           categories: ["Divers"],
           question: "Est-il possible de consulter le passé/archives de Quart de nuit?",
-          answer: "Pour l'instant, non. Mais c'est dans nos futurs plans!"
+          answer: "Pour l'instant, non. Mais c'est dans nos plans futurs!"
         },
         {
           categories: ["Divers"],
