@@ -12,72 +12,78 @@
         <v-row>
           <v-col>
             <v-row justify="center" align="center">
-              <v-col class="scrolling-wrapper justify-md-center align-center">
-                <v-card width="250px" height="435" class="mx-4" disabled>
-                  <v-col class="pa-7">
-                    <QdnTitleSVG width="200" />
-                  </v-col>
+              <v-col class="justify-md-center align-center">
+                <v-slide-group center-active v-model="slide">
+                  <v-slide-item>
+                    <v-card width="250px" height="435" class="mx-4" disabled>
+                      <v-col class="pa-7">
+                        <QdnTitleSVG width="200" />
+                      </v-col>
 
-                  <v-card-text class="py-0 white--text posfix" align="center">
-                    <i>Early Bird</i>
-                    <br />50 premiers billets
-                  </v-card-text>
-                  <v-card-text>
-                    <span class="display-1">$ 20</span>.
-                    <span class="body">00</span>
-                  </v-card-text>
-                  <!-- Seems like a bug. The Name should be at the center. -->
-                  <v-divider />
-                  <v-form v-model="tickets[0].valid">
-                    <v-card-text align="center">
-                      <v-text-field
-                        class="text-right"
-                        suffix="x"
-                        label="Nombre de billets"
-                        placeholder="2"
-                        :rules="[rules.number, rules.maximum]"
-                        width="30px"
-                        height="30px"
-                      ></v-text-field>Billet d'entrée générale
-                    </v-card-text>
-                    <v-card-actions class="justify-center pb-6">
-                      <v-btn :disabled="!tickets[0].valid" class="secondary">Acheter</v-btn>
-                    </v-card-actions>
-                  </v-form>
-                </v-card>
+                      <v-card-text class="py-0 white--text posfix" align="center">
+                        <i>Early Bird</i>
+                        <br />50 premiers billets
+                      </v-card-text>
+                      <v-card-text>
+                        <span class="display-1">$ 20</span>.
+                        <span class="body">00</span>
+                      </v-card-text>
+                      <!-- Seems like a bug. The Name should be at the center. -->
+                      <v-divider />
+                      <v-form v-model="tickets[0].valid">
+                        <v-card-text align="center">
+                          <v-text-field
+                            class="text-right"
+                            suffix="x"
+                            label="Nombre de billets"
+                            placeholder="2"
+                            :rules="[rules.number, rules.maximum]"
+                            width="30px"
+                            height="30px"
+                          ></v-text-field>Billet d'entrée générale
+                        </v-card-text>
+                        <v-card-actions class="justify-center pb-6">
+                          <v-btn :disabled="!tickets[0].valid" class="secondary">Acheter</v-btn>
+                        </v-card-actions>
+                      </v-form>
+                    </v-card>
+                  </v-slide-item>
 
-                <v-card width="250px" height="435" class="mr-6" disabled>
-                  <v-col class="pa-7">
-                    <QdnTitleSVG width="200" />
-                  </v-col>
+                  <v-slide-item>
+                    <v-card width="250px" height="435" class="mr-6" disabled>
+                      <v-col class="pa-7">
+                        <QdnTitleSVG width="200" />
+                      </v-col>
 
-                  <v-card-text class="py-0 white--text posfix pb-5" align="center">
-                    <i>Régulier</i>
-                    <br />
-                  </v-card-text>
-                  <v-card-text>
-                    <span class="display-1">$ 25</span>.
-                    <span class="body">00</span>
-                  </v-card-text>
-                  <!-- Seems like a bug. The Name should be at the center. -->
-                  <v-divider />
-                  <v-form v-model="tickets[1].valid">
-                    <v-card-text align="center">
-                      <v-text-field
-                        class="text-right"
-                        suffix="x"
-                        label="Nombre de billets"
-                        placeholder="2"
-                        :rules="[rules.number, rules.maximum]"
-                        width="30px"
-                        height="30px"
-                      ></v-text-field>Billet d'entrée générale
-                    </v-card-text>
-                    <v-card-actions class="justify-center pb-6">
-                      <v-btn :disabled="!tickets[1].valid" class="secondary">Acheter</v-btn>
-                    </v-card-actions>
-                  </v-form>
-                </v-card>
+                      <v-card-text class="py-0 white--text posfix pb-5" align="center">
+                        <i>Régulier</i>
+                        <br />
+                      </v-card-text>
+                      <v-card-text>
+                        <span class="display-1">$ 25</span>.
+                        <span class="body">00</span>
+                      </v-card-text>
+                      <!-- Seems like a bug. The Name should be at the center. -->
+                      <v-divider />
+                      <v-form v-model="tickets[1].valid">
+                        <v-card-text align="center">
+                          <v-text-field
+                            class="text-right"
+                            suffix="x"
+                            label="Nombre de billets"
+                            placeholder="2"
+                            :rules="[rules.number, rules.maximum]"
+                            width="30px"
+                            height="30px"
+                          ></v-text-field>Billet d'entrée générale
+                        </v-card-text>
+                        <v-card-actions class="justify-center pb-6">
+                          <v-btn :disabled="!tickets[1].valid" class="secondary">Acheter</v-btn>
+                        </v-card-actions>
+                      </v-form>
+                    </v-card>
+                  </v-slide-item>
+                </v-slide-group>
               </v-col>
             </v-row>
             <div>
@@ -144,6 +150,8 @@ export default {
   },
   data() {
     return {
+      slide : null,
+
       tickets: [
         {
           valid: true,
