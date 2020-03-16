@@ -77,8 +77,8 @@ export default {
       faqs: [
         {
           categories: ["COVID-19 (corona virus)"],
-          question: "Que se passe-t-il avec le Quart de nuit V compte tenu de la nouvelle épidémie?",
-          answer: "Compte tenu l'ampleur de l'événement, il n'est pas jugé sécuritaire de le tenir lors de l'épidémie actuelle. Le Quart de nuit V est alors reporté à une date non-déterminée. Nous visons tout de même toujours 2020.<br>Voir <a href='https://www.facebook.com/101435848152584/posts/105216597774509/'>ici</a> pour l'annonce complète"
+          question: "Que se passe-t-il avec le Quart de nuit V compte tenu de la nouvelle pandémie?",
+          answer: "Compte tenu l'ampleur de l'événement, il n'est pas jugé sécuritaire de tenir le Quart de nuit durant la pandémie actuelle. Il est alors reporté à une date non-déterminée pour le moment. Nous visons tout de même toujours 2020. <br>Voir <a href='https://www.facebook.com/101435848152584/posts/105216597774509/'>ici</a> pour l'annonce complète"
         },
         {
           categories: ["COVID-19 (corona virus)"],
@@ -99,7 +99,7 @@ export default {
           categories: ["Aide"],
           question: "Je ne comprends pas trop c’est quoi le Quart de nuit.",
           answer:
-            "Le Quart de nuit c'est une soirée que tu passes avec tes amis à faire ce que tu as le goût dans toutes les activités offertes (clique ici pour la liste des activités)! Tu es libre de faire ce que tu veux, quand tu veux. Tu n'es même pas obligé.e de jouer : plusieurs viennent simplement pour socialiser. C'est aussi l'occasion parfaite pour rencontrer plein de nouveau monde. Et si tu penses que ce n’est pas pour toi parce que tu n’es pas nerd ou geek, tu ne peux pas avoir moins raison, on y trouve de tous les goûts : jeux de sociétés, karaoke, trivia, bar, jeux vidéo accessibles (Just Dance, Dance Dance Revolution, Guitar Hero, etc.) et plus!"
+            "Le Quart de nuit, c'est une soirée que tu passes avec tes amis à faire ce que tu as le goût parmi toutes les activités offertes (clique ici pour la liste des activités)! Tu es libre de faire ce que tu veux, quand tu veux. Tu n'es même pas obligé.e de jouer : plusieurs viennent simplement pour socialiser. C'est aussi l'occasion parfaite pour rencontrer plein de nouveau monde. Et si tu penses que ce n’est pas pour toi parce que tu n’es pas nerd ou geek, tu ne peux pas avoir moins raison, on y trouve de tous les goûts : jeux de sociétés, karaoke, trivia, bar, jeux vidéo accessibles (Just Dance, Dance Dance Revolution, Guitar Hero, etc.) et plus!"
         },
          {
           categories: ["Paiement", "Aide"],
@@ -121,7 +121,7 @@ export default {
           categories: ["Paiement"],
           question: "Puis-je me faire rembourser une fois mon billet acheté?",
           answer:
-            "Normalement, toute vente est finale. Toutefois, on est des humains et on comprend que ça arrive des empêchements dernière minute. Si tu crois que tu as une bonne raison pour te faire rembourser (garde en tête qu’on ne roule pas sur l’or et donc que nos options sont limitées), contacte-nous par courriel <a href='mailto:quartdenuitmtl@gmail.com'>ici</a> ou par Messenger au bas de la page."
+            "Normalement, toute vente est finale. Toutefois, on est des humains et on comprend que ça arrive des empêchements dernière minute. Si tu crois que tu as une bonne raison pour te faire rembourser (garde en tête qu’on ne roule pas sur l’or et donc que nos options sont limitées), contacte-nous par courriel <a href='mailto:quartdenuitmtl@gmail.com'>ici</a> ou via notre Messenger qui se situe au bas de la page."
         },
         {
           categories: ["Paiement"],
@@ -146,7 +146,7 @@ export default {
           question:
             "Puis-je apporter mon ordinateur, ma console de jeu et/ou des jeux de société ?",
           answer:
-            "Pour les ordinateurs portables et les jeux de société, et les consoles de jeux portables, il n’y a aucun problème. Pour les ordinateurs « tours » (incluant tous les équipements connexes tels que la souris, le clavier, l’écran, etc.), ainsi que pour les consoles de jeu, il est important de vérifier avec nous avant l’événement. N’oublie pas que tu es entièrement responsable de tous les items que tu amènes. "
+            "Pour les ordinateurs portables, les jeux de société et les consoles de jeux portables, il n’y a aucun problème. Pour les ordinateurs « tours » (incluant tous les équipements connexes tels que la souris, le clavier, l’écran, etc.), ainsi que pour les consoles de jeu, il est important de vérifier avec nous avant l’événement. N’oublie pas que tu es entièrement responsable de tous les items que tu amènes. "
         },
         {
           categories: ["Contribuer"],
