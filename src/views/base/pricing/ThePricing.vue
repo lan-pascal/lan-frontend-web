@@ -86,13 +86,13 @@
             </v-row>
             <div>
                 <p> 
-                  <b>Où :</b> <span class="title error--text"> Information inconnue dù aux circonstances présentes</span> 
+                  <b>Où :</b> <span class="title error--text"> Information inconnue en raison des circonstances présentes </span> 
                 </p>
                 <p>
-                  <b>Quand? :</b> <span class="title error--text"> Information inconnue dù aux circonstances présentes</span>
+                  <b>Quand? :</b> <span class="title error--text"> Information inconnue en raison des circonstances présentes </span>
                 </p>
                 <p>
-                  <b>Quoi? : </b> <span class="title error--text"> Information inconnue dù aux circonstances présentes</span>
+                  <b>Quoi? : </b> <span class="title error--text">  Information inconnue en raison des circonstances présentes </span>
                 </p>
             </div>
           </v-col>
@@ -102,7 +102,7 @@
       <!--Bar-->
       <v-tab-item>
         <v-row justify=center>
-          <div class="display-2 error--text">Information inconnue dù aux circonstances présentes</div>
+          <div class="display-2 error--text">Information inconnue en raison des circonstances présentes</div>
         </v-row>
       </v-tab-item>
     </v-tabs-items>

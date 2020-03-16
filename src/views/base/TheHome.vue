@@ -172,7 +172,7 @@
         </v-col>
         <v-col>
           <v-row>
-            <div class="display-2 error--text text-center">Information inconnue dù aux circonstances présentes</div>
+            <div class="display-2 error--text text-center">Information inconnue en raison des circonstances présentes</div>
           </v-row>
         </v-col>
       </v-row>
@@ -224,17 +224,17 @@ export default {
       deadline: "2020/04/09 20:00:00",
       quickinfo: [
         {
-          name: "Information inconnue dù aux circonstances présentes",
+          name: "Information inconnue en raison des circonstances présentes",
           desc: "",
           icon: "mdi-map-marker"
         },
         {
-          name: "Information inconnue dù aux circonstances présentes",
+          name: "Information inconnue en raison des circonstances présentes",
           desc: "",
           icon: "mdi-calendar-blank"
         },
         {
-          name: "Information inconnue dù aux circonstances présentes",
+          name: "Information inconnue en raison des circonstances présentes",
           desc: "",
           icon: "mdi-clock-outline"
         },
