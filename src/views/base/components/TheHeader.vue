@@ -81,18 +81,18 @@
             class="text-center"
             width=100%
             >
-                <v-card-text>
+                <v-card-actions>
                     <v-btn
                     v-for="media in medias"
                     :key="media.link"
                     :href="media.link"
                     target="_blank"
-                    class="mx-4"
+                    class="mx-3"
                     icon
                     >
                         <v-icon size="24px">{{ media.icon }}</v-icon>
                     </v-btn>
-                </v-card-text>
+                </v-card-actions>
             </v-card>
       </template>
     </v-navigation-drawer>
@@ -117,7 +117,8 @@ export default {
     medias: [
             {icon: "mdi-email", link: "mailto:quartdenuitmtl@gmail.com"},
             {icon: "mdi-instagram", link: "https://www.instagram.com/quartdenuit/"},
-            {icon: "mdi-facebook", link: "https://www.facebook.com/quartdenuitofficiel/"}
+            {icon: "mdi-facebook", link: "https://www.facebook.com/quartdenuitofficiel/"},
+            {icon: "mdi-facebook-messenger", link: "https://www.facebook.com/messages/t/quartdenuitofficiel?noCoBLog=false"}
     ],
   })
 };
