@@ -57,7 +57,7 @@
       </v-row>
 
       <!-- Quick Info -->
-      <v-row id="quickinfo" class="pt-2 mx-2" align="center">
+      <v-row id="quickinfo" class="pt-2 mx-2" align="start">
         <v-col v-for="info in quickinfo" :key="info" align="center" cols="6" md="3">
           <v-icon x-large color="primary">{{info.icon}}</v-icon>
           <h2>{{info.name}}</h2>
