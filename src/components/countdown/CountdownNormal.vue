@@ -3,7 +3,7 @@
     <v-row dense justify="center">
         <template v-for="(time,index) in times">
             <v-col class="d-flex-inline flex-grow-0" :key=index>
-                <CountdownPiece class="clock__piece" :digits="time"/>
+                <CountdownPiece class="clock__piece transparent" :digits="time"/>
             </v-col>
       </template>
     </v-row>
