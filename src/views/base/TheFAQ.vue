@@ -93,7 +93,7 @@ export default {
         {
           categories: ["Aide"],
           question: "Où sont les informations sur le prochain Quart de nuit?",
-          answer: "ATTENTION : sujet à changement avec le report dû au COVID-19. Clique <a href='/'>ici</a>."
+          answer: "ATTENTION : sujet à changement avec le report dû au COVID-19. Clique <router-link :to='/'>ici</router-link>."
         },
         {
           categories: ["Aide"],
