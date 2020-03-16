@@ -89,6 +89,7 @@
                     target="_blank"
                     class="mx-3"
                     icon
+                    rel="noopener"
                     >
                         <v-icon size="24px">{{ media.icon }}</v-icon>
                     </v-btn>

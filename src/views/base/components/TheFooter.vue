@@ -12,6 +12,7 @@
                     :key="media.link"
                     :href="media.link"
                     target="_blank"
+                    rel="noopener"
                     class="mx-4"
                     icon
                     >

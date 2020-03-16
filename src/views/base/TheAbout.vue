@@ -36,6 +36,7 @@
             :key="media.link"
             :href="media.link"
             target="_blank"
+            rel="noopener"
             class="mx-3"
             icon
             color="primary"
