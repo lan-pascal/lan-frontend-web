@@ -92,7 +92,7 @@ export default {
           answer: "Clique <a href='/pricing'>ici</a>."
         },
         {
-          categories: ["Aide", "COVID-19 (corona virus)"],
+          categories: ["Aide"],
           question:
             "J'ai une question/comment vous contactez?",
           answer: "Clique <a href='mailto:quartdenuitmtl@gmail.com'>ici</a> pour nous envoyer un courriel. Sinon, au bas de la page, il y a un lien vers notre Messenger."
