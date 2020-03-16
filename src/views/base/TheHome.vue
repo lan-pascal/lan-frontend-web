@@ -10,10 +10,6 @@
         <v-row justify="center" class="pa-5">
           <QdnTitleSVG width="500" class="py-md-5" />
         </v-row>
-
-        <v-row justify="center" class="px-4 py-12">
-          <Countdown class="mt-n5" deadline="0/0/0" />
-        </v-row>
       </v-col>
     </v-row>
 
@@ -214,14 +210,11 @@ import QdnTitleSVG from "@/assets/logo/qdn-logo-vector.svg?inline";
 import LogoSVG from "@/assets/logo/logo-bleu.svg?inline";
 import GameStackSVG from "@/assets/media/activities/game-board-stack.svg?inline";
 
-import Countdown from "@/components/countdown/CountdownNormal";
-
 export default {
   length: 3,
   onboarding: 0,
   name: "TheHome",
   components: {
-    Countdown,
     LogoSVG,
     QdnTitleSVG,
     GameStackSVG
