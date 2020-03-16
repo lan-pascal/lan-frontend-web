@@ -1,16 +1,16 @@
 <template>
   <div class="width">
 
-  
+
   <v-col>
-    
+
     <v-row align="center" class="pt-12 my-12">
       <v-col class="pr-12" cols="12" md="10">
         <div class="display-3 primary--text">À propos</div>
         <div class="font-weight-light headline" style="font-family:'Teko', sans-serif;">
           <p>
-            Nous sommes un regroupement de personnes motivé à créer des événements, nommés
-            Quart de nuit, qui incorporent diverse facettes du geek-culture et les rendent accessibles à tous.
+            Nous sommes un regroupement de personnes motivées à créer des événements, nommés
+            Quart de nuit, qui incorporent diverses facettes du geek-culture et qui les rendent accessibles à tous.
           </p>
           <p>
             Notre mission est, qu'à chaque
@@ -114,12 +114,12 @@ export default {
           name: "Karl-Étienne",
           title: "Développeur web en chef & assistant-technique",
           description:
-            "Fondateur du site web. Aide bénévolement depuis le début. Côté rationnel à Pascal."
+            "Fondateur du site web. Aide bénévolement depuis le début. Côté rationnel de Pascal."
         },
         {
           name: "Lianne",
           title: "Conseillère financière & communications",
-          description: "Aide bénévolement depuis Quart de nuit IV. Épicerie du Quart de nuit. Grâce à elle si le Quart n'est pas bankrupt."
+          description: "Aide bénévolement depuis Quart de nuit IV. Épicerie du Quart de nuit. C'est grâce à elle si le Quart n'est pas bankrupt."
         },
         {
           name: "Nicolas",
@@ -139,17 +139,17 @@ export default {
         {
           name: "Leon",
           title: "Créateur du logo officiel",
-          description: "Fais des caméléons photo-réaliste à la mine."
+          description: "Fait des caméléons photo-réaliste à la mine."
         },
         {
           name: "Sacha",
           title: "Photographe & maître-t-shirtier",
-          description: "Prends de très jolies photos."
+          description: "Prend de très jolies photos."
         },
         {
           name: "Hugues",
           title: "DJ & maître du son",
-          description: "Grâce à lui si le Quart est pas un malaise silencieux! Son site : https://www.facebook.com/karaokedjhugz/"
+          description: "C'est grâce à lui si le Quart n'est pas un malaise silencieux! Son site : https://www.facebook.com/karaokedjhugz/"
         },
         {
           name: "Kevin",
