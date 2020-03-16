@@ -78,7 +78,7 @@ export default {
         {
           categories: ["COVID-19 (corona virus)"],
           question: "Que se passe-t-il avec le Quart de nuit V compte tenu de la nouvelle épidémie?",
-          answer: "Compte tenu l'ampleur de l'événement, il n'est pas jugé sécuritaire de le tenir lors de l'épidémie actuelle. Le Quart de nuit V est alors reporté à une date non-déterminée. Nous visons tout de même toujours 2020.<br>Voir <a href='/pricing'>ici</a> pour l'annonce complète"
+          answer: "Compte tenu l'ampleur de l'événement, il n'est pas jugé sécuritaire de le tenir lors de l'épidémie actuelle. Le Quart de nuit V est alors reporté à une date non-déterminée. Nous visons tout de même toujours 2020.<br>Voir <a href='https://www.facebook.com/101435848152584/posts/105216597774509/'>ici</a> pour l'annonce complète"
         },
         {
           categories: ["COVID-19 (corona virus)"],
