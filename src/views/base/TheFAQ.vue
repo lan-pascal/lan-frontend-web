@@ -76,21 +76,6 @@ export default {
       selection: "Tous",
       faqs: [
         {
-          categories: ["COVID-19 (corona virus)"],
-          question: "Que se passe-t-il avec le Quart de nuit V compte tenu de la nouvelle épidémie?",
-          answer: "Compte tenu l'ampleur de l'événement, il n'est pas jugé sécuritaire de le tenir lors de l'épidémie actuelle. Le Quart de nuit V est alors reporté à une date non-déterminée. Nous visons tout de même toujours 2020.<br>Voir <a href='/pricing'>ici</a> pour l'annonce complète"
-        },
-        {
-          categories: ["COVID-19 (corona virus)"],
-          question: "À quand le Quart de nuit V alors?",
-          answer: "On ne peut pas dire en ce moment. Nous visons 2020, mais ne faisons aucune promesse. Dès que nous allons le savoir, ce sera annoncé sur nos réseaux sociaux (qui sont au bas de la page) et le site sera mis à jour."
-        },
-        {
-          categories: ["COVID-19 (corona virus)"],
-          question: "Le Quart de nuit V reporté sera-t-il identique au Quart de nuit V du 9 avril?",
-          answer: "Probablement pas. Tout ce qui est encore sur le site est relativement fiable pour le Quart de nuit V reporté. Par contre, étant donné le temps supplémentaire que nous avons, tout est sujet à changement (pour le mieux!)."
-        },
-        {
           categories: ["Aide"],
           question: "Où sont les informations sur le prochain Quart de nuit?",
           answer: "ATTENTION : sujet à changement avec le report dû au COVID-19. Clique <a href='/'>ici</a>."
@@ -107,7 +92,7 @@ export default {
           answer: "Clique <a href='/pricing'>ici</a>."
         },
         {
-          categories: ["Aide", "COVID-19 (corona virus)"],
+          categories: ["Aide"],
           question:
             "J'ai une question/comment vous contactez?",
           answer: "Clique <a href='mailto:quartdenuitmtl@gmail.com'>ici</a> pour nous envoyer un courriel. Sinon, au bas de la page, il y a un lien vers notre Messenger."

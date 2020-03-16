@@ -12,6 +12,7 @@
                     :key="media.link"
                     :href="media.link"
                     target="_blank"
+                    rel="noopener"
                     class="mx-4"
                     icon
                     >
@@ -47,7 +48,9 @@ export default {
         medias: [
             {icon: "mdi-email", link: "mailto:quartdenuitmtl@gmail.com"},
             {icon: "mdi-instagram", link: "https://www.instagram.com/quartdenuit/"},
-            {icon: "mdi-facebook", link: "https://www.facebook.com/quartdenuitofficiel/"}
+            {icon: "mdi-facebook", link: "https://www.facebook.com/quartdenuitofficiel/"},
+            {icon: "mdi-facebook-messenger", link: "https://www.facebook.com/messages/t/quartdenuitofficiel?noCoBLog=false"}
+
         ],
         links:  [
             {name: "Conditions d'utilisation", route: "terms_of_use"},
