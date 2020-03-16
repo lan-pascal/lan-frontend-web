@@ -12,7 +12,6 @@
         <v-row>
           <v-col>
             <v-row justify="center" align="center">
-              <v-col class="justify-md-center align-center">
                 <v-slide-group center-active v-model="slide">
                   <v-slide-item>
                     <v-card width="250px" height="435" class="mx-4" disabled>
@@ -84,7 +83,6 @@
                     </v-card>
                   </v-slide-item>
                 </v-slide-group>
-              </v-col>
             </v-row>
             <div>
                 <p> 
