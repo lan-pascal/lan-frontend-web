@@ -195,7 +195,7 @@ export default {
           name: "Alex",
           title: "Assistant-technique",
           description:
-            "Aide bénévolement depuis le début. Dort encore moins que Karl-Étienne."
+            "Aide bénévolement depuis le début."
         },
         {
           name: "Étienne",
