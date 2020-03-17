@@ -38,12 +38,12 @@
               <div class="headline pl-3">Pour qui?</div>
               <p
                 class="pl-8"
-              >Pour toi! Si tu lis ça, oui tu es invité.e! Et oui tu peux inviter tes ami.e.s! Même si tu n'as jamais touché à quelque chose d'électronique de ta vie, tu y trouveras quelque chose.</p>
+              >Pour toi! Si tu lis ça, oui tu es invité.e! Et oui tu peux inviter tes ami.e.s! Même si tu n'as jamais touché à quoique ce soit d'électronique de ta vie, tu y trouveras quelque chose.</p>
 
               <div class="headline pl-3">Par qui?</div>
               <p
                 class="pl-8"
-              >Nous sommes un regroupement de personnes motivé à créer des événements, nommés Quart de nuit, qui incorporent diverses facettes du geek-culture et les rendent accessibles à tous.</p>
+              >Nous sommes un regroupement de personnes motivées à créer des événements, nommés Quart de nuit, qui incorporent diverses facettes du geek-culture et qui les rendent accessibles à tous.</p>
             </v-col>
           </v-row>
         </v-col>
@@ -151,7 +151,7 @@
             <v-card-title class="primary--text"><v-row justify=center>JEUX DE SOCIÉTÉ</v-row></v-card-title>
             <v-card-text
               class="pa-2 text-center"
-            >Plusieurs tables avec un bar à côté seront dédiées pour les jeux de société. Animateur inclus!</v-card-text>
+            >Plusieurs tables près d'un bar seront dédiées aux jeux de société. Animateur inclus!</v-card-text>
           </v-card>
 
           <v-row justify="center">
