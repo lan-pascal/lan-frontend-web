@@ -1,26 +1,13 @@
 # Lan à Papascal
 
-## Installation
+![image](https://user-images.githubusercontent.com/26026137/233758683-0e1f1afb-4e0d-434f-85c6-61fc24a19018.png)
 
-### Répertoire
+## How to Setup
 
-* Installer Git-bash ou Github
-* Cloner le répertoire dans un dossier sur votre ordinateur avec la commande suivante.
-```
-git clone https://github.com/lan-pascal/lan-backend-web
-```
-
-### Javascript et ses dépendances
-
-* Installer npm
-* Installer un éditeur de code (ex: Visual Studio Code)
-* Installer les dépendances associées au projet
-
+### Install Dependencies
 ```
 npm install
 ```
-
-## Exécution
 
 ### Compiles and hot-reloads for development
 ```
@@ -42,17 +29,14 @@ npm run test
 npm run lint
 ```
 
-## Outils
+## Tools
 
 * [Vue](https://vuejs.org/) - Progressive JavaScript Framework
 * [Vuetify](https://vuetifyjs.com/en/) - Material Design Components Framework
 
 ## Contribution
 
-(fichier à venir)
-
-## Collaborateurs
-
-Merci à 
-
-* [Karl-Étienne Bolduc](https://github.com/LodrikMtl)
+* [Karl-Étienne Bolduc](https://github.com/LodrikMtl) Creation of the website
+* [Pascal Vaillancourt] Organizing the event
+* [Nicolas Vaillancourt] Help designing the website
+* [Léon Carlos Navarro Campillo] Design of the LOGO
